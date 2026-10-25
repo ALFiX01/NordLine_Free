@@ -4,13 +4,14 @@
 python probe.py <xray_bin> <build.py> <out.json> <file1> [file2 ...]
 """
 import importlib.util
+import argparse
 import json
 import math
 import os
 import subprocess
 import sys
 import time
-from concurrent.futures import ThreadPoolExecutor
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
 from build import TEST_URL, PROBE_POLICY
 
@@ -94,7 +95,15 @@ def gemini_ok(port):
 
 
 def main():
-    xray_bin, build_py, out_json, *files = sys.argv[1:]
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("xray_bin")
+    parser.add_argument("build_py")
+    parser.add_argument("out_json")
+    parser.add_argument("files", nargs="+")
+    parser.add_argument("--workers", type=int, default=48, choices=range(1, 49), metavar="1..48")
+    parser.add_argument("--skip-gemini", action="store_true")
+    args = parser.parse_args()
+    xray_bin, build_py, out_json, files = args.xray_bin, args.build_py, args.out_json, args.files
     spec = importlib.util.spec_from_file_location("builder", build_py)
     builder = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(builder)
@@ -131,11 +140,18 @@ def main():
             result = check_connectivity(base + i)
             if result["ok"]:
                 country = result.get("exit") or nodes[i]["cc"]
-                result["gemini"] = gemini_ok(base + i) if country not in builder.NO_AI else False
+                if not args.skip_gemini:
+                    result["gemini"] = gemini_ok(base + i) if country not in builder.NO_AI else False
             return nodes[i]["key"], result
 
-        with ThreadPoolExecutor(48) as pool:
-            report = dict(pool.map(test, range(len(nodes))))
+        report = {}
+        with ThreadPoolExecutor(args.workers) as pool:
+            futures = [pool.submit(test, i) for i in range(len(nodes))]
+            for future in as_completed(futures):
+                key, result = future.result()
+                report[key] = result
+                if len(report) % args.workers == 0 or len(report) == len(nodes):
+                    print(f"Progress {len(report)}/{len(nodes)}, reachable {sum(bool(r['ok']) for r in report.values())}", flush=True)
     finally:
         proc.terminate()
         proc.wait(timeout=10)
@@ -145,7 +161,8 @@ def main():
     report["__meta__"] = {"checked_at": datetime.now(timezone.utc).isoformat()}
     with open(out_json, "w", encoding="utf-8") as output:
         json.dump(report, output, ensure_ascii=False, indent=2)
-    print(f"Checked {len(nodes)}, reachable {ok}, Gemini {gemini}")
+    gemini_summary = "not checked" if args.skip_gemini else str(gemini)
+    print(f"Checked {len(nodes)}, reachable {ok}, Gemini {gemini_summary}")
 
 
 if __name__ == "__main__":

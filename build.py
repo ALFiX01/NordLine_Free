@@ -7,11 +7,14 @@
 
 Запуск:  python3 -I build.py <файл1[,файл2=bl,файл3=auto,файл4=cap,...]> <папка_вывода> [--allow-insecure] [--alive probe.json]
 
---alive: результат probe.py; нерабочие зарубежные серверы «только для блокировок» убираются,
-страна берётся по реальному выходу, внутри страны сервера идут от быстрых к медленным.
+--alive: результат probe.py не старше двух часов. Основные подписки содержат
+только проверенные узлы; непроверенные узлы белых списков сохраняются отдельно.
 """
 import json
 import sys
+import hashlib
+import math
+from datetime import datetime, timezone
 from urllib.parse import urlsplit, parse_qs, unquote, quote
 
 BRAND = "NordLine_Free"
@@ -47,6 +50,15 @@ RU_DIRECT_DOMAINS = [
 ]
 
 TEST_URL = "http://www.gstatic.com/generate_204"
+PROBE_MAX_AGE = 7200
+
+
+def fresh_probe_time(value):
+    try:
+        checked = datetime.fromisoformat(value)
+        return checked.tzinfo is not None and -300 <= (datetime.now(timezone.utc) - checked).total_seconds() <= PROBE_MAX_AGE
+    except (ValueError, TypeError):
+        return False
 
 
 def flag_to_code(s):
@@ -82,10 +94,22 @@ def parse_link(line):
 
 
 def dedup_key(n):
-    q = n["q"]
-    return (n["host"], n["port"], n["uuid"], n["sec"], n["net"], first(q, "sni"),
-            first(q, "pbk"), first(q, "sid"), first(q, "serviceName"),
-            first(q, "path"), first(q, "host"), first(q, "mode"))
+    # Preserve unknown settings too: losing a duplicate is safer than merging
+    # connections with different transport/security parameters.
+    q = {k: list(v) for k, v in n["q"].items() if k not in ("type", "security")}
+    if "extra" in q:
+        for i, value in enumerate(q["extra"]):
+            try:
+                q["extra"][i] = json.dumps(json.loads(value), sort_keys=True, separators=(",", ":"))
+            except ValueError:
+                pass
+    return (n["host"], n["port"], n["uuid"], n["sec"], n["net"],
+            json.dumps(q, sort_keys=True, ensure_ascii=True, separators=(",", ":")))
+
+
+def probe_key(n):
+    payload = json.dumps(dedup_key(n), ensure_ascii=True, separators=(",", ":"))
+    return "v2:" + hashlib.sha256(payload.encode("utf-8")).hexdigest()
 
 
 def label(n):
@@ -164,7 +188,8 @@ def write_sub(path, title, desc, nodes):
 
 
 def build_clash(mode, nodes):
-    cl = [n for n in nodes if clash_ok(n)]
+    cl = [n for n in nodes if n.get("verified") and clash_ok(n)
+          and (mode != "whitelist" or n.get("wl", True))]
     proxies = [clash_proxy(n) for n in cl]
     names_all = [p["name"] for p in proxies]
     names_wl = [n["name"] for n in cl if n.get("wl", True)]
@@ -181,6 +206,8 @@ def build_clash(mode, nodes):
                                        "🇷🇺 Только РФ-авто")
     main = f"🚀 {BRAND}"
     order = [g_reg, g_auto, g_wl, g_ai, g_ru]
+    if mode == "whitelist":
+        order = [g_wl, g_auto, g_reg, g_ai, g_ru]
     groups = [
         {"name": main, "type": "select", "proxies": order + ["🖐 Выбрать вручную", "DIRECT"]},
         ut(g_reg, names_reg), ut(g_auto, names_reg), ut(g_wl, names_wl),
@@ -261,23 +288,31 @@ def xray_outbound(n, tag):
                        "streamSettings": ss})
 
 
-def xray_config(remarks, nodes, ai_routing=False):
+def xray_config(remarks, nodes, ai_routing=False, balanced=True):
     """Один конфиг Xray. Все узлы в одном балансировщике leastPing = авто-сервер."""
+    if balanced:
+        nodes = [n for n in nodes if n.get("verified")]
     outs = []
     for i, n in enumerate(nodes, 1):
         tag = ("node-ai-" if n.get("ai") else "node-ru-") + str(i)
         outs.append(xray_outbound(n, tag))
     outs += [{"tag": "direct", "protocol": "freedom"}, {"tag": "block", "protocol": "blackhole"}]
-    balancers = [{"tag": "auto", "selector": ["node-"], "strategy": {"type": "leastPing"}}]
+    ranked = sorted(zip(nodes, outs), key=lambda pair: pair[0].get("ms", float("inf")))
+    balancers = [{"tag": "auto", "selector": ["node-"], "strategy": {"type": "leastPing"},
+                  "fallbackTag": ranked[0][1]["tag"]}] if nodes and balanced else []
     rules = []
     if ai_routing and any(n.get("ai") for n in nodes):
-        balancers.append({"tag": "auto-ai", "selector": ["node-ai-"], "strategy": {"type": "leastPing"}})
+        fallback_ai = next(o["tag"] for n, o in ranked if n.get("ai"))
+        balancers.append({"tag": "auto-ai", "selector": ["node-ai-"],
+                          "strategy": {"type": "leastPing"}, "fallbackTag": fallback_ai})
         rules.append({"type": "field", "domain": [f"domain:{d}" for d in AI_DOMAINS],
                       "balancerTag": "auto-ai"})
     rules.append({"type": "field", "network": "tcp,udp", "balancerTag": "auto"})
     return {
         "remarks": remarks,
         "log": {"loglevel": "warning"},
+        "dns": {"hosts": {"cloudflare-dns.com": "1.1.1.1"},
+                "servers": ["https://cloudflare-dns.com/dns-query"], "queryStrategy": "UseIPv4"},
         "inbounds": [
             {"tag": "socks", "listen": "127.0.0.1", "port": 10808, "protocol": "socks",
              "settings": {"udp": True},
@@ -292,8 +327,10 @@ def xray_config(remarks, nodes, ai_routing=False):
     }
 
 
-def build_xray_sub(nodes):
+def build_xray_sub(nodes, auto=True):
     """Подписка Xray JSON: сверху авто-конфиги, ниже каждый сервер отдельно."""
+    if auto:
+        nodes = [n for n in nodes if n.get("verified")]
     ai = [n for n in nodes if n.get("ai")]
     reg = [n for n in nodes if n["cc"] != "RU"]
     items = [
@@ -302,9 +339,9 @@ def build_xray_sub(nodes):
         xray_config(f"📶 АВТО Белые списки — {BRAND}", [n for n in nodes if n.get("wl", True)]),
         xray_config(f"🧠 АВТО ИИ — {BRAND}", ai),
     ]
-    items = [c for c in items if len(c["outbounds"]) > 2]
+    items = [c for c in items if len(c["outbounds"]) > 2] if auto else []
     for n in nodes:
-        c = xray_config(n["name"], [n])
+        c = xray_config(n["name"], [n], balanced=False)
         c["routing"]["balancers"] = []
         c["routing"]["rules"] = [{"type": "field", "network": "tcp,udp",
                                   "outboundTag": c["outbounds"][0]["tag"]}]
@@ -367,24 +404,30 @@ def main():
         nodes.append(n)
 
     dropped_dead = 0
-    if "--alive" not in sys.argv:  # без проверки страну безфлажковых узлов не узнать
-        nodes = [n for n in nodes if n["cc"] != "XX"]
+    alive = {}
     if "--alive" in sys.argv:
         alive = json.load(open(sys.argv[sys.argv.index("--alive") + 1], encoding="utf-8"))
-        kept = []
-        for n in nodes:
-            r = alive.get("|".join(map(str, dedup_key(n))))
-            n["ms"] = r["ms"] if r and r.get("ok") else 99999
-            if r and r.get("ok"):
-                ex = (r.get("exit") or "").upper()
-                if len(ex) == 2 and ex.isalpha():
-                    n["cc"] = ex
-                kept.append(n)
-            elif (n["wl"] or n["cc"] == "RU") and n["cc"] != "XX":
-                kept.append(n)  # белые-списки-серверы из-за границы не проверить честно: оставляем
-            else:
-                dropped_dead += 1
-        nodes = kept
+    checked_at = alive.get("__meta__", {}).get("checked_at")
+    fresh = fresh_probe_time(checked_at)
+    kept = []
+    for n in nodes:
+        r = alive.get(probe_key(n), {})
+        ms = r.get("ms")
+        n["verified"] = bool(fresh and r.get("ok") is True and isinstance(ms, (int, float))
+                             and not isinstance(ms, bool) and math.isfinite(ms) and ms >= 0)
+        n["ms"] = ms if n["verified"] else 99999
+        if n["verified"]:
+            ex = (r.get("exit") or "").upper()
+            if len(ex) == 2 and ex.isascii() and ex.isalpha():
+                n["cc"] = ex
+        # Unknown geography cannot safely enter foreign-only or Russian groups.
+        if n["cc"] == "XX":
+            n["verified"] = False
+        if n["verified"] or n["wl"] or n["cc"] == "RU":
+            kept.append(n)
+        else:
+            dropped_dead += 1
+    nodes = kept
 
     # большой источник (rjsxrd): оставляем CAP лучших, поровну по странам
     CAP = 120
@@ -392,7 +435,7 @@ def main():
     dropped_cap = 0
     if len(capped) > CAP:
         by = {}
-        for n in sorted(capped, key=lambda n: n.get("ms", 0)):
+        for n in sorted(capped, key=lambda n: (not n["verified"], n.get("ms", 0))):
             by.setdefault(n["cc"], []).append(n)
         keep = []
         while len(keep) < CAP and any(by.values()):
@@ -403,27 +446,32 @@ def main():
         dropped_cap = len(capped) - len(keep)
         nodes = [n for n in nodes if not n.get("cap") or id(n) in ks]
 
-    # ИИ-метка. С результатами проверки: только если через сервер реально открылся Gemini.
-    # Без проверки: только прямые зарубежные серверы из списка «блокировки», мост из белых списков не считаем.
-    have_probe = "--alive" in sys.argv
+    # ИИ-метка требует свежую проверку соединения и успешную проверку Gemini.
     for n in nodes:
-        if n["cc"] in NO_AI:
-            n["ai"] = False
-        elif have_probe:
-            r = alive.get("|".join(map(str, dedup_key(n))))
-            n["ai"] = bool(r and r.get("ok") and r.get("gemini"))
-        else:
-            n["ai"] = not n["wl"]
+        n["ai"] = bool(n["verified"] and n["cc"] not in NO_AI
+                       and alive.get(probe_key(n), {}).get("gemini"))
 
-    # сортируем: РФ сначала (стабильнее при белых списках), потом по странам
-    nodes.sort(key=lambda n: (n["cc"] == "RU", COUNTRIES.get(n["cc"], n["cc"]), n.get("ms", 0)))
+    nodes.sort(key=lambda n: (not n["verified"], n["cc"] == "RU", COUNTRIES.get(n["cc"], n["cc"]), n["ms"]))
     counters = {}
     for n in nodes:
         counters[n["cc"]] = counters.get(n["cc"], 0) + 1
         flag = "".join(chr(0x1F1E6 + ord(c) - 65) for c in n["cc"]) if n["cc"] != "XX" else "🌐"
-        n["name"] = f"{flag} {COUNTRIES.get(n['cc'], n['cc'])} #{counters[n['cc']]} · {purpose(n)}"
+        suffix = "" if n["verified"] else " · ⚠ Не проверен"
+        n["name"] = f"{flag} {COUNTRIES.get(n['cc'], n['cc'])} #{counters[n['cc']]} · {purpose(n)}{suffix}"
         n["new_link"] = n["raw"].split("#", 1)[0] + "#" + quote(n["name"], safe="")
 
+    reserve = [n for n in nodes if not n["verified"]]
+    health = {probe_key(n): {**alive.get(probe_key(n), {}), "status": "verified" if n["verified"] else "unverified",
+                            "checked_at": checked_at, "ms": n["ms"] if n["verified"] else None,
+                            "insecure": n["insecure"]}
+              for n in nodes}
+    with open(f"{out}/health.json", "w", encoding="utf-8") as f:
+        json.dump(health, f, ensure_ascii=False, indent=2)
+    write_sub(f"{out}/unverified.txt", f"{BRAND} — непроверенный резерв",
+              "Нет свежей успешной проверки. Только ручной выбор", reserve)
+    with open(f"{out}/unverified.json", "w", encoding="utf-8") as f:
+        json.dump(build_xray_sub(reserve, auto=False), f, ensure_ascii=False, indent=2)
+    nodes = [n for n in nodes if n["verified"]]
     ai = [n for n in nodes if n.get("ai")]
     reg = [n for n in nodes if n["cc"] != "RU"]
     ru = [n for n in nodes if n["cc"] == "RU"]
@@ -450,6 +498,9 @@ def main():
     stats = {"строк в источнике": total_lines, "конфигов в auto.json": len(xray_items), "разобрано": len(parsed),
              "убрано без шифрования": dropped_insecure, "убрано нерабочих": dropped_dead, "срезано сверх лимита": dropped_cap, "после дедупа": len(nodes),
              "ИИ": len(ai), "обычные блокировки": len(reg), "РФ": len(ru)}
+    stats["generated_at"] = datetime.now(timezone.utc).isoformat()
+    stats["last_successful_probe_at"] = checked_at if nodes else None
+    stats["непроверенный резерв"] = len(reserve)
     with open(f"{out}/stats.json", "w", encoding="utf-8") as f:
         json.dump(stats, f, ensure_ascii=False, indent=2)
     print(json.dumps(stats, ensure_ascii=False, indent=2))

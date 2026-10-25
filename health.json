@@ -1,0 +1,4862 @@
+{
+  "v2:68e10e2a52297a9e38de58df0835fa97faff916720cd3a76ce47b6f679b797eb": {
+    "ok": true,
+    "ms": 374,
+    "exit": "AT",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [],
+    "gemini": true,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:b9943dcda8741ab76eabddd1659180bbbc023bc1a2bebe00be3e13e160f2359c": {
+    "ok": true,
+    "ms": 3759,
+    "exit": "BY",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [],
+    "gemini": false,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:9ac58fdc48f6e1a1b93b60c5d697e00f1f67e501180eb6aaafba4847bb6f1db1": {
+    "ok": true,
+    "ms": 888,
+    "exit": "BG",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [],
+    "gemini": false,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:fd98b976dc6458083bf0695009641b028f1461f553f11ee5b873024d3387c157": {
+    "ok": true,
+    "ms": 1027,
+    "exit": "BG",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [],
+    "gemini": true,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:f57dae6b60aeacb44bbfc2ff59ff76fac3ff25ea39c9b3588e3933eff2fc7db5": {
+    "ok": true,
+    "ms": 1039,
+    "exit": "BG",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [],
+    "gemini": true,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:d0001ee9a6fa9197377130c509226202a97a723cca29510aba9d7977558e3177": {
+    "ok": true,
+    "ms": 1054,
+    "exit": "BG",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [],
+    "gemini": true,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:08c13d95ab0da39a672a37ecdc29005e2e7389fa0aa95c3e7749f1b0677918a6": {
+    "ok": true,
+    "ms": 1439,
+    "exit": null,
+    "endpoint": "https://www.gstatic.com/generate_204",
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "gemini": false,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:314efeaf0193194263ef471afa87654825e5e9ece4b7a728da94925799448427": {
+    "ok": true,
+    "ms": 1539,
+    "exit": null,
+    "endpoint": "https://www.gstatic.com/generate_204",
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "gemini": false,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:a39241325148b75a0a448363712d917b7a849b8bb8bd068f478b2075295ef01f": {
+    "ok": true,
+    "ms": 1812,
+    "exit": "BG",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [],
+    "gemini": false,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:603ab64681ae71d7178855484eef78dcb17c18866fbbbb0f690823669a97a8c1": {
+    "ok": true,
+    "ms": 1816,
+    "exit": "BG",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [],
+    "gemini": false,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:395e4363283cef77449607cf02d0d3ca6715087953b24ffeec0164dec6fd3b2c": {
+    "ok": true,
+    "ms": 2928,
+    "exit": null,
+    "endpoint": "https://www.gstatic.com/generate_204",
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "gemini": false,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:78b1bdd8628a0bd8f4c03a55a9598ccbedd3f4a8e2165a50fd8b0b2bddd03467": {
+    "ok": true,
+    "ms": 392,
+    "exit": null,
+    "endpoint": "https://www.gstatic.com/generate_204",
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_56"
+      }
+    ],
+    "gemini": false,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:232853c2f76c0909aacefcb805ce4c3613735f2566d814fad2d0d1ca3446f015": {
+    "ok": true,
+    "ms": 463,
+    "exit": "GB",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [],
+    "gemini": false,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:b850b19ed28ed6b93a790ee29af9dc557867fc8570ea914eb881c79b20fba8d3": {
+    "ok": true,
+    "ms": 1589,
+    "exit": "GB",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [],
+    "gemini": true,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:1056089dd4fcf734ce0363f1c07603d8faf75ef25e1103c3d764a5e9e5b62c6d": {
+    "ok": true,
+    "ms": 221,
+    "exit": "DE",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "gemini": false,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:a41c789e69b1c066af00f42c8ab1aed89d43673c837f201d88ea8ac6295d19d6": {
+    "ok": true,
+    "ms": 282,
+    "exit": "DE",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [],
+    "gemini": true,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:6a71eb9c547a20bbc1286041bbc6b5e6f46d091ed8ddb10434720791ed43bb89": {
+    "ok": true,
+    "ms": 622,
+    "exit": "DE",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [],
+    "gemini": false,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:2f1deef8e2fce462878f53e4f86e0788e78ef12b1c9df0f1f6a7394eb441e951": {
+    "ok": true,
+    "ms": 2476,
+    "exit": "DE",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "gemini": false,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:ebc7785a5bab0e5daae70da0ca395c66aa31b23b18f978c75c05976163ea4995": {
+    "ok": true,
+    "ms": 3356,
+    "exit": "DE",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_60"
+      }
+    ],
+    "gemini": false,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:1d8857d8dd6f5aae36aace871fb5ccf7b832c814b787286235bdc7baae06735b": {
+    "ok": true,
+    "ms": 464,
+    "exit": "GR",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [],
+    "gemini": true,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:6ebfb2fb2d3990aed2854a02a7b9d854f55de564d8e255150ae8913fd1eb2bbf": {
+    "ok": true,
+    "ms": 226,
+    "exit": "ES",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [],
+    "gemini": true,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:0c83792ef3db94535182018d6a2a346ee0d99eb1631f3192879782ecd8a33d3d": {
+    "ok": true,
+    "ms": 4501,
+    "exit": "ES",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [],
+    "gemini": false,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:353e1167ad48e7948aeb1db606ed3928afac98374631f1590bd1f9d71f4590bf": {
+    "ok": true,
+    "ms": 3395,
+    "exit": "KZ",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "gemini": false,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:12f4f875a77b61bf5be88ccca077572407ccdc6fe7db97bafd0605ded0a3a726": {
+    "ok": true,
+    "ms": 968,
+    "exit": "CA",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [],
+    "gemini": true,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:1f7315021d7ac6c9b9963eafa1cde2a431a40b293ea2befc2e909a8df8e4f141": {
+    "ok": true,
+    "ms": 999,
+    "exit": "CA",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [],
+    "gemini": true,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:154f479fd4d128b61220a5bd6335187738843bc26fa4fb36ddd8ee8d85d430fa": {
+    "ok": true,
+    "ms": 873,
+    "exit": "CY",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [],
+    "gemini": false,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:9d94c7fbb786c979ae2440c7567340c95b267665b682fbf494c58a99d30bd396": {
+    "ok": true,
+    "ms": 1002,
+    "exit": "CY",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [],
+    "gemini": false,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:8d9b0c2465c3f39a51cda1e7267a2343f0ddfdd646b1202f6cdc460da38c3800": {
+    "ok": true,
+    "ms": 1930,
+    "exit": "CY",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [],
+    "gemini": false,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:cafbadd3758f3b444e6f38ac2bdb9f5f43cbe5ad41b0333cef804cd5dfd12243": {
+    "ok": true,
+    "ms": 3048,
+    "exit": "CY",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [],
+    "gemini": false,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:438b3c78bdb4f332c260eee6d3ff36989fdd0ba6b0f24ec79b948c81c091cb29": {
+    "ok": true,
+    "ms": 1707,
+    "exit": "KR",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [],
+    "gemini": false,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:f6c01df8bfc685d838d0ea9d2f63fc285a67e16a90f69e789b7d0b008edd5c27": {
+    "ok": true,
+    "ms": 1651,
+    "exit": "LV",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [],
+    "gemini": true,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:22519452f91bb32d97c6430a2432bd6d36836b910f8446641b4ddac1beb6b53e": {
+    "ok": true,
+    "ms": 2098,
+    "exit": "LV",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [],
+    "gemini": true,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:424b1d39e8eb1da25ef2ed8db1f87d13e71d9fdd956064bfe96e71d3c7110d77": {
+    "ok": true,
+    "ms": 753,
+    "exit": "MD",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [],
+    "gemini": false,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:d8a3e4b08040f3aa447e7aec76528deb6e577494cd3434d6a1efa88f8aaa80d3": {
+    "ok": true,
+    "ms": 772,
+    "exit": "MD",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [],
+    "gemini": false,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:c97dbdf889b699884a578a4bb977c042330e23bf9967ef471a49fe86b62fae16": {
+    "ok": true,
+    "ms": 1355,
+    "exit": "MD",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [],
+    "gemini": false,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:ed25643b125fd163bf291cad5899d218ed8482c42bb56767f88a7e3a4a7309c9": {
+    "ok": true,
+    "ms": 1986,
+    "exit": "MD",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [],
+    "gemini": false,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:90fbebf59e40b5e91438c02ca7e28dadbd337f29851157d9cadd4d36a4ea7818": {
+    "ok": true,
+    "ms": 1989,
+    "exit": "MD",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [],
+    "gemini": false,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:362fe554b57c6e3a1c159daac1d5dc5f5f8b0671781e7d12b39265a5769a7208": {
+    "ok": true,
+    "ms": 235,
+    "exit": "NL",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [],
+    "gemini": true,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:eda7a0d10a217a148ed2e23755163306c1a9838172c6cfdc88dc6f2c03552048": {
+    "ok": true,
+    "ms": 483,
+    "exit": "NL",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [],
+    "gemini": true,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:796bd7cdf9d4961a3577bfa306c873c0b72df5fc1ef6fc356a7bb941f5dfc9de": {
+    "ok": true,
+    "ms": 497,
+    "exit": "NL",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [],
+    "gemini": true,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:ae3a24befe733ffa44e576ccffb586b20bd1b3edb337c45d0a819a2a151c48cb": {
+    "ok": true,
+    "ms": 666,
+    "exit": "NL",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [],
+    "gemini": true,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:e9a07dd7629140c5e442df7d335053b5a04721ed8edb08961d420800f59d1c7e": {
+    "ok": true,
+    "ms": 706,
+    "exit": "NL",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [],
+    "gemini": true,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:8c2523796d15637ec6fe3ade660b1975f00d87af3d8db110a2e215b912732769": {
+    "ok": true,
+    "ms": 4901,
+    "exit": "NL",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [],
+    "gemini": true,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:e5f2b1d2c2c60906036bdb6353d469555d8b039bf20aa9e12e95022a76c0ceae": {
+    "ok": true,
+    "ms": 244,
+    "exit": "PL",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [],
+    "gemini": true,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:a36dadc307f05db327f4b651607b103fd4b12d41a2e59c30d5888e19f1be86fc": {
+    "ok": true,
+    "ms": 276,
+    "exit": "PL",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [],
+    "gemini": true,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:eaf98a5b2215be996618cf11b88a307fd96c24c97357eddbda4786ba86260c89": {
+    "ok": true,
+    "ms": 340,
+    "exit": "PL",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [],
+    "gemini": true,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:17ff411103cce1ffb5dfc4c34babfa0bc6b725bcf49260ea49b7d2e4eeed0ee4": {
+    "ok": true,
+    "ms": 348,
+    "exit": "PL",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [],
+    "gemini": true,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:82fccd476aecb8882e5ff7a627e9fc422029e393a2678cc1f0fa3b6edbb1216b": {
+    "ok": true,
+    "ms": 2207,
+    "exit": "PL",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [],
+    "gemini": true,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:27d0bee8e5d5741cb718c6105e30e59edc80a334e38fc9f3e0f435ba735bd9fe": {
+    "ok": true,
+    "ms": 4319,
+    "exit": "US",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "gemini": false,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:b109b0a8023066e7f56bd8298a9547352cb470cc46600903a4a031a56771f13b": {
+    "ok": true,
+    "ms": 4782,
+    "exit": null,
+    "endpoint": "https://www.gstatic.com/generate_204",
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "gemini": false,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:ed671c495088b67e7a44ac9773a6b2b9f85be7ae7c2fbf894251243af63cb389": {
+    "ok": true,
+    "ms": 552,
+    "exit": "RS",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [],
+    "gemini": false,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:3ae2aa0052b2a3c84e12f0d8833453fde237f6afedb57c7aaa5195e022b07277": {
+    "ok": true,
+    "ms": 823,
+    "exit": "RS",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [],
+    "gemini": false,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:8b2c54c592846906e60e8f88d48c081d6c4187106c3d5947c75ce678461aad3f": {
+    "ok": true,
+    "ms": 1864,
+    "exit": "RS",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_35"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_35"
+      }
+    ],
+    "gemini": false,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:7c86fa61af56604a5007e3d8981ef6d37d1470a3896617529bdb06b223f5c780": {
+    "ok": true,
+    "ms": 2185,
+    "exit": "RS",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_35"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_35"
+      }
+    ],
+    "gemini": false,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:6c657e936458711b25bfeab8077008171cb63dc061c806cda2d37a870a45d011": {
+    "ok": true,
+    "ms": 270,
+    "exit": "TR",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [],
+    "gemini": false,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:e7d6f59cb09a1318f74036a7df41d76b30105e08886795fd4e130eb5362553be": {
+    "ok": true,
+    "ms": 367,
+    "exit": "TR",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [],
+    "gemini": true,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:e09b6d1dded25d90626522d4386662a1b6fa60aaf2f5bb0e124986c16d7d1524": {
+    "ok": true,
+    "ms": 374,
+    "exit": "TR",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [],
+    "gemini": true,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:5daf190c975f0daa414e9f1329edda079bf55aaa63432ea117d13c3aab2274c9": {
+    "ok": true,
+    "ms": 500,
+    "exit": "TR",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [],
+    "gemini": true,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:ea81a11723ff2a8388d78e7cb34916d8047cebe75cffda940a40d4d099d199b1": {
+    "ok": true,
+    "ms": 295,
+    "exit": "FI",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [],
+    "gemini": true,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:7ee1ba689c19a51f079d54d6895a7202e1d06dc91093059930f06ce7aa7fb6d4": {
+    "ok": true,
+    "ms": 314,
+    "exit": "FI",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [],
+    "gemini": true,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:baa09b0aab86f86d19efd4d4e2615f5201422b60d4cd30d0c27bbf842d0775a8": {
+    "ok": true,
+    "ms": 417,
+    "exit": "FI",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [],
+    "gemini": true,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:36828ebc4f30af24be966c7ee0cf2bec304d8a24a8d58ba29f14d1a7368d2032": {
+    "ok": true,
+    "ms": 587,
+    "exit": "FI",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [],
+    "gemini": true,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:088202342533e63ea35e5fd4cbed5030d980121eb0a49089d85c5cdce7edd97c": {
+    "ok": true,
+    "ms": 249,
+    "exit": "FR",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [],
+    "gemini": true,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:dd797a3316665183b2d601d18c0986d6fb7c271f053eb5427d087e5b7a71f192": {
+    "ok": true,
+    "ms": 253,
+    "exit": "FR",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [],
+    "gemini": false,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:afcf8db95838499d44e7e44efd461232fef2e028db868e386a250a1d05e045b7": {
+    "ok": true,
+    "ms": 254,
+    "exit": "FR",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [],
+    "gemini": false,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:a4b604027167ef5b6844f1dcfb47dca93b1abf3fe83a4aa20a4ea568ef92f47d": {
+    "ok": true,
+    "ms": 341,
+    "exit": "FR",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [],
+    "gemini": true,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:ec6f72a7d8492f6781940ab217fc96a29a11a5b8643378c4568c8c6c3e6d3e97": {
+    "ok": true,
+    "ms": 1655,
+    "exit": "FR",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [],
+    "gemini": true,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:109b2b7998591b62a58e017ee1b4836324efc81c6f83c749b1bf3092ba777f5f": {
+    "ok": true,
+    "ms": 3319,
+    "exit": null,
+    "endpoint": "https://www.gstatic.com/generate_204",
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "gemini": false,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:214e617fad02ca703d104854ef5dffb2058c1db3a35f5a6c59bfeae33a927463": {
+    "ok": true,
+    "ms": 254,
+    "exit": "EE",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [],
+    "gemini": false,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:8bf86cef57b07a26193069340ab202af3cdb8f4c153cb75f801c457f6550c464": {
+    "ok": true,
+    "ms": 325,
+    "exit": "EE",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [],
+    "gemini": true,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:4c091b4482491093f8e392241610c5ef7f3cbfed06c00553b068ad1123a04a63": {
+    "ok": true,
+    "ms": 331,
+    "exit": "EE",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [],
+    "gemini": false,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:9d972493b1dc3134ddc65fd13ab1ecbd0486bc8f34585c0b39af96288da35a67": {
+    "ok": true,
+    "ms": 379,
+    "exit": "EE",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [],
+    "gemini": true,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:8aa74fb98804470a7ae4113b594777d8766ac14337e52ab7ffae555d35d281b1": {
+    "ok": true,
+    "ms": 514,
+    "exit": "EE",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [],
+    "gemini": false,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:732b8cdb15290e16417e26983a7a91bacf40f435dafed4a44827a3ec314b6885": {
+    "ok": true,
+    "ms": 5187,
+    "exit": "JP",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [],
+    "gemini": false,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:547799aa4b912eb3b08066d8fea5a8dd074f1c70de126bf169f408675319dec3": {
+    "ok": true,
+    "ms": 132,
+    "exit": "RU",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [],
+    "gemini": false,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:aaa6ac2c74fe1da27dd39e06027f08f8987ae15a0a5d2e598eb5c4869d6955fa": {
+    "ok": true,
+    "ms": 247,
+    "exit": "RU",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [],
+    "gemini": false,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:976c706476311252d516f380fe2e10181dc647d33f383883153de70918cdf9bb": {
+    "ok": true,
+    "ms": 254,
+    "exit": "RU",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [],
+    "gemini": false,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:373d541feee59a96d95b5825fc92c4b7fe382ebc97dbd3796c6ce5851a19db22": {
+    "ok": true,
+    "ms": 256,
+    "exit": "RU",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [],
+    "gemini": false,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:d379cff303869918d131513a3c866daeef8f9073b66979eac3270ce54064a99d": {
+    "ok": true,
+    "ms": 290,
+    "exit": "RU",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [],
+    "gemini": false,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:fa1a0edb48c01fb155ef4a556025d46f30a3db514a110d4b2cf65b1a0b84c7b5": {
+    "ok": true,
+    "ms": 301,
+    "exit": "RU",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_60"
+      }
+    ],
+    "gemini": false,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:9b8788009226990d21d4f90c527b09924400eb3a00ff2b9e521bfac48b72b04c": {
+    "ok": true,
+    "ms": 304,
+    "exit": "RU",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [],
+    "gemini": false,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:def2a6f7c5d4845dc1bdda81889931a55efc17ba066f04f5d220808181d378e9": {
+    "ok": true,
+    "ms": 453,
+    "exit": "RU",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [],
+    "gemini": false,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:f758f852fe5927c01a2881d58987fd9540faeae2045cc4eb8dbe3e166d6266b1": {
+    "ok": true,
+    "ms": 526,
+    "exit": "RU",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [],
+    "gemini": false,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:bb1eb780253d461bb5cd596f4aff739b466f61cde37055a97d734985c04a9616": {
+    "ok": true,
+    "ms": 552,
+    "exit": "RU",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [],
+    "gemini": false,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:0c72e8d80839b6b0a10dfdf84cb0933ee3a4f476c2c1912251b244d768c31b24": {
+    "ok": true,
+    "ms": 1070,
+    "exit": "RU",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [],
+    "gemini": false,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:a7dd842d5d4eb620423a4ff69e8670a0dc31d4759c27a57cb1cfd6113634266b": {
+    "ok": true,
+    "ms": 3442,
+    "exit": "RU",
+    "endpoint": "https://www.cloudflare.com/cdn-cgi/trace",
+    "failed_targets": [],
+    "gemini": false,
+    "status": "verified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "insecure": false
+  },
+  "v2:ef24a08bd069a26e2e5d09f856c926e79b217ea4cb6d46e4090cccd9d84a757f": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:6754b68a4775e6abe2a629152139c48483e1b1fb4658c610efd64588163e9421": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:f3d8cf392054d57785dcbaac06f244c9e3e166b88d428668c751d41707a52416": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:41259833803e21111f4e12356f69fa98613bdcbef0e4f787c91e9fd56e7201ed": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:aa219f17c7d6479aca8cd034181b81866cfa4a888a4d41b9085ab49dfbc8f28f": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:299b56fe4ee592ae5bb78347325e5454d306bd444ff7528a9897fc087864f03c": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:b720a2423adb09b97d57e818d69a5829699d8c0aedf0efef37c5e1881b6f5112": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:31e0b39ae71ac82e54a00897a672fc9a39e8205ee447ec70dc31a732b05ebbf3": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:5b0dd8568b69ee80be6ae4e5545b4ee032c46ce21abdf0fe710ea171c5799f6a": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:dc4c20bb7775b3b3ef9178a5ab652bbe7304e77826a4fc9b2064c7a26a1d0989": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_35"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_35"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_35"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_35"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_35"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_35"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:5973cecc5aee917972e5e50b40506612e210731d0ef3d8c4e94590038b3c2ebe": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:2087e8dce8134def19cc844496bb943602864a78a0380ec734bcba6f48321b13": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_35"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_35"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_35"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_35"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_35"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:3f3fc1506a9fdf12ab4a4e613a667a38f02bb24bd6d76b10a47b85e599ae9955": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:7d3ee1e4b605ed1a3fb985011083688da6dfc457044cff8bb1113bab2117a69b": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:26c3e68bf12f63918f8e723df93d9205b7f5c5aff5729c4bdf2c807329b31301": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:e313717655bd4d5abce35899aeafd572b3458cec6e9bcfb7d14fe5dcecbd05d8": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:99fedc2b18be76190788af5754cf11f212bb7424cba85eb2f235c9625b9145b1": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:78aa069ff935f55062677fa91e9cb392cd506bee2c1f8e37bfbf255e0cf1dc2c": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:eb55d798e819562519942eef74072c163944769277ca5ee7a08d14b613018cb7": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:f2670735dd02f13201766b51256997ef1f2a2c6f556f3c5692d19639a193fa58": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:32e2934a7e633dc3d03b058a552846fbd7a99fccc3facc8e1442a1a3ddb46b07": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:0ac6e283f18d0a10cec3ff20e6c76387205ea19244223f07108a26951d985106": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:837562a5bdfc3ec4506d9c29b237ed8e50f9239b645748750334154571c6197f": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:137034caf4f8b8fea1af61935dcec6be9748101150a49ff9af2c406cd24cbe79": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:1f829675d987cc0c088c6260f88c8a57bfea08336ad70e9d74d555444c1dbf87": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:a970a747d706699eff3ec0b449dec447833de3c72689cc63a51e430619868646": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:aa298fe7e5d23fb2ff58abe036b58d43adbe4abe8569206fd252dff0d682ef5e": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:ef214fe6d628f8cfed91487ded77efd80446ef0c94cdf4ebc516f52561eafff1": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:3daedcb4ff97b95aa5b6511aa9b38213e8840b5dc9c033a82fe1a06d06df0ded": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:0e47d14c9c87a69632ee2e040e03432ec94ce601c588d55578a4483dd8d8d0ae": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_35"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_35"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_35"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_35"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_35"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_35"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:9acc6add752a703e6439c25154d2532718557fbe9c43b5d34af09a351022549c": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:52074ae01b4126013e91a037c239b1a1a60867b9ceb19c922d1ac2c393393c6c": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:31a71ccbbfa5d6c26c89e580a84429c7e3ceb90c1df5017e5831f96ee5b6701e": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:55c3c84f06b37c87b5c444addd487ffee457fc0beac5ab40205548141ba6dfd1": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:b48c8d2844a2ac9a04007dd4f46f7aaf4ce58e07c0d3028bb5700a9e751ac4ec": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:11415461515224f599d9bb5248557025e59169dc63fed370def7b81ae794c280": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:75ce59837243c3abe1cd4eb00e48d2b2f325631ddc6e7506159352f42587a84d": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:96ce4ebd79ba0e4f700d2c8083bea1ff2fb669257af79edd546ea14665c12f1e": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:b135f9356bbb24a191cb81ed61a7bfe5037f49be317ef3dff1f09cf7aae3eff8": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_35"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_35"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_35"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_35"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_35"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_35"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:4689a6d419ad82e64638d251171f5d1ed0e9da51a97ff6ed7ac743ee7788456a": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:c53a62ee903987621c54f18f1b0ad807909402da9b69ac3fab5c2419a01922c3": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:00a262bac399b70f01e91417570a85d3ebbd3398f825198b57413045ac47eaac": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:c2dd7299d50f8de38101346cb3be65341b80060762a7458b2bfeefd436c0642d": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:0fdcc874468d02927231f24c2c470a8a6bba9bf9a4a614f736de6e1377a5d5f0": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:f05ad6e13125065d6421c2de1953521002121365894c814fb3d80a7f861ebee5": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:f3425f21632244ba7557bcc484ab5991ac721d050dbd0ea7085687db13e4b1eb": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:8504283be59047c84bcb146d4870fd77409dadbc54482da87cc1a1fa71d6f232": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:c258e00ef6aaa992e405a15966ed29afca36ee350881e31b2a6372bd3409a075": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:d0bc9d7f540364c1b6c25e506abb945b3710d24af85af306eb88754bf212c164": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:dc03d71dd43316a6d067071a3e05a54dadcd6a93947e5a40d7471a2d4663cf06": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:77c90a649abdb1d56b1ffb57bab6d4806c470447e78d24f25ba2944e471ba239": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:b952378ca7f6344656b24bd4fe9d2814fcee7a3a7a7ce20ba229d95d24464d24": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:f793b68a4b3da3f4baa30e4a96a8340c91cd780162f16bbfbb3e5e7ac48acccd": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:e111bb185404cceed8531f81945349706639d91e5b9e4a04816ae850ef53c0a4": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:ecae234a218e4e8de592b1ab2cab4ebf19a75e364a3f7c7948ed564329570792": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:9509367039480652afc53b3d277c2d62f0e612b4574f4bbe4eaadb463765f7c3": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:2b54c27cd8700419c8cefebd3b6f1dc747672245a06d654b76c244156637677c": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:1c08695361c733806d66623d23568449a3caf21d57d5f68d43b9cf510e7cf0bd": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:60882b35fe99732f5accb0ef7226592ab6340228f108f8fc0baeb0e3442a21c7": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_35"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_35"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_35"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_35"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_35"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:d779fc44e20d831ab394690cef5a15f09266ac442a5f5b65817523ab2e3b739d": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:c5801094283230d347c90c85fe5d5bdc9d1ee4fa49cc7c7be619122d402c2419": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:1cda04276ab03691207d0c67128f2204c27e44ecca76eea1709c904f74b562fa": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:2d77eb132ed04fc36af761efad7d47d75f4076610e7fe3acf3a74be5107a6d37": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:3dbd40cae2ef1c0fcca932de91cd5acaac799dcce7e2d221c427883093d542c0": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:42932ea34a03643ace3edf54ffd96c83be81f7fe153cd244f580226a1430be02": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_35"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_35"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_35"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_35"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_35"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:6c70a4673927a6e0eaf62402ec334ff4b68d1e83be649d5f6df6917a48d19083": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:c2712c80b5e05fe20cee900af2b321b53d49b04ee122e85ff27c2cb11ac85e75": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:015c961a6ea16b809c4ee377ca00663c2ce55c8c10031a39a54f28eb521b5d1d": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:c9dbb2cd373a4b436abc8852118dc32a43122dd2978d57342c2cb80c6174362b": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_35"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_35"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_35"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_35"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_35"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:b475226a8b3abaf5539a3a8614c83675fda201ed9e4029d82105a0a4dae48289": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_35"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_35"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_35"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_35"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_35"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:9383a4fae3b7d1a490b8ed08ac15e985fc5884723f215dc30f9fd2fc397e5cc9": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:ba43887a277fa79239851b2a529477651731d9960a50c13e29b66c5546da467d": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:f542ba7f432f0833a4af30c4a1d59eaaeb05d6968ad725b9c3ee4757abedb66e": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:2cc7f0bd4fab8b4bc406cb91bb96ac3d6702b43c93e49d67495b729a3fd6f09f": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_35"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:a9baba18f6916d77183dc5ae84a4cebcaa56427f4b388f53016a1cc47ad1abc6": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:aa8ac41820013d5b25544dc85a3282057cbafb087a596fdc4fdb4ebe8da93bc6": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:8b36ceafe08ceaa212795061e7485bca1a2e61db69c4067ba8376aa8f062517f": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:b092940544bdadb02bba0d765b00dad224ba92707702087d787fdd31aa254294": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:9e92614d4e50502a4fc67550f7f4778d6033987f112d0942cc3159f32659f42f": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_35"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_35"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_35"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:ab2348de6bd45f1c80f865275c2782ee421cb555ca388abbc119e2ee0da4c824": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:60ebf9183d0f993657e6f5e01eb24f26027e0be0d4f9b1f4e9e666b0c62fbe9e": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_35"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_35"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_35"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_35"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_35"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:f99d4bfa1cdfa57fe09a74087f41495294e88a08de51c6f0ca23a19e99134be0": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_35"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_35"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_35"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_35"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_35"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_35"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:a2333a655e56e893410ccb8ea12f76801bceebce9c1273fdc8b2d037a44c632d": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:e00bf4f8914c3364a1243d8271edf0ae4ac6d01ecdf23adaa2fe107cfe5b59cf": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:ebf75afeb8965968c78c61048939bd928f756f361691b311bf4bd101d0778f69": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:b0923fa8fd023651d77872053ef403c37f5afb35c9fac27381578587424076cb": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:9470e3fe451dca9fc3dd3458931174f31b3a1a778df2e4ad29900b3c4851b407": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:1a75f4fb06d73a9dece9045f1edd6dc35454cc88f653b0ed494e2eca81fe9216": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:d21496d4fde44062b37efc1de1cf4cf3d7c6923947bb1f184e0deab1c91c7f5f": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:758e4fc5fb0b6a2bceb27c0c1eec389275cbc5dfdf00a0c9c05fa872fd393653": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:821960e4465a74020d31ce508e9e56c70ad5ba09ffdd7e2e0e3ba4cbd825aa4f": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_35"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_35"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_35"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_35"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_35"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:0dbddfae66f6c9e827a789cfc7a5b634321261d1f86e490ba26a83d5adfa364f": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:a1f0ab774638e4967bcb48b1e981559c6ba4559b3b9b7538f02e5123b24bed95": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_35"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_35"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_35"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_35"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_35"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:d7f357a1600e4c949639274efd913349bdfd95658cfcb242a9cf2bea349aa46a": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  },
+  "v2:d44b27836078fd9be63e2b56457cf30a94c08b45e79f6849d170f2acea14e289": {
+    "ok": false,
+    "failed_targets": [
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 1,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.cloudflare.com/cdn-cgi/trace",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.gstatic.com/generate_204",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      },
+      {
+        "url": "https://www.msftconnecttest.com/connecttest.txt",
+        "attempt": 2,
+        "reason": "curl_exit_28"
+      }
+    ],
+    "status": "unverified",
+    "checked_at": "2026-10-25T08:42:11.655970+00:00",
+    "ms": null,
+    "insecure": false
+  }
+}

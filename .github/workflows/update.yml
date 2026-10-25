@@ -42,6 +42,21 @@ jobs:
           unzip -o /tmp/xray.zip xray -d xray
           chmod +x xray/xray
 
+      - name: Скачать Mihomo для проверки конфигов
+        run: |
+          mkdir -p mihomo
+          curl -fLsS --retry 3 --connect-timeout 20 --max-time 120 \
+            https://github.com/MetaCubeX/mihomo/releases/download/v1.19.33/mihomo-linux-amd64-compatible-v1.19.33.gz \
+            -o /tmp/mihomo.gz
+          gzip -dc /tmp/mihomo.gz > mihomo/mihomo
+          chmod +x mihomo/mihomo
+
+      - name: Проверить регрессии и начальную маршрутизацию
+        env:
+          XRAY_BIN: ${{ github.workspace }}/xray/xray
+          MIHOMO_BIN: ${{ github.workspace }}/mihomo/mihomo
+        run: python -m unittest -v
+
       - name: Собрать исходные конфигурации
         run: |
           mkdir -p sources
@@ -101,10 +116,13 @@ jobs:
             "sources/universal.txt,sources/lite.txt,sources/white_cidr.txt,sources/white_sni.txt,sources/white_checked.txt,sources/black.txt=bl,sources/keys.txt=auto,sources/bypass.txt=cap" \
             output --alive sources/probe.json
 
-          cp output/* .
+      - name: Проверить подписки перед публикацией
+        run: |
+          python validate.py output --previous . --require-probe \
+            --xray xray/xray --mihomo mihomo/mihomo
 
-          python -m json.tool stats.json > /dev/null
-          python -m json.tool auto.json > /dev/null
+      - name: Обновить публикуемые файлы
+        run: cp output/* .
 
       - name: Сохранить обновления в GitHub
         run: |
@@ -113,6 +131,7 @@ jobs:
 
           git add auto.json all.txt whitelist.txt \
             regular.txt ai.txt ru_only.txt \
+            unverified.txt unverified.json health.json \
             clash_regular.yaml clash_whitelist.yaml \
             stats.json
 

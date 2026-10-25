@@ -21,6 +21,8 @@ jobs:
     steps:
       - name: Скачать репозиторий
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Настроить Python
         uses: actions/setup-python@v5
@@ -137,7 +139,7 @@ jobs:
 
           if ! git diff --cached --quiet; then
             git commit -m "Auto update VPN subscriptions"
-            git push
+            bash .github/scripts/push-update.sh
           else
             echo "Изменений нет"
           fi

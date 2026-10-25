@@ -12,11 +12,12 @@ import sys
 import time
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
+from build import TEST_URL, PROBE_POLICY
 
 
 TARGETS = (
+    (TEST_URL, "204-head"),
     ("https://www.cloudflare.com/cdn-cgi/trace", "trace"),
-    ("https://www.gstatic.com/generate_204", "204"),
     ("https://www.msftconnecttest.com/connecttest.txt", "microsoft"),
 )
 BLOCK_MARKERS = ("location is not supported", "isn't currently supported", "not supported in your country",
@@ -40,23 +41,38 @@ def via(port, args):
 
 def check_connectivity(port):
     failures = []
+    last_checks = []
     for attempt in range(2):
+        checks = []
+        exit_country = None
         for url, kind in TARGETS:
+            method = "HEAD" if kind == "204-head" else "GET"
+            check = {"url": url, "method": method, "ok": False}
+            checks.append(check)
             try:
-                code, _, body, ms = via(port, [url])
+                code, _, body, ms = via(port, (["-I"] if method == "HEAD" else []) + [url])
                 loc = next((line[4:].strip().upper() for line in body.splitlines() if line.startswith("loc=")), None)
                 valid_loc = bool(loc and len(loc) == 2 and loc.isascii() and loc.isalpha())
                 success = ((kind == "trace" and code == "200" and valid_loc)
-                           or (kind == "204" and code == "204" and not body.strip())
+                           or (kind == "204-head" and code == "204")
                            or (kind == "microsoft" and code == "200" and body.strip() == "Microsoft Connect Test"))
                 if success:
-                    return {"ok": True, "ms": ms, "exit": loc if valid_loc else None,
-                            "endpoint": url, "failed_targets": failures}
+                    check.update(ok=True, ms=ms)
+                    if kind == "trace":
+                        exit_country = loc
+                    if checks[0]["ok"] and sum(c["ok"] for c in checks) >= 2:
+                        return {"ok": True, "ms": checks[0]["ms"], "exit": exit_country,
+                                "endpoint": TEST_URL, "policy": PROBE_POLICY,
+                                "checks": checks, "failed_targets": failures}
+                    continue
                 reason = f"unexpected_http_{code}_or_body"
             except (ValueError, IndexError, OSError, subprocess.TimeoutExpired) as exc:
                 reason = str(exc) if isinstance(exc, ValueError) else type(exc).__name__
             failures.append({"url": url, "attempt": attempt + 1, "reason": reason})
-    return {"ok": False, "failed_targets": failures}
+            if method == "HEAD":
+                break  # No secondary success can compensate for a failed client probe.
+        last_checks = checks
+    return {"ok": False, "policy": PROBE_POLICY, "checks": last_checks, "failed_targets": failures}
 
 
 def gemini_ok(port):

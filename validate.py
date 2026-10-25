@@ -57,7 +57,7 @@ def validate_output(folder, previous=None, require_probe=False):
             record = health.get(build.probe_key(n), {})
             require(record.get("status") == status, "health.json: missing or wrong node status")
             if status == "verified":
-                require(record.get("ok") is True and build.fresh_probe_time(record.get("checked_at")),
+                require(build.valid_probe_result(record) and build.fresh_probe_time(record.get("checked_at")),
                         "health.json: missing fresh successful probe")
                 require(isinstance(record.get("ms"), (int, float)) and not isinstance(record["ms"], bool)
                         and 0 <= record["ms"] < float("inf"), "health.json: invalid latency")
@@ -78,10 +78,15 @@ def validate_output(folder, previous=None, require_probe=False):
         age = (datetime.now(timezone.utc) - checked).total_seconds()
         require(-300 <= age <= 7200, "probe: successful check is stale or in the future")
     if previous and (Path(previous) / "all.txt").exists():
-        old_count = len(read_nodes(Path(previous) / "all.txt"))
-        # First migration: the old subscription mixed verified and unverified
-        # nodes. Compare retained total once; later compare verified nodes only.
-        retained = len(lists["all"]) if (Path(previous) / "health.json").exists() else len(lists["all"]) + len(reserve)
+        old_nodes = read_nodes(Path(previous) / "all.txt")
+        old_count = len(old_nodes)
+        previous_health = Path(previous) / "health.json"
+        old_health = json.loads(previous_health.read_text(encoding="utf-8")) if previous_health.exists() else {}
+        compatible = bool(old_nodes) and all(old_health.get(build.probe_key(n), {}).get("policy") == build.PROBE_POLICY
+                                             for n in old_nodes)
+        # Nodes accepted by a weaker policy may legitimately move into reserve.
+        # Keep the verified-count guard once both snapshots use this policy.
+        retained = len(lists["all"]) if compatible else len(lists["all"]) + len(reserve)
         require(retained >= old_count * 0.5,
                 f"all.txt: fewer than 50% of previous nodes ({retained}/{old_count})")
 
@@ -118,6 +123,8 @@ def validate_output(folder, previous=None, require_probe=False):
                 require(key in expected_primary, "auto.json: outbound has no verified health record")
                 latencies[tag] = expected_primary[key]["ms"]
         for bal in cfg.get("routing", {}).get("balancers", []):
+            require(cfg.get("burstObservatory", {}).get("pingConfig", {}).get("destination") == build.TEST_URL,
+                    "auto.json: client probe differs from verified HTTPS endpoint")
             tag = bal.get("fallbackTag", "")
             require(tag in outs and outs[tag]["protocol"] == "vless"
                     and any(tag.startswith(s) for s in bal["selector"]),

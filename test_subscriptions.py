@@ -28,7 +28,12 @@ def node(name="test", wl=True, ai=False, **params):
 
 def write_probe(path, nodes, checked=None):
     report = {build.probe_key(n): {"ok": True, "ms": n.get("ms", 100),
-                                  "exit": n["cc"], "gemini": n.get("ai", False)} for n in nodes}
+                                  "exit": n["cc"], "gemini": n.get("ai", False),
+                                  "policy": "https-head-plus-independent-v1",
+                                  "checks": [{"url": "https://www.gstatic.com/generate_204", "method": "HEAD",
+                                              "ok": True, "ms": n.get("ms", 100)},
+                                             {"url": "https://www.cloudflare.com/cdn-cgi/trace", "method": "GET",
+                                              "ok": True, "ms": 150}]} for n in nodes}
     report["__meta__"] = {"checked_at": checked or datetime.now(timezone.utc).isoformat()}
     path.write_text(json.dumps(report), encoding="utf-8")
 
@@ -197,10 +202,10 @@ class PublicationTests(unittest.TestCase):
 
     def test_build_consumes_new_probe_identity_and_records_check_time(self):
         checked = datetime.now(timezone.utc).isoformat()
-        probe = {build.probe_key(node()): {"ok": True, "ms": 123, "exit": "DE", "gemini": True},
-                 "__meta__": {"checked_at": checked}}
         report = self.root / "probe.json"
-        report.write_text(json.dumps(probe), encoding="utf-8")
+        fixture = node(ai=True)
+        fixture["ms"] = 123
+        write_probe(report, [fixture], checked)
         result = subprocess.run([sys.executable, "-X", "utf8", str(ROOT / "build.py"),
                                  str(self.source), str(self.out), "--alive", str(report)], capture_output=True)
         self.assertEqual(result.returncode, 0, result.stderr)
@@ -249,6 +254,37 @@ class PublicationTests(unittest.TestCase):
             self.assertEqual(json.loads((self.out / "auto.json").read_text(encoding="utf-8")), [])
             self.assertIn("vless://", (self.out / "unverified.txt").read_text(encoding="utf-8"))
 
+    def test_stricter_policy_migration_counts_nodes_moved_to_reserve(self):
+        nodes = [node(sni=f"old-{i}.example") for i in range(8)]
+        self.source.write_text(node()["raw"] + "\n" + "\n".join(n["raw"] for n in nodes), encoding="utf-8")
+        old = [node(), *nodes]
+        (self.previous / "all.txt").write_text("\n".join(n["raw"] for n in old), encoding="utf-8")
+        (self.previous / "health.json").write_text(json.dumps({build.probe_key(n): {"ok": True, "status": "verified"}
+                                                               for n in old}), encoding="utf-8")
+        result = subprocess.run([sys.executable, "-X", "utf8", str(ROOT / "build.py"), str(self.source),
+                                 str(self.out), "--alive", str(self.report)], capture_output=True)
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.validate(True, "--previous", str(self.previous))
+        (self.previous / "health.json").write_text(json.dumps({build.probe_key(n): {"policy": "https-head-plus-independent-v1"}
+                                                               for n in old}), encoding="utf-8")
+        self.assertIn("50%", self.validate(False, "--previous", str(self.previous)))
+
+    def test_client_probe_destination_must_match_checked_endpoint(self):
+        self.edit_json("auto.json", lambda items: items[0]["burstObservatory"]["pingConfig"].update(
+            destination="http://www.gstatic.com/generate_204"))
+        self.assertIn("client probe differs", self.validate(False))
+
+    def test_old_one_endpoint_report_cannot_restore_verified_status(self):
+        report = json.loads(self.report.read_text(encoding="utf-8"))
+        for value in report.values():
+            value.pop("policy", None)
+            value.pop("checks", None)
+        self.report.write_text(json.dumps(report), encoding="utf-8")
+        result = subprocess.run([sys.executable, "-X", "utf8", str(ROOT / "build.py"), str(self.source),
+                                 str(self.out), "--alive", str(self.report)], capture_output=True)
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertEqual(json.loads((self.out / "auto.json").read_text(encoding="utf-8")), [])
+
 
     @unittest.skipUnless(os.environ.get("XRAY_BIN") and os.environ.get("MIHOMO_BIN"), "Set core binary paths")
     def test_core_gate_rejects_invalid_xray_inbound(self):
@@ -259,15 +295,36 @@ class PublicationTests(unittest.TestCase):
 
 
 class ProbeTests(unittest.TestCase):
-    def test_primary_failure_uses_second_target_through_same_tunnel(self):
+    def test_cloudflare_only_does_not_make_node_verified(self):
+        import probe
+        def response(command, **kwargs):
+            if 'https://www.cloudflare.com/cdn-cgi/trace' in command:
+                return subprocess.CompletedProcess([], 0, 'loc=TH\n\n200 0.1')
+            return subprocess.CompletedProcess([], 28, '')
+        with patch('probe.subprocess.run', side_effect=response):
+            self.assertFalse(probe.check_connectivity(31001)['ok'])
+
+    def test_client_probe_must_pass_even_if_other_two_targets_work(self):
+        import probe
+        def response(command, **kwargs):
+            if 'https://www.gstatic.com/generate_204' in command:
+                return subprocess.CompletedProcess([], 28, '')
+            body = 'loc=DE\n' if 'https://www.cloudflare.com/cdn-cgi/trace' in command else 'Microsoft Connect Test'
+            return subprocess.CompletedProcess([], 0, body+'\n200 0.1')
+        with patch('probe.subprocess.run', side_effect=response):
+            self.assertFalse(probe.check_connectivity(31001)['ok'])
+
+    def test_cloudflare_failure_uses_third_target_with_client_probe(self):
         import probe
         failure = subprocess.CompletedProcess([], 0, "bad\n503 0.1")
         success = subprocess.CompletedProcess([], 0, "\n204 0.25")
-        with patch("probe.subprocess.run", side_effect=[failure, success]) as request:
+        secondary = subprocess.CompletedProcess([], 0, "Microsoft Connect Test\n200 0.3")
+        with patch("probe.subprocess.run", side_effect=[success, failure, secondary]) as request:
             result = probe.check_connectivity(31001)
         self.assertTrue(result["ok"])
         self.assertEqual(result["ms"], 250)
         self.assertIsNone(result["exit"])
+        self.assertIn("-I", request.call_args_list[0].args[0])
         for call in request.call_args_list:
             self.assertIn("127.0.0.1:31001", call.args[0])
             self.assertIn("--socks5-hostname", call.args[0])
@@ -277,15 +334,16 @@ class ProbeTests(unittest.TestCase):
         with patch("probe.subprocess.run", return_value=subprocess.CompletedProcess([], 28, "")):
             self.assertFalse(probe.check_connectivity(31001)["ok"])
 
-    def test_third_target_can_confirm_tunnel_when_first_two_fail(self):
+    def test_client_head_and_cloudflare_confirm_same_tunnel(self):
         import probe
-        failure = subprocess.CompletedProcess([], 0, "wrong\n200 0.1")
-        success = subprocess.CompletedProcess([], 0, "Microsoft Connect Test\n200 0.3")
-        with patch("probe.subprocess.run", side_effect=[failure, failure, success]):
+        first = subprocess.CompletedProcess([], 0, "HTTP/2 204\r\n\r\n\n204 0.15")
+        success = subprocess.CompletedProcess([], 0, "loc=DE\n\n200 0.3")
+        with patch("probe.subprocess.run", side_effect=[first, success]):
             result = probe.check_connectivity(31001)
         self.assertTrue(result["ok"])
-        self.assertEqual(result["ms"], 300)
-        self.assertIn("msftconnecttest.com", result["endpoint"])
+        self.assertEqual(result["ms"], 150)
+        self.assertEqual(result["exit"], "DE")
+        self.assertEqual(len(result["checks"]), 2)
 
     def test_arbitrary_success_page_does_not_confirm_tunnel(self):
         import probe
@@ -293,7 +351,7 @@ class ProbeTests(unittest.TestCase):
         with patch("probe.subprocess.run", return_value=portal):
             result = probe.check_connectivity(31001)
         self.assertFalse(result["ok"])
-        self.assertEqual(len(result["failed_targets"]), 6)
+        self.assertEqual(len(result["failed_targets"]), 2)
 
 
 @unittest.skipUnless(os.environ.get("XRAY_BIN"), "Set XRAY_BIN for the real-core startup check")

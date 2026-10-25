@@ -49,8 +49,19 @@ RU_DIRECT_DOMAINS = [
     "tinkoff.ru", "gosuslugi.ru", "mos.ru", "avito.st", "ozon.ru", "wb.ru",
 ]
 
-TEST_URL = "http://www.gstatic.com/generate_204"
+TEST_URL = "https://www.gstatic.com/generate_204"
 PROBE_MAX_AGE = 7200
+PROBE_POLICY = "https-head-plus-independent-v1"
+
+
+def valid_probe_result(result):
+    if result.get("ok") is not True or result.get("policy") != PROBE_POLICY:
+        return False
+    checks = result.get("checks", [])
+    client = [c for c in checks if c.get("ok") is True and c.get("url") == TEST_URL and c.get("method") == "HEAD"]
+    independent = any(c.get("ok") is True and c.get("method") == "GET" and c.get("url") in (
+        "https://www.cloudflare.com/cdn-cgi/trace", "https://www.msftconnecttest.com/connecttest.txt") for c in checks)
+    return bool(client and independent and result.get("ms") == client[0].get("ms"))
 
 
 def fresh_probe_time(value):
@@ -413,7 +424,7 @@ def main():
     for n in nodes:
         r = alive.get(probe_key(n), {})
         ms = r.get("ms")
-        n["verified"] = bool(fresh and r.get("ok") is True and isinstance(ms, (int, float))
+        n["verified"] = bool(fresh and valid_probe_result(r) and isinstance(ms, (int, float))
                              and not isinstance(ms, bool) and math.isfinite(ms) and ms >= 0)
         n["ms"] = ms if n["verified"] else 99999
         if n["verified"]:
@@ -499,6 +510,7 @@ def main():
              "убрано без шифрования": dropped_insecure, "убрано нерабочих": dropped_dead, "срезано сверх лимита": dropped_cap, "после дедупа": len(nodes),
              "ИИ": len(ai), "обычные блокировки": len(reg), "РФ": len(ru)}
     stats["generated_at"] = datetime.now(timezone.utc).isoformat()
+    stats["probe_policy"] = PROBE_POLICY
     stats["last_successful_probe_at"] = checked_at if nodes else None
     stats["непроверенный резерв"] = len(reserve)
     with open(f"{out}/stats.json", "w", encoding="utf-8") as f:

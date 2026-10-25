@@ -1,6 +1,6 @@
 [
   {
-    "remarks": "🇹🇭 TH #1 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
+    "remarks": "🇨🇴 CO #1 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
     "log": {
       "loglevel": "warning"
     },
@@ -45,375 +45,11 @@
         "settings": {
           "vnext": [
             {
-              "address": "funagfrdfs.alixxplay.com",
-              "port": 56415,
+              "address": "141.101.90.108",
+              "port": 2053,
               "users": [
                 {
-                  "id": "57beeeb0-03fc-4fc9-94da-7604488a7134",
-                  "encryption": "none",
-                  "flow": "xtls-rprx-vision"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "tcp",
-          "security": "reality",
-          "realitySettings": {
-            "serverName": "www.kaidee.com",
-            "fingerprint": "chrome",
-            "publicKey": "EG-jzQw1RyOwAM4L9rMKondSx7cyFmPyv1OP7xXkIk4",
-            "shortId": "cbd39bea0805e2",
-            "spiderX": "/"
-          }
-        }
-      },
-      {
-        "tag": "direct",
-        "protocol": "freedom"
-      },
-      {
-        "tag": "block",
-        "protocol": "blackhole"
-      }
-    ],
-    "routing": {
-      "domainStrategy": "AsIs",
-      "balancers": [],
-      "rules": [
-        {
-          "type": "field",
-          "network": "tcp,udp",
-          "outboundTag": "node-ru-1"
-        }
-      ]
-    }
-  },
-  {
-    "remarks": "🇦🇲 Армения #1 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
-    "log": {
-      "loglevel": "warning"
-    },
-    "dns": {
-      "hosts": {
-        "cloudflare-dns.com": "1.1.1.1"
-      },
-      "servers": [
-        "https://cloudflare-dns.com/dns-query"
-      ],
-      "queryStrategy": "UseIPv4"
-    },
-    "inbounds": [
-      {
-        "tag": "socks",
-        "listen": "127.0.0.1",
-        "port": 10808,
-        "protocol": "socks",
-        "settings": {
-          "udp": true
-        },
-        "sniffing": {
-          "enabled": true,
-          "destOverride": [
-            "http",
-            "tls",
-            "quic"
-          ]
-        }
-      },
-      {
-        "tag": "http",
-        "listen": "127.0.0.1",
-        "port": 10809,
-        "protocol": "http"
-      }
-    ],
-    "outbounds": [
-      {
-        "tag": "node-ru-1",
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "88.218.92.41",
-              "port": 24694,
-              "users": [
-                {
-                  "id": "408c51e8-9246-483d-ba73-34ab4e202eb9",
-                  "encryption": "none",
-                  "flow": "xtls-rprx-vision"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "tcp",
-          "security": "reality",
-          "realitySettings": {
-            "serverName": "metrika.yandex.ru",
-            "fingerprint": "firefox",
-            "publicKey": "kaPztgo_2b2CKxytGWXzn6EauyNKr6Ho8xerGpSS-SQ",
-            "shortId": "58301280",
-            "spiderX": "/"
-          }
-        }
-      },
-      {
-        "tag": "direct",
-        "protocol": "freedom"
-      },
-      {
-        "tag": "block",
-        "protocol": "blackhole"
-      }
-    ],
-    "routing": {
-      "domainStrategy": "AsIs",
-      "balancers": [],
-      "rules": [
-        {
-          "type": "field",
-          "network": "tcp,udp",
-          "outboundTag": "node-ru-1"
-        }
-      ]
-    }
-  },
-  {
-    "remarks": "🇦🇲 Армения #2 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
-    "log": {
-      "loglevel": "warning"
-    },
-    "dns": {
-      "hosts": {
-        "cloudflare-dns.com": "1.1.1.1"
-      },
-      "servers": [
-        "https://cloudflare-dns.com/dns-query"
-      ],
-      "queryStrategy": "UseIPv4"
-    },
-    "inbounds": [
-      {
-        "tag": "socks",
-        "listen": "127.0.0.1",
-        "port": 10808,
-        "protocol": "socks",
-        "settings": {
-          "udp": true
-        },
-        "sniffing": {
-          "enabled": true,
-          "destOverride": [
-            "http",
-            "tls",
-            "quic"
-          ]
-        }
-      },
-      {
-        "tag": "http",
-        "listen": "127.0.0.1",
-        "port": 10809,
-        "protocol": "http"
-      }
-    ],
-    "outbounds": [
-      {
-        "tag": "node-ru-1",
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "88.218.92.41",
-              "port": 24694,
-              "users": [
-                {
-                  "id": "4ad3dbf5-2005-4d96-b56c-a0ca9905cab6",
-                  "encryption": "none",
-                  "flow": "xtls-rprx-vision"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "tcp",
-          "security": "reality",
-          "realitySettings": {
-            "serverName": "metrika.yandex.ru",
-            "fingerprint": "firefox",
-            "publicKey": "kaPztgo_2b2CKxytGWXzn6EauyNKr6Ho8xerGpSS-SQ",
-            "shortId": "58301280",
-            "spiderX": "/"
-          }
-        }
-      },
-      {
-        "tag": "direct",
-        "protocol": "freedom"
-      },
-      {
-        "tag": "block",
-        "protocol": "blackhole"
-      }
-    ],
-    "routing": {
-      "domainStrategy": "AsIs",
-      "balancers": [],
-      "rules": [
-        {
-          "type": "field",
-          "network": "tcp,udp",
-          "outboundTag": "node-ru-1"
-        }
-      ]
-    }
-  },
-  {
-    "remarks": "🇦🇲 Армения #3 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
-    "log": {
-      "loglevel": "warning"
-    },
-    "dns": {
-      "hosts": {
-        "cloudflare-dns.com": "1.1.1.1"
-      },
-      "servers": [
-        "https://cloudflare-dns.com/dns-query"
-      ],
-      "queryStrategy": "UseIPv4"
-    },
-    "inbounds": [
-      {
-        "tag": "socks",
-        "listen": "127.0.0.1",
-        "port": 10808,
-        "protocol": "socks",
-        "settings": {
-          "udp": true
-        },
-        "sniffing": {
-          "enabled": true,
-          "destOverride": [
-            "http",
-            "tls",
-            "quic"
-          ]
-        }
-      },
-      {
-        "tag": "http",
-        "listen": "127.0.0.1",
-        "port": 10809,
-        "protocol": "http"
-      }
-    ],
-    "outbounds": [
-      {
-        "tag": "node-ru-1",
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "hahahaarmenia.redemshenvpn.site",
-              "port": 24694,
-              "users": [
-                {
-                  "id": "4ad3dbf5-2005-4d96-b56c-a0ca9905cab6",
-                  "encryption": "none",
-                  "flow": "xtls-rprx-vision"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "tcp",
-          "security": "reality",
-          "realitySettings": {
-            "serverName": "metrika.yandex.ru",
-            "fingerprint": "firefox",
-            "publicKey": "kaPztgo_2b2CKxytGWXzn6EauyNKr6Ho8xerGpSS-SQ",
-            "shortId": "58301280",
-            "spiderX": "/"
-          }
-        }
-      },
-      {
-        "tag": "direct",
-        "protocol": "freedom"
-      },
-      {
-        "tag": "block",
-        "protocol": "blackhole"
-      }
-    ],
-    "routing": {
-      "domainStrategy": "AsIs",
-      "balancers": [],
-      "rules": [
-        {
-          "type": "field",
-          "network": "tcp,udp",
-          "outboundTag": "node-ru-1"
-        }
-      ]
-    }
-  },
-  {
-    "remarks": "🇦🇲 Армения #4 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
-    "log": {
-      "loglevel": "warning"
-    },
-    "dns": {
-      "hosts": {
-        "cloudflare-dns.com": "1.1.1.1"
-      },
-      "servers": [
-        "https://cloudflare-dns.com/dns-query"
-      ],
-      "queryStrategy": "UseIPv4"
-    },
-    "inbounds": [
-      {
-        "tag": "socks",
-        "listen": "127.0.0.1",
-        "port": 10808,
-        "protocol": "socks",
-        "settings": {
-          "udp": true
-        },
-        "sniffing": {
-          "enabled": true,
-          "destOverride": [
-            "http",
-            "tls",
-            "quic"
-          ]
-        }
-      },
-      {
-        "tag": "http",
-        "listen": "127.0.0.1",
-        "port": 10809,
-        "protocol": "http"
-      }
-    ],
-    "outbounds": [
-      {
-        "tag": "node-ru-1",
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "77.91.68.70",
-              "port": 55983,
-              "users": [
-                {
-                  "id": "f667a096-5231-4cfb-8759-92bb32473139",
+                  "id": "d18c6897-2849-456a-8c46-d7ecece47c20",
                   "encryption": "none"
                 }
               ]
@@ -421,14 +57,18 @@
           ]
         },
         "streamSettings": {
-          "network": "tcp",
-          "security": "reality",
-          "realitySettings": {
-            "serverName": "yahoo.com",
+          "network": "ws",
+          "security": "tls",
+          "tlsSettings": {
             "fingerprint": "chrome",
-            "publicKey": "nWQ7b9l9X6N3PrXLgIzOvMM8iSYrqjVHEb9ikWxqYSg",
-            "shortId": "0e",
-            "spiderX": "/"
+            "allowInsecure": false,
+            "serverName": "wzs.echo.net.eu.org"
+          },
+          "wsSettings": {
+            "path": "/video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HUlxQSwUEVRwJUx8BQRoaSVhfRhoOChkDDUs=",
+            "headers": {
+              "Host": "wzs.echo.net.eu.org"
+            }
           }
         }
       },
@@ -454,7 +94,7 @@
     }
   },
   {
-    "remarks": "🇧🇾 Беларусь #2 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
+    "remarks": "🇲🇪 ME #1 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
     "log": {
       "loglevel": "warning"
     },
@@ -499,300 +139,30 @@
         "settings": {
           "vnext": [
             {
-              "address": "95.128.71.79",
-              "port": 10444,
+              "address": "xstack.mahanfixe.workers.dev",
+              "port": 443,
               "users": [
                 {
-                  "id": "8cef7621-c6f0-486e-b51d-59c30c5b0b25",
-                  "encryption": "none",
-                  "flow": "xtls-rprx-vision"
+                  "id": "a8b1d666-d3ba-4b17-90c4-ba7514c74f78",
+                  "encryption": "none"
                 }
               ]
             }
           ]
         },
         "streamSettings": {
-          "network": "tcp",
-          "security": "reality",
-          "realitySettings": {
-            "serverName": "ads.x5.ru",
-            "fingerprint": "firefox",
-            "publicKey": "0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo",
-            "shortId": "8debcf36f1cc69ff",
-            "spiderX": "/"
-          }
-        }
-      },
-      {
-        "tag": "direct",
-        "protocol": "freedom"
-      },
-      {
-        "tag": "block",
-        "protocol": "blackhole"
-      }
-    ],
-    "routing": {
-      "domainStrategy": "AsIs",
-      "balancers": [],
-      "rules": [
-        {
-          "type": "field",
-          "network": "tcp,udp",
-          "outboundTag": "node-ru-1"
-        }
-      ]
-    }
-  },
-  {
-    "remarks": "🇧🇾 Беларусь #3 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
-    "log": {
-      "loglevel": "warning"
-    },
-    "dns": {
-      "hosts": {
-        "cloudflare-dns.com": "1.1.1.1"
-      },
-      "servers": [
-        "https://cloudflare-dns.com/dns-query"
-      ],
-      "queryStrategy": "UseIPv4"
-    },
-    "inbounds": [
-      {
-        "tag": "socks",
-        "listen": "127.0.0.1",
-        "port": 10808,
-        "protocol": "socks",
-        "settings": {
-          "udp": true
-        },
-        "sniffing": {
-          "enabled": true,
-          "destOverride": [
-            "http",
-            "tls",
-            "quic"
-          ]
-        }
-      },
-      {
-        "tag": "http",
-        "listen": "127.0.0.1",
-        "port": 10809,
-        "protocol": "http"
-      }
-    ],
-    "outbounds": [
-      {
-        "tag": "node-ru-1",
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "178.172.227.228",
-              "port": 10444,
-              "users": [
-                {
-                  "id": "b6e5dc56-836f-48c1-9163-b0b0b43b647d",
-                  "encryption": "none",
-                  "flow": "xtls-rprx-vision"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "tcp",
-          "security": "reality",
-          "realitySettings": {
-            "serverName": "ads.x5.ru",
-            "fingerprint": "ios",
-            "publicKey": "0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo",
-            "shortId": "8debcf36f1cc69ff",
-            "spiderX": "/"
-          }
-        }
-      },
-      {
-        "tag": "direct",
-        "protocol": "freedom"
-      },
-      {
-        "tag": "block",
-        "protocol": "blackhole"
-      }
-    ],
-    "routing": {
-      "domainStrategy": "AsIs",
-      "balancers": [],
-      "rules": [
-        {
-          "type": "field",
-          "network": "tcp,udp",
-          "outboundTag": "node-ru-1"
-        }
-      ]
-    }
-  },
-  {
-    "remarks": "🇧🇾 Беларусь #4 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
-    "log": {
-      "loglevel": "warning"
-    },
-    "dns": {
-      "hosts": {
-        "cloudflare-dns.com": "1.1.1.1"
-      },
-      "servers": [
-        "https://cloudflare-dns.com/dns-query"
-      ],
-      "queryStrategy": "UseIPv4"
-    },
-    "inbounds": [
-      {
-        "tag": "socks",
-        "listen": "127.0.0.1",
-        "port": 10808,
-        "protocol": "socks",
-        "settings": {
-          "udp": true
-        },
-        "sniffing": {
-          "enabled": true,
-          "destOverride": [
-            "http",
-            "tls",
-            "quic"
-          ]
-        }
-      },
-      {
-        "tag": "http",
-        "listen": "127.0.0.1",
-        "port": 10809,
-        "protocol": "http"
-      }
-    ],
-    "outbounds": [
-      {
-        "tag": "node-ru-1",
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "178.172.227.124",
-              "port": 10444,
-              "users": [
-                {
-                  "id": "1af36694-b548-4b18-89a0-bc076eab4ed7",
-                  "encryption": "none",
-                  "flow": "xtls-rprx-vision"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "tcp",
-          "security": "reality",
-          "realitySettings": {
-            "serverName": "ads.x5.ru",
-            "fingerprint": "firefox",
-            "publicKey": "0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo",
-            "shortId": "8debcf36f1cc69ff",
-            "spiderX": "/"
-          }
-        }
-      },
-      {
-        "tag": "direct",
-        "protocol": "freedom"
-      },
-      {
-        "tag": "block",
-        "protocol": "blackhole"
-      }
-    ],
-    "routing": {
-      "domainStrategy": "AsIs",
-      "balancers": [],
-      "rules": [
-        {
-          "type": "field",
-          "network": "tcp,udp",
-          "outboundTag": "node-ru-1"
-        }
-      ]
-    }
-  },
-  {
-    "remarks": "🇧🇾 Беларусь #5 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
-    "log": {
-      "loglevel": "warning"
-    },
-    "dns": {
-      "hosts": {
-        "cloudflare-dns.com": "1.1.1.1"
-      },
-      "servers": [
-        "https://cloudflare-dns.com/dns-query"
-      ],
-      "queryStrategy": "UseIPv4"
-    },
-    "inbounds": [
-      {
-        "tag": "socks",
-        "listen": "127.0.0.1",
-        "port": 10808,
-        "protocol": "socks",
-        "settings": {
-          "udp": true
-        },
-        "sniffing": {
-          "enabled": true,
-          "destOverride": [
-            "http",
-            "tls",
-            "quic"
-          ]
-        }
-      },
-      {
-        "tag": "http",
-        "listen": "127.0.0.1",
-        "port": 10809,
-        "protocol": "http"
-      }
-    ],
-    "outbounds": [
-      {
-        "tag": "node-ru-1",
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "178.172.227.124",
-              "port": 10444,
-              "users": [
-                {
-                  "id": "1af36694-b548-4b18-89a0-bc076eab4ed7",
-                  "encryption": "none",
-                  "flow": "xtls-rprx-vision"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "tcp",
-          "security": "reality",
-          "realitySettings": {
-            "serverName": "ads.x5.ru",
+          "network": "ws",
+          "security": "tls",
+          "tlsSettings": {
             "fingerprint": "chrome",
-            "publicKey": "0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo",
-            "shortId": "8debcf36f1cc69ff",
-            "spiderX": "/"
+            "allowInsecure": false,
+            "serverName": "xstack.mahanfixe.workers.dev"
+          },
+          "wsSettings": {
+            "path": "/",
+            "headers": {
+              "Host": "xstack.mahanfixe.workers.dev"
+            }
           }
         }
       },
@@ -818,7 +188,7 @@
     }
   },
   {
-    "remarks": "🇧🇪 Бельгия #1 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
+    "remarks": "🌐 XX #1 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
     "log": {
       "loglevel": "warning"
     },
@@ -863,27 +233,30 @@
         "settings": {
           "vnext": [
             {
-              "address": "109.69.218.164",
+              "address": "172.64.153.153",
               "port": 443,
               "users": [
                 {
-                  "id": "d64ac545-bd16-49ca-b9c0-c90faa2b620c",
-                  "encryption": "none",
-                  "flow": "xtls-rprx-vision"
+                  "id": "d342d11e-d224-4463-b982-532309285094",
+                  "encryption": "none"
                 }
               ]
             }
           ]
         },
         "streamSettings": {
-          "network": "tcp",
-          "security": "reality",
-          "realitySettings": {
-            "serverName": "zealous-vortex.cdn.cachefleet.com",
-            "fingerprint": "firefox",
-            "publicKey": "cv_KJnMzQUZruACPbH-BCgLWrYqPm2dbUymg-gW_sVc",
-            "shortId": "",
-            "spiderX": "/"
+          "network": "ws",
+          "security": "tls",
+          "tlsSettings": {
+            "fingerprint": "chrome",
+            "allowInsecure": false,
+            "serverName": "ccc.010304.xyz"
+          },
+          "wsSettings": {
+            "path": "/",
+            "headers": {
+              "Host": "ccc.010304.xyz"
+            }
           }
         }
       },
@@ -909,7 +282,7 @@
     }
   },
   {
-    "remarks": "🇬🇧 Великобритания #4 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
+    "remarks": "🌐 XX #2 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
     "log": {
       "loglevel": "warning"
     },
@@ -954,27 +327,30 @@
         "settings": {
           "vnext": [
             {
-              "address": "185.88.174.184",
+              "address": "188.164.248.216",
               "port": 443,
               "users": [
                 {
-                  "id": "fd0a5c32-afc0-4d57-b95a-ca6ec8f93e87",
-                  "encryption": "none",
-                  "flow": "xtls-rprx-vision"
+                  "id": "d342d11e-d224-4463-b982-532309285094",
+                  "encryption": "none"
                 }
               ]
             }
           ]
         },
         "streamSettings": {
-          "network": "tcp",
-          "security": "reality",
-          "realitySettings": {
-            "serverName": "gb.ozon.ru",
-            "fingerprint": "edge",
-            "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-            "shortId": "",
-            "spiderX": "/"
+          "network": "ws",
+          "security": "tls",
+          "tlsSettings": {
+            "fingerprint": "chrome",
+            "allowInsecure": false,
+            "serverName": "ccc.010304.xyz"
+          },
+          "wsSettings": {
+            "path": "/fp=chrome",
+            "headers": {
+              "Host": "ccc.010304.xyz"
+            }
           }
         }
       },
@@ -1000,7 +376,7 @@
     }
   },
   {
-    "remarks": "🇬🇧 Великобритания #5 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
+    "remarks": "🌐 XX #3 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
     "log": {
       "loglevel": "warning"
     },
@@ -1045,11 +421,11 @@
         "settings": {
           "vnext": [
             {
-              "address": "62.233.33.22",
-              "port": 443,
+              "address": "147.45.187.188",
+              "port": 8443,
               "users": [
                 {
-                  "id": "f0157cd2-3a39-4a70-b828-1584dbafd577",
+                  "id": "fe8e2ffb-8796-408c-af5b-0d4774215e00",
                   "encryption": "none"
                 }
               ]
@@ -1060,14 +436,14 @@
           "network": "grpc",
           "security": "reality",
           "realitySettings": {
-            "serverName": "room7.filesnap.tech",
-            "fingerprint": "firefox",
-            "publicKey": "0F-7qY1KfQytZY2MUMM46g_CyEavhhBpzuOZ99haH1I",
-            "shortId": "4d118eb3858f6235",
+            "serverName": "vedomosti.ru",
+            "fingerprint": "chrome",
+            "publicKey": "dTdncizxtVTqDZDkQoYdRTkf2Mn6XuKtkzg8vZhrkzA",
+            "shortId": "6ba85179e30d4fc2",
             "spiderX": "/"
           },
           "grpcSettings": {
-            "serviceName": "community.events.v1"
+            "serviceName": "grpc"
           }
         }
       },
@@ -1093,7 +469,7 @@
     }
   },
   {
-    "remarks": "🇬🇧 Великобритания #6 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
+    "remarks": "🌐 XX #4 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
     "log": {
       "loglevel": "warning"
     },
@@ -1138,11 +514,11 @@
         "settings": {
           "vnext": [
             {
-              "address": "147.45.46.143",
+              "address": "23.134.76.212",
               "port": 443,
               "users": [
                 {
-                  "id": "fd0a5c32-afc0-4d57-b95a-ca6ec8f93e87",
+                  "id": "3cd1770d-f285-4cf4-8979-e9dd8f4be36a",
                   "encryption": "none",
                   "flow": "xtls-rprx-vision"
                 }
@@ -1154,10 +530,10 @@
           "network": "tcp",
           "security": "reality",
           "realitySettings": {
-            "serverName": "gb.ozon.ru",
+            "serverName": "us.dark-bit.cc",
             "fingerprint": "firefox",
-            "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-            "shortId": "",
+            "publicKey": "cYmfBXsDs1sqQ2ZBW3xsFroB7JHV_ufFT5m7ab7STnU",
+            "shortId": "9ab513f082d4c6e1",
             "spiderX": "/"
           }
         }
@@ -1184,7 +560,7 @@
     }
   },
   {
-    "remarks": "🇬🇧 Великобритания #7 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
+    "remarks": "🇦🇹 Австрия #4 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
     "log": {
       "loglevel": "warning"
     },
@@ -1229,27 +605,27 @@
         "settings": {
           "vnext": [
             {
-              "address": "37.235.249.9",
+              "address": "62.60.238.201",
               "port": 443,
               "users": [
                 {
-                  "id": "fd0a5c32-afc0-4d57-b95a-ca6ec8f93e87",
-                  "encryption": "none",
-                  "flow": "xtls-rprx-vision"
+                  "id": "d40fdcdb-8d6f-406d-a050-12e196fe8804",
+                  "encryption": "none"
                 }
               ]
             }
           ]
         },
         "streamSettings": {
-          "network": "tcp",
-          "security": "reality",
-          "realitySettings": {
-            "serverName": "gb.ozon.ru",
+          "network": "grpc",
+          "security": "tls",
+          "tlsSettings": {
             "fingerprint": "firefox",
-            "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-            "shortId": "",
-            "spiderX": "/"
+            "allowInsecure": false,
+            "serverName": "au1.sream-rutube.shop"
+          },
+          "grpcSettings": {
+            "serviceName": "trgrpc"
           }
         }
       },
@@ -1275,7 +651,7 @@
     }
   },
   {
-    "remarks": "🇬🇧 Великобритания #8 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
+    "remarks": "🇧🇬 Болгария #20 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
     "log": {
       "loglevel": "warning"
     },
@@ -1320,27 +696,29 @@
         "settings": {
           "vnext": [
             {
-              "address": "103.91.147.214",
-              "port": 443,
+              "address": "78.159.246.85",
+              "port": 8443,
               "users": [
                 {
-                  "id": "fd0a5c32-afc0-4d57-b95a-ca6ec8f93e87",
-                  "encryption": "none",
-                  "flow": "xtls-rprx-vision"
+                  "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
+                  "encryption": "none"
                 }
               ]
             }
           ]
         },
         "streamSettings": {
-          "network": "tcp",
-          "security": "reality",
-          "realitySettings": {
-            "serverName": "gb.ozon.ru",
+          "network": "xhttp",
+          "security": "tls",
+          "tlsSettings": {
             "fingerprint": "firefox",
-            "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-            "shortId": "",
-            "spiderX": "/"
+            "allowInsecure": false,
+            "serverName": "fitindoor.net"
+          },
+          "xhttpSettings": {
+            "path": "/api/v1/upload",
+            "mode": "auto",
+            "host": "fitindoor.net"
           }
         }
       },
@@ -1366,7 +744,7 @@
     }
   },
   {
-    "remarks": "🇩🇪 Германия #6 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
+    "remarks": "🇧🇬 Болгария #21 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
     "log": {
       "loglevel": "warning"
     },
@@ -1411,209 +789,28 @@
         "settings": {
           "vnext": [
             {
-              "address": "45.144.54.12",
-              "port": 443,
+              "address": "78.159.246.179",
+              "port": 8443,
               "users": [
                 {
-                  "id": "35da102e-536b-4103-9632-58c7c4c6303b",
-                  "encryption": "none",
-                  "flow": "xtls-rprx-vision"
+                  "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
+                  "encryption": "none"
                 }
               ]
             }
           ]
         },
         "streamSettings": {
-          "network": "tcp",
-          "security": "reality",
-          "realitySettings": {
-            "serverName": "gr2.originmesh.online",
-            "fingerprint": "firefox",
-            "publicKey": "teeoEZ6yog5ZTII-k7OuRAbWg9qbI4k3ArgCZH4Uxx8",
-            "shortId": "eecfe76af97a6132",
-            "spiderX": "/"
-          }
-        }
-      },
-      {
-        "tag": "direct",
-        "protocol": "freedom"
-      },
-      {
-        "tag": "block",
-        "protocol": "blackhole"
-      }
-    ],
-    "routing": {
-      "domainStrategy": "AsIs",
-      "balancers": [],
-      "rules": [
-        {
-          "type": "field",
-          "network": "tcp,udp",
-          "outboundTag": "node-ru-1"
-        }
-      ]
-    }
-  },
-  {
-    "remarks": "🇩🇪 Германия #7 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
-    "log": {
-      "loglevel": "warning"
-    },
-    "dns": {
-      "hosts": {
-        "cloudflare-dns.com": "1.1.1.1"
-      },
-      "servers": [
-        "https://cloudflare-dns.com/dns-query"
-      ],
-      "queryStrategy": "UseIPv4"
-    },
-    "inbounds": [
-      {
-        "tag": "socks",
-        "listen": "127.0.0.1",
-        "port": 10808,
-        "protocol": "socks",
-        "settings": {
-          "udp": true
-        },
-        "sniffing": {
-          "enabled": true,
-          "destOverride": [
-            "http",
-            "tls",
-            "quic"
-          ]
-        }
-      },
-      {
-        "tag": "http",
-        "listen": "127.0.0.1",
-        "port": 10809,
-        "protocol": "http"
-      }
-    ],
-    "outbounds": [
-      {
-        "tag": "node-ru-1",
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "177.3.222.100",
-              "port": 443,
-              "users": [
-                {
-                  "id": "f8d52ece-fad4-478d-875d-df6eed3befa7",
-                  "encryption": "none",
-                  "flow": "xtls-rprx-vision"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "tcp",
-          "security": "reality",
-          "realitySettings": {
-            "serverName": "ge-s-1.pythonmakemigreat.wiki",
-            "fingerprint": "firefox",
-            "publicKey": "5fkwwCKZzMsE6Eb_b3iqluu-1AWIfnYl-p0N3EL9Al8",
-            "shortId": "2c9a2790ad5900b2",
-            "spiderX": "/"
-          }
-        }
-      },
-      {
-        "tag": "direct",
-        "protocol": "freedom"
-      },
-      {
-        "tag": "block",
-        "protocol": "blackhole"
-      }
-    ],
-    "routing": {
-      "domainStrategy": "AsIs",
-      "balancers": [],
-      "rules": [
-        {
-          "type": "field",
-          "network": "tcp,udp",
-          "outboundTag": "node-ru-1"
-        }
-      ]
-    }
-  },
-  {
-    "remarks": "🇩🇪 Германия #8 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
-    "log": {
-      "loglevel": "warning"
-    },
-    "dns": {
-      "hosts": {
-        "cloudflare-dns.com": "1.1.1.1"
-      },
-      "servers": [
-        "https://cloudflare-dns.com/dns-query"
-      ],
-      "queryStrategy": "UseIPv4"
-    },
-    "inbounds": [
-      {
-        "tag": "socks",
-        "listen": "127.0.0.1",
-        "port": 10808,
-        "protocol": "socks",
-        "settings": {
-          "udp": true
-        },
-        "sniffing": {
-          "enabled": true,
-          "destOverride": [
-            "http",
-            "tls",
-            "quic"
-          ]
-        }
-      },
-      {
-        "tag": "http",
-        "listen": "127.0.0.1",
-        "port": 10809,
-        "protocol": "http"
-      }
-    ],
-    "outbounds": [
-      {
-        "tag": "node-ru-1",
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "198.202.146.51",
-              "port": 443,
-              "users": [
-                {
-                  "id": "afbd410e-1663-4f40-9d3b-df5117aa23ca",
-                  "encryption": "none",
-                  "flow": "xtls-rprx-vision"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "tcp",
-          "security": "reality",
-          "realitySettings": {
-            "serverName": "198.202.146.51.sslip.io",
+          "network": "xhttp",
+          "security": "tls",
+          "tlsSettings": {
             "fingerprint": "chrome",
-            "publicKey": "B5DMtKe8wjH_WeM8M8IEuKwPqJ6-Ku98JH_LifwehEY",
-            "shortId": "6fe2994a0e208408",
-            "spiderX": "/"
+            "allowInsecure": false
+          },
+          "xhttpSettings": {
+            "path": "/api/v1/upload",
+            "mode": "auto",
+            "host": "randomquaint.net"
           }
         }
       },
@@ -1639,7 +836,7 @@
     }
   },
   {
-    "remarks": "🇩🇪 Германия #9 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
+    "remarks": "🇧🇬 Болгария #22 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
     "log": {
       "loglevel": "warning"
     },
@@ -1684,11 +881,269 @@
         "settings": {
           "vnext": [
             {
-              "address": "64.188.66.181",
+              "address": "81.94.148.232",
+              "port": 8443,
+              "users": [
+                {
+                  "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
+                  "encryption": "none"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "xhttp",
+          "security": "tls",
+          "tlsSettings": {
+            "fingerprint": "chrome",
+            "allowInsecure": false,
+            "serverName": "windytrout.net"
+          },
+          "xhttpSettings": {
+            "path": "/api/v1/upload",
+            "mode": "auto",
+            "host": "windytrout.net",
+            "extra": {
+              "host": "",
+              "path": "",
+              "mode": "",
+              "xPaddingBytes": "100-1000",
+              "xPaddingObfsMode": false,
+              "xPaddingKey": "",
+              "xPaddingHeader": "",
+              "xPaddingPlacement": "",
+              "xPaddingMethod": "",
+              "uplinkHTTPMethod": "",
+              "sessionIDPlacement": "",
+              "sessionIDKey": "",
+              "sessionIDTable": "",
+              "sessionIDLength": "0",
+              "seqPlacement": "",
+              "seqKey": "",
+              "uplinkDataPlacement": "",
+              "uplinkDataKey": "",
+              "uplinkChunkSize": "0",
+              "noGRPCHeader": false,
+              "noSSEHeader": false,
+              "scMaxEachPostBytes": "1000000",
+              "scMinPostsIntervalMs": "30",
+              "scMaxBufferedPosts": 0,
+              "scStreamUpServerSecs": "0",
+              "serverMaxHeaderBytes": 0,
+              "xmux": {
+                "maxConcurrency": "16-32",
+                "maxConnections": "0",
+                "cMaxReuseTimes": "64-128",
+                "hMaxRequestTimes": "0",
+                "hMaxReusableSecs": "0",
+                "hKeepAlivePeriod": 0
+              }
+            }
+          }
+        }
+      },
+      {
+        "tag": "direct",
+        "protocol": "freedom"
+      },
+      {
+        "tag": "block",
+        "protocol": "blackhole"
+      }
+    ],
+    "routing": {
+      "domainStrategy": "AsIs",
+      "balancers": [],
+      "rules": [
+        {
+          "type": "field",
+          "network": "tcp,udp",
+          "outboundTag": "node-ru-1"
+        }
+      ]
+    }
+  },
+  {
+    "remarks": "🇬🇧 Великобритания #12 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
+    "log": {
+      "loglevel": "warning"
+    },
+    "dns": {
+      "hosts": {
+        "cloudflare-dns.com": "1.1.1.1"
+      },
+      "servers": [
+        "https://cloudflare-dns.com/dns-query"
+      ],
+      "queryStrategy": "UseIPv4"
+    },
+    "inbounds": [
+      {
+        "tag": "socks",
+        "listen": "127.0.0.1",
+        "port": 10808,
+        "protocol": "socks",
+        "settings": {
+          "udp": true
+        },
+        "sniffing": {
+          "enabled": true,
+          "destOverride": [
+            "http",
+            "tls",
+            "quic"
+          ]
+        }
+      },
+      {
+        "tag": "http",
+        "listen": "127.0.0.1",
+        "port": 10809,
+        "protocol": "http"
+      }
+    ],
+    "outbounds": [
+      {
+        "tag": "node-ru-1",
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "188.72.103.4",
               "port": 443,
               "users": [
                 {
-                  "id": "f8d52ece-fad4-478d-875d-df6eed3befa7",
+                  "id": "000187a2-924b-8be4-b475-485a4699c80d",
+                  "encryption": "none"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "xhttp",
+          "security": "tls",
+          "tlsSettings": {
+            "fingerprint": "firefox",
+            "allowInsecure": false,
+            "serverName": "gb-cdn.fius.dev"
+          },
+          "xhttpSettings": {
+            "path": "/api-test",
+            "mode": "packet-up",
+            "host": "gb-cdn.fius.dev",
+            "extra": {
+              "host": "",
+              "path": "",
+              "mode": "",
+              "xPaddingBytes": "100-1000",
+              "xPaddingObfsMode": true,
+              "xPaddingKey": "dc",
+              "xPaddingHeader": "X-Cache",
+              "xPaddingPlacement": "queryInHeader",
+              "xPaddingMethod": "tokenish",
+              "uplinkHTTPMethod": "OPTIONS",
+              "sessionIDPlacement": "",
+              "sessionIDKey": "",
+              "sessionIDTable": "",
+              "sessionIDLength": "0",
+              "seqPlacement": "",
+              "seqKey": "",
+              "uplinkDataPlacement": "header",
+              "uplinkDataKey": "",
+              "uplinkChunkSize": "4096",
+              "noGRPCHeader": false,
+              "noSSEHeader": false,
+              "scMaxEachPostBytes": "16384",
+              "scMinPostsIntervalMs": "10",
+              "scMaxBufferedPosts": 0,
+              "scStreamUpServerSecs": "0",
+              "serverMaxHeaderBytes": 0,
+              "xmux": {
+                "maxConcurrency": "0",
+                "maxConnections": "0",
+                "cMaxReuseTimes": "0",
+                "hMaxRequestTimes": "0",
+                "hMaxReusableSecs": "0",
+                "hKeepAlivePeriod": 0
+              }
+            }
+          }
+        }
+      },
+      {
+        "tag": "direct",
+        "protocol": "freedom"
+      },
+      {
+        "tag": "block",
+        "protocol": "blackhole"
+      }
+    ],
+    "routing": {
+      "domainStrategy": "AsIs",
+      "balancers": [],
+      "rules": [
+        {
+          "type": "field",
+          "network": "tcp,udp",
+          "outboundTag": "node-ru-1"
+        }
+      ]
+    }
+  },
+  {
+    "remarks": "🇬🇧 Великобритания #13 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
+    "log": {
+      "loglevel": "warning"
+    },
+    "dns": {
+      "hosts": {
+        "cloudflare-dns.com": "1.1.1.1"
+      },
+      "servers": [
+        "https://cloudflare-dns.com/dns-query"
+      ],
+      "queryStrategy": "UseIPv4"
+    },
+    "inbounds": [
+      {
+        "tag": "socks",
+        "listen": "127.0.0.1",
+        "port": 10808,
+        "protocol": "socks",
+        "settings": {
+          "udp": true
+        },
+        "sniffing": {
+          "enabled": true,
+          "destOverride": [
+            "http",
+            "tls",
+            "quic"
+          ]
+        }
+      },
+      {
+        "tag": "http",
+        "listen": "127.0.0.1",
+        "port": 10809,
+        "protocol": "http"
+      }
+    ],
+    "outbounds": [
+      {
+        "tag": "node-ru-1",
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "193.223.104.149",
+              "port": 443,
+              "users": [
+                {
+                  "id": "fd0a5c32-afc0-4d57-b95a-ca6ec8f93e87",
                   "encryption": "none",
                   "flow": "xtls-rprx-vision"
                 }
@@ -1700,10 +1155,10 @@
           "network": "tcp",
           "security": "reality",
           "realitySettings": {
-            "serverName": "ge-s-1.pythonmakemigreat.wiki",
-            "fingerprint": "firefox",
-            "publicKey": "5fkwwCKZzMsE6Eb_b3iqluu-1AWIfnYl-p0N3EL9Al8",
-            "shortId": "2c9a2790ad5900b2",
+            "serverName": "gb.ozon.ru",
+            "fingerprint": "android",
+            "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+            "shortId": "",
             "spiderX": "/"
           }
         }
@@ -1730,7 +1185,98 @@
     }
   },
   {
-    "remarks": "🇩🇪 Германия #10 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
+    "remarks": "🇩🇪 Германия #37 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
+    "log": {
+      "loglevel": "warning"
+    },
+    "dns": {
+      "hosts": {
+        "cloudflare-dns.com": "1.1.1.1"
+      },
+      "servers": [
+        "https://cloudflare-dns.com/dns-query"
+      ],
+      "queryStrategy": "UseIPv4"
+    },
+    "inbounds": [
+      {
+        "tag": "socks",
+        "listen": "127.0.0.1",
+        "port": 10808,
+        "protocol": "socks",
+        "settings": {
+          "udp": true
+        },
+        "sniffing": {
+          "enabled": true,
+          "destOverride": [
+            "http",
+            "tls",
+            "quic"
+          ]
+        }
+      },
+      {
+        "tag": "http",
+        "listen": "127.0.0.1",
+        "port": 10809,
+        "protocol": "http"
+      }
+    ],
+    "outbounds": [
+      {
+        "tag": "node-ru-1",
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "201.51.8.163",
+              "port": 443,
+              "users": [
+                {
+                  "id": "30572b57-f5ab-4eb8-82d4-a24d399b99f6",
+                  "encryption": "none",
+                  "flow": "xtls-rprx-vision"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "tcp",
+          "security": "reality",
+          "realitySettings": {
+            "serverName": "atk.vkusnews.com",
+            "fingerprint": "qq",
+            "publicKey": "Buy9pirx5Ih_LHwc6R3BCmvRL4g4Ljx6B3MEsZfIZhU",
+            "shortId": "",
+            "spiderX": "/"
+          }
+        }
+      },
+      {
+        "tag": "direct",
+        "protocol": "freedom"
+      },
+      {
+        "tag": "block",
+        "protocol": "blackhole"
+      }
+    ],
+    "routing": {
+      "domainStrategy": "AsIs",
+      "balancers": [],
+      "rules": [
+        {
+          "type": "field",
+          "network": "tcp,udp",
+          "outboundTag": "node-ru-1"
+        }
+      ]
+    }
+  },
+  {
+    "remarks": "🇩🇪 Германия #38 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
     "log": {
       "loglevel": "warning"
     },
@@ -1821,7 +1367,7 @@
     }
   },
   {
-    "remarks": "🇩🇪 Германия #11 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
+    "remarks": "🇩🇪 Германия #39 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
     "log": {
       "loglevel": "warning"
     },
@@ -1866,11 +1412,11 @@
         "settings": {
           "vnext": [
             {
-              "address": "188.225.27.229",
+              "address": "201.51.8.163",
               "port": 443,
               "users": [
                 {
-                  "id": "66dc1927-8528-4f1e-bb74-5a9c7aa8ea8c",
+                  "id": "30572b57-f5ab-4eb8-82d4-a24d399b99f6",
                   "encryption": "none",
                   "flow": "xtls-rprx-vision"
                 }
@@ -1882,10 +1428,10 @@
           "network": "tcp",
           "security": "reality",
           "realitySettings": {
-            "serverName": "bridge.rkitman.ru",
-            "fingerprint": "safari",
-            "publicKey": "8C7evg_SSrJbxMTaUqJoylqB9HSNsmBvmUlgs_c5EiU",
-            "shortId": "88d9dc52ef39c8bd",
+            "serverName": "atk.vkusnews.com",
+            "fingerprint": "firefox",
+            "publicKey": "Buy9pirx5Ih_LHwc6R3BCmvRL4g4Ljx6B3MEsZfIZhU",
+            "shortId": "",
             "spiderX": "/"
           }
         }
@@ -1912,7 +1458,7 @@
     }
   },
   {
-    "remarks": "🇩🇪 Германия #12 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
+    "remarks": "🇩🇪 Германия #40 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
     "log": {
       "loglevel": "warning"
     },
@@ -1957,7 +1503,7 @@
         "settings": {
           "vnext": [
             {
-              "address": "5.129.222.115",
+              "address": "201.51.8.163",
               "port": 443,
               "users": [
                 {
@@ -1973,7 +1519,7 @@
           "network": "tcp",
           "security": "reality",
           "realitySettings": {
-            "serverName": "ad7.vkusnews.com",
+            "serverName": "atk.vkusnews.com",
             "fingerprint": "chrome",
             "publicKey": "Buy9pirx5Ih_LHwc6R3BCmvRL4g4Ljx6B3MEsZfIZhU",
             "shortId": "",
@@ -2003,7 +1549,7 @@
     }
   },
   {
-    "remarks": "🇩🇪 Германия #13 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
+    "remarks": "🇩🇪 Германия #41 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
     "log": {
       "loglevel": "warning"
     },
@@ -2048,191 +1594,11 @@
         "settings": {
           "vnext": [
             {
-              "address": "de15.h1cloud.net",
-              "port": 25362,
+              "address": "201.51.8.163",
+              "port": 443,
               "users": [
                 {
-                  "id": "36fb6650-8a50-42b5-9f66-06538806f32c",
-                  "encryption": "none"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "tcp",
-          "security": "reality",
-          "realitySettings": {
-            "serverName": "www.chip.de",
-            "fingerprint": "chrome",
-            "publicKey": "hFee7zTreqlv_wccK_8zxN5v23hj9u-DshByvGf-KAA",
-            "shortId": "23732d14a527990d",
-            "spiderX": "/"
-          }
-        }
-      },
-      {
-        "tag": "direct",
-        "protocol": "freedom"
-      },
-      {
-        "tag": "block",
-        "protocol": "blackhole"
-      }
-    ],
-    "routing": {
-      "domainStrategy": "AsIs",
-      "balancers": [],
-      "rules": [
-        {
-          "type": "field",
-          "network": "tcp,udp",
-          "outboundTag": "node-ru-1"
-        }
-      ]
-    }
-  },
-  {
-    "remarks": "🇩🇪 Германия #14 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
-    "log": {
-      "loglevel": "warning"
-    },
-    "dns": {
-      "hosts": {
-        "cloudflare-dns.com": "1.1.1.1"
-      },
-      "servers": [
-        "https://cloudflare-dns.com/dns-query"
-      ],
-      "queryStrategy": "UseIPv4"
-    },
-    "inbounds": [
-      {
-        "tag": "socks",
-        "listen": "127.0.0.1",
-        "port": 10808,
-        "protocol": "socks",
-        "settings": {
-          "udp": true
-        },
-        "sniffing": {
-          "enabled": true,
-          "destOverride": [
-            "http",
-            "tls",
-            "quic"
-          ]
-        }
-      },
-      {
-        "tag": "http",
-        "listen": "127.0.0.1",
-        "port": 10809,
-        "protocol": "http"
-      }
-    ],
-    "outbounds": [
-      {
-        "tag": "node-ru-1",
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "de15.h1cloud.net",
-              "port": 25362,
-              "users": [
-                {
-                  "id": "36fb6650-8a50-42b5-9f66-06538806f32c",
-                  "encryption": "none"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "tcp",
-          "security": "reality",
-          "realitySettings": {
-            "serverName": "www.chip.de",
-            "fingerprint": "",
-            "publicKey": "hFee7zTreqlv_wccK_8zxN5v23hj9u-DshByvGf-KAA",
-            "shortId": "23732d14a527990d",
-            "spiderX": "/"
-          }
-        }
-      },
-      {
-        "tag": "direct",
-        "protocol": "freedom"
-      },
-      {
-        "tag": "block",
-        "protocol": "blackhole"
-      }
-    ],
-    "routing": {
-      "domainStrategy": "AsIs",
-      "balancers": [],
-      "rules": [
-        {
-          "type": "field",
-          "network": "tcp,udp",
-          "outboundTag": "node-ru-1"
-        }
-      ]
-    }
-  },
-  {
-    "remarks": "🇭🇰 Гонконг #1 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
-    "log": {
-      "loglevel": "warning"
-    },
-    "dns": {
-      "hosts": {
-        "cloudflare-dns.com": "1.1.1.1"
-      },
-      "servers": [
-        "https://cloudflare-dns.com/dns-query"
-      ],
-      "queryStrategy": "UseIPv4"
-    },
-    "inbounds": [
-      {
-        "tag": "socks",
-        "listen": "127.0.0.1",
-        "port": 10808,
-        "protocol": "socks",
-        "settings": {
-          "udp": true
-        },
-        "sniffing": {
-          "enabled": true,
-          "destOverride": [
-            "http",
-            "tls",
-            "quic"
-          ]
-        }
-      },
-      {
-        "tag": "http",
-        "listen": "127.0.0.1",
-        "port": 10809,
-        "protocol": "http"
-      }
-    ],
-    "outbounds": [
-      {
-        "tag": "node-ru-1",
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "50.7.44.28",
-              "port": 2091,
-              "users": [
-                {
-                  "id": "76b6a658-ce80-4500-b24d-404c94639ac6",
+                  "id": "30572b57-f5ab-4eb8-82d4-a24d399b99f6",
                   "encryption": "none",
                   "flow": "xtls-rprx-vision"
                 }
@@ -2244,10 +1610,10 @@
           "network": "tcp",
           "security": "reality",
           "realitySettings": {
-            "serverName": "www.apple.com",
-            "fingerprint": "firefox",
-            "publicKey": "1N6AW5YuEwBoYcZK5KuugDzBHsa0NKZMT8QI-EmyL0k",
-            "shortId": "08a4b1f473932632",
+            "serverName": "atk.vkusnews.com",
+            "fingerprint": "edge",
+            "publicKey": "Buy9pirx5Ih_LHwc6R3BCmvRL4g4Ljx6B3MEsZfIZhU",
+            "shortId": "",
             "spiderX": "/"
           }
         }
@@ -2274,371 +1640,7 @@
     }
   },
   {
-    "remarks": "🇭🇰 Гонконг #2 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
-    "log": {
-      "loglevel": "warning"
-    },
-    "dns": {
-      "hosts": {
-        "cloudflare-dns.com": "1.1.1.1"
-      },
-      "servers": [
-        "https://cloudflare-dns.com/dns-query"
-      ],
-      "queryStrategy": "UseIPv4"
-    },
-    "inbounds": [
-      {
-        "tag": "socks",
-        "listen": "127.0.0.1",
-        "port": 10808,
-        "protocol": "socks",
-        "settings": {
-          "udp": true
-        },
-        "sniffing": {
-          "enabled": true,
-          "destOverride": [
-            "http",
-            "tls",
-            "quic"
-          ]
-        }
-      },
-      {
-        "tag": "http",
-        "listen": "127.0.0.1",
-        "port": 10809,
-        "protocol": "http"
-      }
-    ],
-    "outbounds": [
-      {
-        "tag": "node-ru-1",
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "67.159.49.28",
-              "port": 2091,
-              "users": [
-                {
-                  "id": "76b6a658-ce80-4500-b24d-404c94639ac6",
-                  "encryption": "none",
-                  "flow": "xtls-rprx-vision"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "tcp",
-          "security": "reality",
-          "realitySettings": {
-            "serverName": "www.apple.com",
-            "fingerprint": "firefox",
-            "publicKey": "1N6AW5YuEwBoYcZK5KuugDzBHsa0NKZMT8QI-EmyL0k",
-            "shortId": "08a4b1f473932632",
-            "spiderX": "/"
-          }
-        }
-      },
-      {
-        "tag": "direct",
-        "protocol": "freedom"
-      },
-      {
-        "tag": "block",
-        "protocol": "blackhole"
-      }
-    ],
-    "routing": {
-      "domainStrategy": "AsIs",
-      "balancers": [],
-      "rules": [
-        {
-          "type": "field",
-          "network": "tcp,udp",
-          "outboundTag": "node-ru-1"
-        }
-      ]
-    }
-  },
-  {
-    "remarks": "🇭🇰 Гонконг #3 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
-    "log": {
-      "loglevel": "warning"
-    },
-    "dns": {
-      "hosts": {
-        "cloudflare-dns.com": "1.1.1.1"
-      },
-      "servers": [
-        "https://cloudflare-dns.com/dns-query"
-      ],
-      "queryStrategy": "UseIPv4"
-    },
-    "inbounds": [
-      {
-        "tag": "socks",
-        "listen": "127.0.0.1",
-        "port": 10808,
-        "protocol": "socks",
-        "settings": {
-          "udp": true
-        },
-        "sniffing": {
-          "enabled": true,
-          "destOverride": [
-            "http",
-            "tls",
-            "quic"
-          ]
-        }
-      },
-      {
-        "tag": "http",
-        "listen": "127.0.0.1",
-        "port": 10809,
-        "protocol": "http"
-      }
-    ],
-    "outbounds": [
-      {
-        "tag": "node-ru-1",
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "67.159.46.134",
-              "port": 2091,
-              "users": [
-                {
-                  "id": "76b6a658-ce80-4500-b24d-404c94639ac6",
-                  "encryption": "none",
-                  "flow": "xtls-rprx-vision"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "tcp",
-          "security": "reality",
-          "realitySettings": {
-            "serverName": "www.apple.com",
-            "fingerprint": "firefox",
-            "publicKey": "1N6AW5YuEwBoYcZK5KuugDzBHsa0NKZMT8QI-EmyL0k",
-            "shortId": "08a4b1f473932632",
-            "spiderX": "/"
-          }
-        }
-      },
-      {
-        "tag": "direct",
-        "protocol": "freedom"
-      },
-      {
-        "tag": "block",
-        "protocol": "blackhole"
-      }
-    ],
-    "routing": {
-      "domainStrategy": "AsIs",
-      "balancers": [],
-      "rules": [
-        {
-          "type": "field",
-          "network": "tcp,udp",
-          "outboundTag": "node-ru-1"
-        }
-      ]
-    }
-  },
-  {
-    "remarks": "🇭🇰 Гонконг #4 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
-    "log": {
-      "loglevel": "warning"
-    },
-    "dns": {
-      "hosts": {
-        "cloudflare-dns.com": "1.1.1.1"
-      },
-      "servers": [
-        "https://cloudflare-dns.com/dns-query"
-      ],
-      "queryStrategy": "UseIPv4"
-    },
-    "inbounds": [
-      {
-        "tag": "socks",
-        "listen": "127.0.0.1",
-        "port": 10808,
-        "protocol": "socks",
-        "settings": {
-          "udp": true
-        },
-        "sniffing": {
-          "enabled": true,
-          "destOverride": [
-            "http",
-            "tls",
-            "quic"
-          ]
-        }
-      },
-      {
-        "tag": "http",
-        "listen": "127.0.0.1",
-        "port": 10809,
-        "protocol": "http"
-      }
-    ],
-    "outbounds": [
-      {
-        "tag": "node-ru-1",
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "67.159.46.134",
-              "port": 2091,
-              "users": [
-                {
-                  "id": "76b6a658-ce80-4500-b24d-404c94639ac6",
-                  "encryption": "none",
-                  "flow": "xtls-rprx-vision"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "tcp",
-          "security": "reality",
-          "realitySettings": {
-            "serverName": "www.apple.com",
-            "fingerprint": "chrome",
-            "publicKey": "1N6AW5YuEwBoYcZK5KuugDzBHsa0NKZMT8QI-EmyL0k",
-            "shortId": "08a4b1f473932632",
-            "spiderX": "/"
-          }
-        }
-      },
-      {
-        "tag": "direct",
-        "protocol": "freedom"
-      },
-      {
-        "tag": "block",
-        "protocol": "blackhole"
-      }
-    ],
-    "routing": {
-      "domainStrategy": "AsIs",
-      "balancers": [],
-      "rules": [
-        {
-          "type": "field",
-          "network": "tcp,udp",
-          "outboundTag": "node-ru-1"
-        }
-      ]
-    }
-  },
-  {
-    "remarks": "🇭🇰 Гонконг #5 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
-    "log": {
-      "loglevel": "warning"
-    },
-    "dns": {
-      "hosts": {
-        "cloudflare-dns.com": "1.1.1.1"
-      },
-      "servers": [
-        "https://cloudflare-dns.com/dns-query"
-      ],
-      "queryStrategy": "UseIPv4"
-    },
-    "inbounds": [
-      {
-        "tag": "socks",
-        "listen": "127.0.0.1",
-        "port": 10808,
-        "protocol": "socks",
-        "settings": {
-          "udp": true
-        },
-        "sniffing": {
-          "enabled": true,
-          "destOverride": [
-            "http",
-            "tls",
-            "quic"
-          ]
-        }
-      },
-      {
-        "tag": "http",
-        "listen": "127.0.0.1",
-        "port": 10809,
-        "protocol": "http"
-      }
-    ],
-    "outbounds": [
-      {
-        "tag": "node-ru-1",
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "67.159.49.36",
-              "port": 2091,
-              "users": [
-                {
-                  "id": "76b6a658-ce80-4500-b24d-404c94639ac6",
-                  "encryption": "none",
-                  "flow": "xtls-rprx-vision"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "tcp",
-          "security": "reality",
-          "realitySettings": {
-            "serverName": "www.apple.com",
-            "fingerprint": "chrome",
-            "publicKey": "1N6AW5YuEwBoYcZK5KuugDzBHsa0NKZMT8QI-EmyL0k",
-            "shortId": "08a4b1f473932632",
-            "spiderX": "/"
-          }
-        }
-      },
-      {
-        "tag": "direct",
-        "protocol": "freedom"
-      },
-      {
-        "tag": "block",
-        "protocol": "blackhole"
-      }
-    ],
-    "routing": {
-      "domainStrategy": "AsIs",
-      "balancers": [],
-      "rules": [
-        {
-          "type": "field",
-          "network": "tcp,udp",
-          "outboundTag": "node-ru-1"
-        }
-      ]
-    }
-  },
-  {
-    "remarks": "🇩🇰 Дания #1 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
+    "remarks": "🇩🇰 Дания #3 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
     "log": {
       "loglevel": "warning"
     },
@@ -2706,6 +1708,100 @@
             "path": "/pic/rank",
             "headers": {
               "Host": "vp5.1145678.xyz"
+            }
+          }
+        }
+      },
+      {
+        "tag": "direct",
+        "protocol": "freedom"
+      },
+      {
+        "tag": "block",
+        "protocol": "blackhole"
+      }
+    ],
+    "routing": {
+      "domainStrategy": "AsIs",
+      "balancers": [],
+      "rules": [
+        {
+          "type": "field",
+          "network": "tcp,udp",
+          "outboundTag": "node-ru-1"
+        }
+      ]
+    }
+  },
+  {
+    "remarks": "🇮🇱 Израиль #1 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
+    "log": {
+      "loglevel": "warning"
+    },
+    "dns": {
+      "hosts": {
+        "cloudflare-dns.com": "1.1.1.1"
+      },
+      "servers": [
+        "https://cloudflare-dns.com/dns-query"
+      ],
+      "queryStrategy": "UseIPv4"
+    },
+    "inbounds": [
+      {
+        "tag": "socks",
+        "listen": "127.0.0.1",
+        "port": 10808,
+        "protocol": "socks",
+        "settings": {
+          "udp": true
+        },
+        "sniffing": {
+          "enabled": true,
+          "destOverride": [
+            "http",
+            "tls",
+            "quic"
+          ]
+        }
+      },
+      {
+        "tag": "http",
+        "listen": "127.0.0.1",
+        "port": 10809,
+        "protocol": "http"
+      }
+    ],
+    "outbounds": [
+      {
+        "tag": "node-ru-1",
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "185.253.75.119",
+              "port": 443,
+              "users": [
+                {
+                  "id": "d342d11e-d224-4463-b982-532309285094",
+                  "encryption": "none"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "ws",
+          "security": "tls",
+          "tlsSettings": {
+            "fingerprint": "chrome",
+            "allowInsecure": false,
+            "serverName": "ccc.010304.xyz"
+          },
+          "wsSettings": {
+            "path": "/",
+            "headers": {
+              "Host": "ccc.010304.xyz"
             }
           }
         }
@@ -2826,7 +1922,7 @@
     }
   },
   {
-    "remarks": "🇰🇿 Казахстан #2 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
+    "remarks": "🇮🇪 Ирландия #1 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
     "log": {
       "loglevel": "warning"
     },
@@ -2871,1322 +1967,122 @@
         "settings": {
           "vnext": [
             {
-              "address": "109.73.192.248",
+              "address": "89.125.212.69",
               "port": 443,
               "users": [
                 {
-                  "id": "30572b57-f5ab-4eb8-82d4-a24d399b99f6",
-                  "encryption": "none",
-                  "flow": "xtls-rprx-vision"
+                  "id": "aec51c1d-4f3c-480f-82a7-34daad8361b5",
+                  "encryption": "none"
                 }
               ]
             }
           ]
         },
         "streamSettings": {
-          "network": "tcp",
+          "network": "grpc",
           "security": "reality",
           "realitySettings": {
-            "serverName": "almata.vkusnews.com",
+            "serverName": "grpc.io",
             "fingerprint": "chrome",
-            "publicKey": "Buy9pirx5Ih_LHwc6R3BCmvRL4g4Ljx6B3MEsZfIZhU",
+            "publicKey": "s6NccfQN-sGM2thyPc0HmKQHntFGch6v_x7e1lCDXGI",
+            "shortId": "7f3c91a8d42e6b10",
+            "spiderX": "/"
+          },
+          "grpcSettings": {
+            "serviceName": "grpc"
+          }
+        }
+      },
+      {
+        "tag": "direct",
+        "protocol": "freedom"
+      },
+      {
+        "tag": "block",
+        "protocol": "blackhole"
+      }
+    ],
+    "routing": {
+      "domainStrategy": "AsIs",
+      "balancers": [],
+      "rules": [
+        {
+          "type": "field",
+          "network": "tcp,udp",
+          "outboundTag": "node-ru-1"
+        }
+      ]
+    }
+  },
+  {
+    "remarks": "🇳🇱 Нидерланды #11 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
+    "log": {
+      "loglevel": "warning"
+    },
+    "dns": {
+      "hosts": {
+        "cloudflare-dns.com": "1.1.1.1"
+      },
+      "servers": [
+        "https://cloudflare-dns.com/dns-query"
+      ],
+      "queryStrategy": "UseIPv4"
+    },
+    "inbounds": [
+      {
+        "tag": "socks",
+        "listen": "127.0.0.1",
+        "port": 10808,
+        "protocol": "socks",
+        "settings": {
+          "udp": true
+        },
+        "sniffing": {
+          "enabled": true,
+          "destOverride": [
+            "http",
+            "tls",
+            "quic"
+          ]
+        }
+      },
+      {
+        "tag": "http",
+        "listen": "127.0.0.1",
+        "port": 10809,
+        "protocol": "http"
+      }
+    ],
+    "outbounds": [
+      {
+        "tag": "node-ru-1",
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "ns.90909.club",
+              "port": 2096,
+              "users": [
+                {
+                  "id": "eeb96fef-4476-4ab0-915e-32e8f014c3b2",
+                  "encryption": "none"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "grpc",
+          "security": "reality",
+          "realitySettings": {
+            "serverName": "id.vk.com",
+            "fingerprint": "android",
+            "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
             "shortId": "",
             "spiderX": "/"
-          }
-        }
-      },
-      {
-        "tag": "direct",
-        "protocol": "freedom"
-      },
-      {
-        "tag": "block",
-        "protocol": "blackhole"
-      }
-    ],
-    "routing": {
-      "domainStrategy": "AsIs",
-      "balancers": [],
-      "rules": [
-        {
-          "type": "field",
-          "network": "tcp,udp",
-          "outboundTag": "node-ru-1"
-        }
-      ]
-    }
-  },
-  {
-    "remarks": "🇨🇦 Канада #3 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
-    "log": {
-      "loglevel": "warning"
-    },
-    "dns": {
-      "hosts": {
-        "cloudflare-dns.com": "1.1.1.1"
-      },
-      "servers": [
-        "https://cloudflare-dns.com/dns-query"
-      ],
-      "queryStrategy": "UseIPv4"
-    },
-    "inbounds": [
-      {
-        "tag": "socks",
-        "listen": "127.0.0.1",
-        "port": 10808,
-        "protocol": "socks",
-        "settings": {
-          "udp": true
-        },
-        "sniffing": {
-          "enabled": true,
-          "destOverride": [
-            "http",
-            "tls",
-            "quic"
-          ]
-        }
-      },
-      {
-        "tag": "http",
-        "listen": "127.0.0.1",
-        "port": 10809,
-        "protocol": "http"
-      }
-    ],
-    "outbounds": [
-      {
-        "tag": "node-ru-1",
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "209.200.246.148",
-              "port": 443,
-              "users": [
-                {
-                  "id": "ca52e2b6-fb9f-4dac-b6dc-49da9923f251",
-                  "encryption": "none",
-                  "flow": "xtls-rprx-vision"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "tcp",
-          "security": "reality",
-          "realitySettings": {
-            "serverName": "www.cloudflare.com",
-            "fingerprint": "firefox",
-            "publicKey": "uTmb-ytXsx8p0fkBz7A76SHpWk7_oVutIA4LGTE8BQk",
-            "shortId": "f98843107912e782",
-            "spiderX": "/"
-          }
-        }
-      },
-      {
-        "tag": "direct",
-        "protocol": "freedom"
-      },
-      {
-        "tag": "block",
-        "protocol": "blackhole"
-      }
-    ],
-    "routing": {
-      "domainStrategy": "AsIs",
-      "balancers": [],
-      "rules": [
-        {
-          "type": "field",
-          "network": "tcp,udp",
-          "outboundTag": "node-ru-1"
-        }
-      ]
-    }
-  },
-  {
-    "remarks": "🇨🇦 Канада #4 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
-    "log": {
-      "loglevel": "warning"
-    },
-    "dns": {
-      "hosts": {
-        "cloudflare-dns.com": "1.1.1.1"
-      },
-      "servers": [
-        "https://cloudflare-dns.com/dns-query"
-      ],
-      "queryStrategy": "UseIPv4"
-    },
-    "inbounds": [
-      {
-        "tag": "socks",
-        "listen": "127.0.0.1",
-        "port": 10808,
-        "protocol": "socks",
-        "settings": {
-          "udp": true
-        },
-        "sniffing": {
-          "enabled": true,
-          "destOverride": [
-            "http",
-            "tls",
-            "quic"
-          ]
-        }
-      },
-      {
-        "tag": "http",
-        "listen": "127.0.0.1",
-        "port": 10809,
-        "protocol": "http"
-      }
-    ],
-    "outbounds": [
-      {
-        "tag": "node-ru-1",
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "213.152.165.200",
-              "port": 2093,
-              "users": [
-                {
-                  "id": "28d7a636-fd0b-489e-bf99-baa5b1bf9f15",
-                  "encryption": "none",
-                  "flow": "xtls-rprx-vision"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "tcp",
-          "security": "reality",
-          "realitySettings": {
-            "serverName": "www.apple.com",
-            "fingerprint": "chrome",
-            "publicKey": "C_GA8wVjeLmyqLK6em5OHn4WPlsbndA-RyvyNU1aGFM",
-            "shortId": "8a9725533854a7e8",
-            "spiderX": "/"
-          }
-        }
-      },
-      {
-        "tag": "direct",
-        "protocol": "freedom"
-      },
-      {
-        "tag": "block",
-        "protocol": "blackhole"
-      }
-    ],
-    "routing": {
-      "domainStrategy": "AsIs",
-      "balancers": [],
-      "rules": [
-        {
-          "type": "field",
-          "network": "tcp,udp",
-          "outboundTag": "node-ru-1"
-        }
-      ]
-    }
-  },
-  {
-    "remarks": "🇨🇦 Канада #5 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
-    "log": {
-      "loglevel": "warning"
-    },
-    "dns": {
-      "hosts": {
-        "cloudflare-dns.com": "1.1.1.1"
-      },
-      "servers": [
-        "https://cloudflare-dns.com/dns-query"
-      ],
-      "queryStrategy": "UseIPv4"
-    },
-    "inbounds": [
-      {
-        "tag": "socks",
-        "listen": "127.0.0.1",
-        "port": 10808,
-        "protocol": "socks",
-        "settings": {
-          "udp": true
-        },
-        "sniffing": {
-          "enabled": true,
-          "destOverride": [
-            "http",
-            "tls",
-            "quic"
-          ]
-        }
-      },
-      {
-        "tag": "http",
-        "listen": "127.0.0.1",
-        "port": 10809,
-        "protocol": "http"
-      }
-    ],
-    "outbounds": [
-      {
-        "tag": "node-ru-1",
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "67.159.46.132",
-              "port": 2093,
-              "users": [
-                {
-                  "id": "0b418782-e023-447e-ba99-e66b84ff118d",
-                  "encryption": "none",
-                  "flow": "xtls-rprx-vision"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "tcp",
-          "security": "reality",
-          "realitySettings": {
-            "serverName": "www.apple.com",
-            "fingerprint": "chrome",
-            "publicKey": "C_GA8wVjeLmyqLK6em5OHn4WPlsbndA-RyvyNU1aGFM",
-            "shortId": "8a9725533854a7e8",
-            "spiderX": "/"
-          }
-        }
-      },
-      {
-        "tag": "direct",
-        "protocol": "freedom"
-      },
-      {
-        "tag": "block",
-        "protocol": "blackhole"
-      }
-    ],
-    "routing": {
-      "domainStrategy": "AsIs",
-      "balancers": [],
-      "rules": [
-        {
-          "type": "field",
-          "network": "tcp,udp",
-          "outboundTag": "node-ru-1"
-        }
-      ]
-    }
-  },
-  {
-    "remarks": "🇨🇦 Канада #6 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
-    "log": {
-      "loglevel": "warning"
-    },
-    "dns": {
-      "hosts": {
-        "cloudflare-dns.com": "1.1.1.1"
-      },
-      "servers": [
-        "https://cloudflare-dns.com/dns-query"
-      ],
-      "queryStrategy": "UseIPv4"
-    },
-    "inbounds": [
-      {
-        "tag": "socks",
-        "listen": "127.0.0.1",
-        "port": 10808,
-        "protocol": "socks",
-        "settings": {
-          "udp": true
-        },
-        "sniffing": {
-          "enabled": true,
-          "destOverride": [
-            "http",
-            "tls",
-            "quic"
-          ]
-        }
-      },
-      {
-        "tag": "http",
-        "listen": "127.0.0.1",
-        "port": 10809,
-        "protocol": "http"
-      }
-    ],
-    "outbounds": [
-      {
-        "tag": "node-ru-1",
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "67.159.46.132",
-              "port": 2093,
-              "users": [
-                {
-                  "id": "0b418782-e023-447e-ba99-e66b84ff118d",
-                  "encryption": "none",
-                  "flow": "xtls-rprx-vision"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "tcp",
-          "security": "reality",
-          "realitySettings": {
-            "serverName": "www.apple.com",
-            "fingerprint": "firefox",
-            "publicKey": "C_GA8wVjeLmyqLK6em5OHn4WPlsbndA-RyvyNU1aGFM",
-            "shortId": "8a9725533854a7e8",
-            "spiderX": "/"
-          }
-        }
-      },
-      {
-        "tag": "direct",
-        "protocol": "freedom"
-      },
-      {
-        "tag": "block",
-        "protocol": "blackhole"
-      }
-    ],
-    "routing": {
-      "domainStrategy": "AsIs",
-      "balancers": [],
-      "rules": [
-        {
-          "type": "field",
-          "network": "tcp,udp",
-          "outboundTag": "node-ru-1"
-        }
-      ]
-    }
-  },
-  {
-    "remarks": "🇰🇷 Корея #2 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
-    "log": {
-      "loglevel": "warning"
-    },
-    "dns": {
-      "hosts": {
-        "cloudflare-dns.com": "1.1.1.1"
-      },
-      "servers": [
-        "https://cloudflare-dns.com/dns-query"
-      ],
-      "queryStrategy": "UseIPv4"
-    },
-    "inbounds": [
-      {
-        "tag": "socks",
-        "listen": "127.0.0.1",
-        "port": 10808,
-        "protocol": "socks",
-        "settings": {
-          "udp": true
-        },
-        "sniffing": {
-          "enabled": true,
-          "destOverride": [
-            "http",
-            "tls",
-            "quic"
-          ]
-        }
-      },
-      {
-        "tag": "http",
-        "listen": "127.0.0.1",
-        "port": 10809,
-        "protocol": "http"
-      }
-    ],
-    "outbounds": [
-      {
-        "tag": "node-ru-1",
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "3.39.4.109",
-              "port": 13672,
-              "users": [
-                {
-                  "id": "814bd064-544d-4255-a070-5705c03f6da9",
-                  "encryption": "none",
-                  "flow": "xtls-rprx-vision"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "tcp",
-          "security": "reality",
-          "realitySettings": {
-            "serverName": "www.apple.com",
-            "fingerprint": "chrome",
-            "publicKey": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
-            "shortId": "48050fab",
-            "spiderX": "/"
-          }
-        }
-      },
-      {
-        "tag": "direct",
-        "protocol": "freedom"
-      },
-      {
-        "tag": "block",
-        "protocol": "blackhole"
-      }
-    ],
-    "routing": {
-      "domainStrategy": "AsIs",
-      "balancers": [],
-      "rules": [
-        {
-          "type": "field",
-          "network": "tcp,udp",
-          "outboundTag": "node-ru-1"
-        }
-      ]
-    }
-  },
-  {
-    "remarks": "🇰🇷 Корея #3 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
-    "log": {
-      "loglevel": "warning"
-    },
-    "dns": {
-      "hosts": {
-        "cloudflare-dns.com": "1.1.1.1"
-      },
-      "servers": [
-        "https://cloudflare-dns.com/dns-query"
-      ],
-      "queryStrategy": "UseIPv4"
-    },
-    "inbounds": [
-      {
-        "tag": "socks",
-        "listen": "127.0.0.1",
-        "port": 10808,
-        "protocol": "socks",
-        "settings": {
-          "udp": true
-        },
-        "sniffing": {
-          "enabled": true,
-          "destOverride": [
-            "http",
-            "tls",
-            "quic"
-          ]
-        }
-      },
-      {
-        "tag": "http",
-        "listen": "127.0.0.1",
-        "port": 10809,
-        "protocol": "http"
-      }
-    ],
-    "outbounds": [
-      {
-        "tag": "node-ru-1",
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "3.39.4.109",
-              "port": 18967,
-              "users": [
-                {
-                  "id": "814bd064-544d-4255-a070-5705c03f6da9",
-                  "encryption": "none",
-                  "flow": "xtls-rprx-vision"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "tcp",
-          "security": "reality",
-          "realitySettings": {
-            "serverName": "www.apple.com",
-            "fingerprint": "chrome",
-            "publicKey": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
-            "shortId": "48050fab",
-            "spiderX": "/"
-          }
-        }
-      },
-      {
-        "tag": "direct",
-        "protocol": "freedom"
-      },
-      {
-        "tag": "block",
-        "protocol": "blackhole"
-      }
-    ],
-    "routing": {
-      "domainStrategy": "AsIs",
-      "balancers": [],
-      "rules": [
-        {
-          "type": "field",
-          "network": "tcp,udp",
-          "outboundTag": "node-ru-1"
-        }
-      ]
-    }
-  },
-  {
-    "remarks": "🇱🇻 Латвия #3 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
-    "log": {
-      "loglevel": "warning"
-    },
-    "dns": {
-      "hosts": {
-        "cloudflare-dns.com": "1.1.1.1"
-      },
-      "servers": [
-        "https://cloudflare-dns.com/dns-query"
-      ],
-      "queryStrategy": "UseIPv4"
-    },
-    "inbounds": [
-      {
-        "tag": "socks",
-        "listen": "127.0.0.1",
-        "port": 10808,
-        "protocol": "socks",
-        "settings": {
-          "udp": true
-        },
-        "sniffing": {
-          "enabled": true,
-          "destOverride": [
-            "http",
-            "tls",
-            "quic"
-          ]
-        }
-      },
-      {
-        "tag": "http",
-        "listen": "127.0.0.1",
-        "port": 10809,
-        "protocol": "http"
-      }
-    ],
-    "outbounds": [
-      {
-        "tag": "node-ru-1",
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "lv6.himoy.space",
-              "port": 443,
-              "users": [
-                {
-                  "id": "5131b5e9-2c3c-44a0-8f18-0641f3f21cac",
-                  "encryption": "none",
-                  "flow": "xtls-rprx-vision"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "tcp",
-          "security": "reality",
-          "realitySettings": {
-            "serverName": "lv6.himoy.space",
-            "fingerprint": "firefox",
-            "publicKey": "t8XaUJANWO5ig79J71WnrpMWJYJ4IuAg3lL49vmSljA",
-            "shortId": "ebe425d08df5cb7b",
-            "spiderX": "/"
-          }
-        }
-      },
-      {
-        "tag": "direct",
-        "protocol": "freedom"
-      },
-      {
-        "tag": "block",
-        "protocol": "blackhole"
-      }
-    ],
-    "routing": {
-      "domainStrategy": "AsIs",
-      "balancers": [],
-      "rules": [
-        {
-          "type": "field",
-          "network": "tcp,udp",
-          "outboundTag": "node-ru-1"
-        }
-      ]
-    }
-  },
-  {
-    "remarks": "🇳🇱 Нидерланды #7 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
-    "log": {
-      "loglevel": "warning"
-    },
-    "dns": {
-      "hosts": {
-        "cloudflare-dns.com": "1.1.1.1"
-      },
-      "servers": [
-        "https://cloudflare-dns.com/dns-query"
-      ],
-      "queryStrategy": "UseIPv4"
-    },
-    "inbounds": [
-      {
-        "tag": "socks",
-        "listen": "127.0.0.1",
-        "port": 10808,
-        "protocol": "socks",
-        "settings": {
-          "udp": true
-        },
-        "sniffing": {
-          "enabled": true,
-          "destOverride": [
-            "http",
-            "tls",
-            "quic"
-          ]
-        }
-      },
-      {
-        "tag": "http",
-        "listen": "127.0.0.1",
-        "port": 10809,
-        "protocol": "http"
-      }
-    ],
-    "outbounds": [
-      {
-        "tag": "node-ru-1",
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "51.158.206.103",
-              "port": 23576,
-              "users": [
-                {
-                  "id": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
-                  "encryption": "none",
-                  "flow": "xtls-rprx-vision"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "tcp",
-          "security": "reality",
-          "realitySettings": {
-            "serverName": "fuck.rkn",
-            "fingerprint": "firefox",
-            "publicKey": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
-            "shortId": "01",
-            "spiderX": "/"
-          }
-        }
-      },
-      {
-        "tag": "direct",
-        "protocol": "freedom"
-      },
-      {
-        "tag": "block",
-        "protocol": "blackhole"
-      }
-    ],
-    "routing": {
-      "domainStrategy": "AsIs",
-      "balancers": [],
-      "rules": [
-        {
-          "type": "field",
-          "network": "tcp,udp",
-          "outboundTag": "node-ru-1"
-        }
-      ]
-    }
-  },
-  {
-    "remarks": "🇳🇱 Нидерланды #8 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
-    "log": {
-      "loglevel": "warning"
-    },
-    "dns": {
-      "hosts": {
-        "cloudflare-dns.com": "1.1.1.1"
-      },
-      "servers": [
-        "https://cloudflare-dns.com/dns-query"
-      ],
-      "queryStrategy": "UseIPv4"
-    },
-    "inbounds": [
-      {
-        "tag": "socks",
-        "listen": "127.0.0.1",
-        "port": 10808,
-        "protocol": "socks",
-        "settings": {
-          "udp": true
-        },
-        "sniffing": {
-          "enabled": true,
-          "destOverride": [
-            "http",
-            "tls",
-            "quic"
-          ]
-        }
-      },
-      {
-        "tag": "http",
-        "listen": "127.0.0.1",
-        "port": 10809,
-        "protocol": "http"
-      }
-    ],
-    "outbounds": [
-      {
-        "tag": "node-ru-1",
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "5.129.234.167",
-              "port": 12213,
-              "users": [
-                {
-                  "id": "7c464358-6c89-4623-bd20-7c7bcd51bc55",
-                  "encryption": "none",
-                  "flow": "xtls-rprx-vision"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "tcp",
-          "security": "reality",
-          "realitySettings": {
-            "serverName": "music.yandex.ru",
-            "fingerprint": "firefox",
-            "publicKey": "kTKM-s7XF0s878Ydmq1KeZFiGT6k1Bw_rLE79s1l1jI",
-            "shortId": "6a29a03b21",
-            "spiderX": "/"
-          }
-        }
-      },
-      {
-        "tag": "direct",
-        "protocol": "freedom"
-      },
-      {
-        "tag": "block",
-        "protocol": "blackhole"
-      }
-    ],
-    "routing": {
-      "domainStrategy": "AsIs",
-      "balancers": [],
-      "rules": [
-        {
-          "type": "field",
-          "network": "tcp,udp",
-          "outboundTag": "node-ru-1"
-        }
-      ]
-    }
-  },
-  {
-    "remarks": "🇳🇱 Нидерланды #9 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
-    "log": {
-      "loglevel": "warning"
-    },
-    "dns": {
-      "hosts": {
-        "cloudflare-dns.com": "1.1.1.1"
-      },
-      "servers": [
-        "https://cloudflare-dns.com/dns-query"
-      ],
-      "queryStrategy": "UseIPv4"
-    },
-    "inbounds": [
-      {
-        "tag": "socks",
-        "listen": "127.0.0.1",
-        "port": 10808,
-        "protocol": "socks",
-        "settings": {
-          "udp": true
-        },
-        "sniffing": {
-          "enabled": true,
-          "destOverride": [
-            "http",
-            "tls",
-            "quic"
-          ]
-        }
-      },
-      {
-        "tag": "http",
-        "listen": "127.0.0.1",
-        "port": 10809,
-        "protocol": "http"
-      }
-    ],
-    "outbounds": [
-      {
-        "tag": "node-ru-1",
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "vr.nehtar.ru",
-              "port": 443,
-              "users": [
-                {
-                  "id": "94fb33dc-1e6d-4820-9dd6-bde226dfa0fe",
-                  "encryption": "none"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "ws",
-          "security": "tls",
-          "tlsSettings": {
-            "fingerprint": "android",
-            "allowInsecure": false,
-            "serverName": "vr.nehtar.ru"
           },
-          "wsSettings": {
-            "path": "/gateway/v1/ws/791f9a4d19f715c2ffaedfbaf99d88bd",
-            "headers": {
-              "Host": "vr.nehtar.ru"
-            }
-          }
-        }
-      },
-      {
-        "tag": "direct",
-        "protocol": "freedom"
-      },
-      {
-        "tag": "block",
-        "protocol": "blackhole"
-      }
-    ],
-    "routing": {
-      "domainStrategy": "AsIs",
-      "balancers": [],
-      "rules": [
-        {
-          "type": "field",
-          "network": "tcp,udp",
-          "outboundTag": "node-ru-1"
-        }
-      ]
-    }
-  },
-  {
-    "remarks": "🇵🇱 Польша #6 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
-    "log": {
-      "loglevel": "warning"
-    },
-    "dns": {
-      "hosts": {
-        "cloudflare-dns.com": "1.1.1.1"
-      },
-      "servers": [
-        "https://cloudflare-dns.com/dns-query"
-      ],
-      "queryStrategy": "UseIPv4"
-    },
-    "inbounds": [
-      {
-        "tag": "socks",
-        "listen": "127.0.0.1",
-        "port": 10808,
-        "protocol": "socks",
-        "settings": {
-          "udp": true
-        },
-        "sniffing": {
-          "enabled": true,
-          "destOverride": [
-            "http",
-            "tls",
-            "quic"
-          ]
-        }
-      },
-      {
-        "tag": "http",
-        "listen": "127.0.0.1",
-        "port": 10809,
-        "protocol": "http"
-      }
-    ],
-    "outbounds": [
-      {
-        "tag": "node-ru-1",
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "185.86.145.142",
-              "port": 443,
-              "users": [
-                {
-                  "id": "c8b3c1d7-4294-4f30-9e5b-e4693b64d518",
-                  "encryption": "none"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "ws",
-          "security": "tls",
-          "tlsSettings": {
-            "fingerprint": "edge",
-            "allowInsecure": false,
-            "serverName": "deliverya.online",
-            "alpn": [
-              "http/1.1"
-            ]
-          },
-          "wsSettings": {
-            "path": "/adrws",
-            "headers": {
-              "Host": "deliverya.online"
-            }
-          }
-        }
-      },
-      {
-        "tag": "direct",
-        "protocol": "freedom"
-      },
-      {
-        "tag": "block",
-        "protocol": "blackhole"
-      }
-    ],
-    "routing": {
-      "domainStrategy": "AsIs",
-      "balancers": [],
-      "rules": [
-        {
-          "type": "field",
-          "network": "tcp,udp",
-          "outboundTag": "node-ru-1"
-        }
-      ]
-    }
-  },
-  {
-    "remarks": "🇵🇱 Польша #7 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
-    "log": {
-      "loglevel": "warning"
-    },
-    "dns": {
-      "hosts": {
-        "cloudflare-dns.com": "1.1.1.1"
-      },
-      "servers": [
-        "https://cloudflare-dns.com/dns-query"
-      ],
-      "queryStrategy": "UseIPv4"
-    },
-    "inbounds": [
-      {
-        "tag": "socks",
-        "listen": "127.0.0.1",
-        "port": 10808,
-        "protocol": "socks",
-        "settings": {
-          "udp": true
-        },
-        "sniffing": {
-          "enabled": true,
-          "destOverride": [
-            "http",
-            "tls",
-            "quic"
-          ]
-        }
-      },
-      {
-        "tag": "http",
-        "listen": "127.0.0.1",
-        "port": 10809,
-        "protocol": "http"
-      }
-    ],
-    "outbounds": [
-      {
-        "tag": "node-ru-1",
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "185.86.145.142",
-              "port": 443,
-              "users": [
-                {
-                  "id": "c8b3c1d7-4294-4f30-9e5b-e4693b64d518",
-                  "encryption": "none"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "ws",
-          "security": "tls",
-          "tlsSettings": {
-            "fingerprint": "chrome",
-            "allowInsecure": false,
-            "serverName": "deliverya.online"
-          },
-          "wsSettings": {
-            "path": "/adrws",
-            "headers": {
-              "Host": "deliverya.online"
-            }
-          }
-        }
-      },
-      {
-        "tag": "direct",
-        "protocol": "freedom"
-      },
-      {
-        "tag": "block",
-        "protocol": "blackhole"
-      }
-    ],
-    "routing": {
-      "domainStrategy": "AsIs",
-      "balancers": [],
-      "rules": [
-        {
-          "type": "field",
-          "network": "tcp,udp",
-          "outboundTag": "node-ru-1"
-        }
-      ]
-    }
-  },
-  {
-    "remarks": "🇵🇱 Польша #8 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
-    "log": {
-      "loglevel": "warning"
-    },
-    "dns": {
-      "hosts": {
-        "cloudflare-dns.com": "1.1.1.1"
-      },
-      "servers": [
-        "https://cloudflare-dns.com/dns-query"
-      ],
-      "queryStrategy": "UseIPv4"
-    },
-    "inbounds": [
-      {
-        "tag": "socks",
-        "listen": "127.0.0.1",
-        "port": 10808,
-        "protocol": "socks",
-        "settings": {
-          "udp": true
-        },
-        "sniffing": {
-          "enabled": true,
-          "destOverride": [
-            "http",
-            "tls",
-            "quic"
-          ]
-        }
-      },
-      {
-        "tag": "http",
-        "listen": "127.0.0.1",
-        "port": 10809,
-        "protocol": "http"
-      }
-    ],
-    "outbounds": [
-      {
-        "tag": "node-ru-1",
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "deliverya.online",
-              "port": 443,
-              "users": [
-                {
-                  "id": "c8b3c1d7-4294-4f30-9e5b-e4693b64d518",
-                  "encryption": "none"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "ws",
-          "security": "tls",
-          "tlsSettings": {
-            "fingerprint": "chrome",
-            "allowInsecure": false,
-            "serverName": "deliverya.online"
-          },
-          "wsSettings": {
-            "path": "/adrws",
-            "headers": {
-              "Host": "deliverya.online"
-            }
-          }
-        }
-      },
-      {
-        "tag": "direct",
-        "protocol": "freedom"
-      },
-      {
-        "tag": "block",
-        "protocol": "blackhole"
-      }
-    ],
-    "routing": {
-      "domainStrategy": "AsIs",
-      "balancers": [],
-      "rules": [
-        {
-          "type": "field",
-          "network": "tcp,udp",
-          "outboundTag": "node-ru-1"
-        }
-      ]
-    }
-  },
-  {
-    "remarks": "🇵🇱 Польша #9 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
-    "log": {
-      "loglevel": "warning"
-    },
-    "dns": {
-      "hosts": {
-        "cloudflare-dns.com": "1.1.1.1"
-      },
-      "servers": [
-        "https://cloudflare-dns.com/dns-query"
-      ],
-      "queryStrategy": "UseIPv4"
-    },
-    "inbounds": [
-      {
-        "tag": "socks",
-        "listen": "127.0.0.1",
-        "port": 10808,
-        "protocol": "socks",
-        "settings": {
-          "udp": true
-        },
-        "sniffing": {
-          "enabled": true,
-          "destOverride": [
-            "http",
-            "tls",
-            "quic"
-          ]
-        }
-      },
-      {
-        "tag": "http",
-        "listen": "127.0.0.1",
-        "port": 10809,
-        "protocol": "http"
-      }
-    ],
-    "outbounds": [
-      {
-        "tag": "node-ru-1",
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "deliverya.online",
-              "port": 443,
-              "users": [
-                {
-                  "id": "c8b3c1d7-4294-4f30-9e5b-e4693b64d518",
-                  "encryption": "none"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "ws",
-          "security": "tls",
-          "tlsSettings": {
-            "fingerprint": "android",
-            "allowInsecure": false,
-            "serverName": "deliverya.online",
-            "alpn": [
-              "http/1.1"
-            ]
-          },
-          "wsSettings": {
-            "path": "/adrws",
-            "headers": {
-              "Host": "deliverya.online"
-            }
+          "grpcSettings": {
+            "serviceName": "vless-grpc-reality"
           }
         }
       },
@@ -4257,11 +2153,102 @@
         "settings": {
           "vnext": [
             {
-              "address": "163.245.41.49",
-              "port": 2096,
+              "address": "au1.sream-rutube.shop",
+              "port": 443,
               "users": [
                 {
-                  "id": "6da2c981-8c77-4340-bda3-93399b7aea26",
+                  "id": "d40fdcdb-8d6f-406d-a050-12e196fe8804",
+                  "encryption": "none"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "grpc",
+          "security": "tls",
+          "tlsSettings": {
+            "fingerprint": "chrome",
+            "allowInsecure": false,
+            "serverName": "au1.sream-rutube.shop"
+          },
+          "grpcSettings": {
+            "serviceName": "trgrpc"
+          }
+        }
+      },
+      {
+        "tag": "direct",
+        "protocol": "freedom"
+      },
+      {
+        "tag": "block",
+        "protocol": "blackhole"
+      }
+    ],
+    "routing": {
+      "domainStrategy": "AsIs",
+      "balancers": [],
+      "rules": [
+        {
+          "type": "field",
+          "network": "tcp,udp",
+          "outboundTag": "node-ru-1"
+        }
+      ]
+    }
+  },
+  {
+    "remarks": "🇺🇸 США #22 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
+    "log": {
+      "loglevel": "warning"
+    },
+    "dns": {
+      "hosts": {
+        "cloudflare-dns.com": "1.1.1.1"
+      },
+      "servers": [
+        "https://cloudflare-dns.com/dns-query"
+      ],
+      "queryStrategy": "UseIPv4"
+    },
+    "inbounds": [
+      {
+        "tag": "socks",
+        "listen": "127.0.0.1",
+        "port": 10808,
+        "protocol": "socks",
+        "settings": {
+          "udp": true
+        },
+        "sniffing": {
+          "enabled": true,
+          "destOverride": [
+            "http",
+            "tls",
+            "quic"
+          ]
+        }
+      },
+      {
+        "tag": "http",
+        "listen": "127.0.0.1",
+        "port": 10809,
+        "protocol": "http"
+      }
+    ],
+    "outbounds": [
+      {
+        "tag": "node-ru-1",
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "ru1.iki-servers.com",
+              "port": 443,
+              "users": [
+                {
+                  "id": "345e0ef7-6861-4722-ab44-799c37507b24",
                   "encryption": "none"
                 }
               ]
@@ -4272,16 +2259,16 @@
           "network": "xhttp",
           "security": "reality",
           "realitySettings": {
-            "serverName": "www.apple.com",
-            "fingerprint": "firefox",
-            "publicKey": "2riaCWjnC6m96hid0WcL9BG4vwzh8NoW_ps8CrVo1mo",
-            "shortId": "3649e084544949f1",
+            "serverName": "ru1.iki-servers.com",
+            "fingerprint": "safari",
+            "publicKey": "ZisG4RvEL2DL5xDZ_IOPpuX_UY4t_HlyGk80iZraUCo",
+            "shortId": "5f5962cc9ec6b180",
             "spiderX": "/"
           },
           "xhttpSettings": {
-            "path": "/apple-xh",
-            "mode": "auto",
-            "host": "www.apple.com"
+            "path": "/lock",
+            "mode": "packet-up",
+            "host": "ru1.iki-servers.com"
           }
         }
       },
@@ -4307,830 +2294,7 @@
     }
   },
   {
-    "remarks": "🇷🇴 Румыния #2 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
-    "log": {
-      "loglevel": "warning"
-    },
-    "dns": {
-      "hosts": {
-        "cloudflare-dns.com": "1.1.1.1"
-      },
-      "servers": [
-        "https://cloudflare-dns.com/dns-query"
-      ],
-      "queryStrategy": "UseIPv4"
-    },
-    "inbounds": [
-      {
-        "tag": "socks",
-        "listen": "127.0.0.1",
-        "port": 10808,
-        "protocol": "socks",
-        "settings": {
-          "udp": true
-        },
-        "sniffing": {
-          "enabled": true,
-          "destOverride": [
-            "http",
-            "tls",
-            "quic"
-          ]
-        }
-      },
-      {
-        "tag": "http",
-        "listen": "127.0.0.1",
-        "port": 10809,
-        "protocol": "http"
-      }
-    ],
-    "outbounds": [
-      {
-        "tag": "node-ru-1",
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "163.245.41.49",
-              "port": 2096,
-              "users": [
-                {
-                  "id": "6da2c981-8c77-4340-bda3-93399b7aea26",
-                  "encryption": "none"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "xhttp",
-          "security": "reality",
-          "realitySettings": {
-            "serverName": "www.apple.com",
-            "fingerprint": "chrome",
-            "publicKey": "2riaCWjnC6m96hid0WcL9BG4vwzh8NoW_ps8CrVo1mo",
-            "shortId": "3649e084544949f1",
-            "spiderX": "/"
-          },
-          "xhttpSettings": {
-            "path": "/apple-xh",
-            "mode": "auto",
-            "host": "www.apple.com"
-          }
-        }
-      },
-      {
-        "tag": "direct",
-        "protocol": "freedom"
-      },
-      {
-        "tag": "block",
-        "protocol": "blackhole"
-      }
-    ],
-    "routing": {
-      "domainStrategy": "AsIs",
-      "balancers": [],
-      "rules": [
-        {
-          "type": "field",
-          "network": "tcp,udp",
-          "outboundTag": "node-ru-1"
-        }
-      ]
-    }
-  },
-  {
-    "remarks": "🇺🇸 США #3 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
-    "log": {
-      "loglevel": "warning"
-    },
-    "dns": {
-      "hosts": {
-        "cloudflare-dns.com": "1.1.1.1"
-      },
-      "servers": [
-        "https://cloudflare-dns.com/dns-query"
-      ],
-      "queryStrategy": "UseIPv4"
-    },
-    "inbounds": [
-      {
-        "tag": "socks",
-        "listen": "127.0.0.1",
-        "port": 10808,
-        "protocol": "socks",
-        "settings": {
-          "udp": true
-        },
-        "sniffing": {
-          "enabled": true,
-          "destOverride": [
-            "http",
-            "tls",
-            "quic"
-          ]
-        }
-      },
-      {
-        "tag": "http",
-        "listen": "127.0.0.1",
-        "port": 10809,
-        "protocol": "http"
-      }
-    ],
-    "outbounds": [
-      {
-        "tag": "node-ru-1",
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "47.253.226.114",
-              "port": 443,
-              "users": [
-                {
-                  "id": "055a1ce8-2a16-4a0d-a2c2-22826c9b2413",
-                  "encryption": "none",
-                  "flow": "xtls-rprx-vision"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "tcp",
-          "security": "reality",
-          "realitySettings": {
-            "serverName": "www.cloudflare.com",
-            "fingerprint": "chrome",
-            "publicKey": "Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc",
-            "shortId": "",
-            "spiderX": "/"
-          }
-        }
-      },
-      {
-        "tag": "direct",
-        "protocol": "freedom"
-      },
-      {
-        "tag": "block",
-        "protocol": "blackhole"
-      }
-    ],
-    "routing": {
-      "domainStrategy": "AsIs",
-      "balancers": [],
-      "rules": [
-        {
-          "type": "field",
-          "network": "tcp,udp",
-          "outboundTag": "node-ru-1"
-        }
-      ]
-    }
-  },
-  {
-    "remarks": "🇺🇸 США #4 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
-    "log": {
-      "loglevel": "warning"
-    },
-    "dns": {
-      "hosts": {
-        "cloudflare-dns.com": "1.1.1.1"
-      },
-      "servers": [
-        "https://cloudflare-dns.com/dns-query"
-      ],
-      "queryStrategy": "UseIPv4"
-    },
-    "inbounds": [
-      {
-        "tag": "socks",
-        "listen": "127.0.0.1",
-        "port": 10808,
-        "protocol": "socks",
-        "settings": {
-          "udp": true
-        },
-        "sniffing": {
-          "enabled": true,
-          "destOverride": [
-            "http",
-            "tls",
-            "quic"
-          ]
-        }
-      },
-      {
-        "tag": "http",
-        "listen": "127.0.0.1",
-        "port": 10809,
-        "protocol": "http"
-      }
-    ],
-    "outbounds": [
-      {
-        "tag": "node-ru-1",
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "195.123.235.183",
-              "port": 443,
-              "users": [
-                {
-                  "id": "c14ec728-3eca-4750-87fc-fd1e6aeb81d5",
-                  "encryption": "none",
-                  "flow": "xtls-rprx-vision"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "tcp",
-          "security": "reality",
-          "realitySettings": {
-            "serverName": "gateway.icloud.com",
-            "fingerprint": "firefox",
-            "publicKey": "H3R3BUAl7thrIZsznTbb-eRREIjQOH2f3WO0oTN7OGY",
-            "shortId": "a0e2a6074c6456b0",
-            "spiderX": "/"
-          }
-        }
-      },
-      {
-        "tag": "direct",
-        "protocol": "freedom"
-      },
-      {
-        "tag": "block",
-        "protocol": "blackhole"
-      }
-    ],
-    "routing": {
-      "domainStrategy": "AsIs",
-      "balancers": [],
-      "rules": [
-        {
-          "type": "field",
-          "network": "tcp,udp",
-          "outboundTag": "node-ru-1"
-        }
-      ]
-    }
-  },
-  {
-    "remarks": "🇺🇸 США #5 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
-    "log": {
-      "loglevel": "warning"
-    },
-    "dns": {
-      "hosts": {
-        "cloudflare-dns.com": "1.1.1.1"
-      },
-      "servers": [
-        "https://cloudflare-dns.com/dns-query"
-      ],
-      "queryStrategy": "UseIPv4"
-    },
-    "inbounds": [
-      {
-        "tag": "socks",
-        "listen": "127.0.0.1",
-        "port": 10808,
-        "protocol": "socks",
-        "settings": {
-          "udp": true
-        },
-        "sniffing": {
-          "enabled": true,
-          "destOverride": [
-            "http",
-            "tls",
-            "quic"
-          ]
-        }
-      },
-      {
-        "tag": "http",
-        "listen": "127.0.0.1",
-        "port": 10809,
-        "protocol": "http"
-      }
-    ],
-    "outbounds": [
-      {
-        "tag": "node-ru-1",
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "169.40.42.104",
-              "port": 443,
-              "users": [
-                {
-                  "id": "d65cc14c-f53f-4fe2-b262-97856601319c",
-                  "encryption": "none",
-                  "flow": "xtls-rprx-vision"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "tcp",
-          "security": "reality",
-          "realitySettings": {
-            "serverName": "yahoo.com",
-            "fingerprint": "ios",
-            "publicKey": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
-            "shortId": "c39cc7310a",
-            "spiderX": "/"
-          }
-        }
-      },
-      {
-        "tag": "direct",
-        "protocol": "freedom"
-      },
-      {
-        "tag": "block",
-        "protocol": "blackhole"
-      }
-    ],
-    "routing": {
-      "domainStrategy": "AsIs",
-      "balancers": [],
-      "rules": [
-        {
-          "type": "field",
-          "network": "tcp,udp",
-          "outboundTag": "node-ru-1"
-        }
-      ]
-    }
-  },
-  {
-    "remarks": "🇺🇸 США #6 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
-    "log": {
-      "loglevel": "warning"
-    },
-    "dns": {
-      "hosts": {
-        "cloudflare-dns.com": "1.1.1.1"
-      },
-      "servers": [
-        "https://cloudflare-dns.com/dns-query"
-      ],
-      "queryStrategy": "UseIPv4"
-    },
-    "inbounds": [
-      {
-        "tag": "socks",
-        "listen": "127.0.0.1",
-        "port": 10808,
-        "protocol": "socks",
-        "settings": {
-          "udp": true
-        },
-        "sniffing": {
-          "enabled": true,
-          "destOverride": [
-            "http",
-            "tls",
-            "quic"
-          ]
-        }
-      },
-      {
-        "tag": "http",
-        "listen": "127.0.0.1",
-        "port": 10809,
-        "protocol": "http"
-      }
-    ],
-    "outbounds": [
-      {
-        "tag": "node-ru-1",
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "169.40.42.90",
-              "port": 443,
-              "users": [
-                {
-                  "id": "d65cc14c-f53f-4fe2-b262-97856601319c",
-                  "encryption": "none",
-                  "flow": "xtls-rprx-vision"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "tcp",
-          "security": "reality",
-          "realitySettings": {
-            "serverName": "yahoo.com",
-            "fingerprint": "chrome",
-            "publicKey": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
-            "shortId": "c39cc7310a",
-            "spiderX": "/"
-          }
-        }
-      },
-      {
-        "tag": "direct",
-        "protocol": "freedom"
-      },
-      {
-        "tag": "block",
-        "protocol": "blackhole"
-      }
-    ],
-    "routing": {
-      "domainStrategy": "AsIs",
-      "balancers": [],
-      "rules": [
-        {
-          "type": "field",
-          "network": "tcp,udp",
-          "outboundTag": "node-ru-1"
-        }
-      ]
-    }
-  },
-  {
-    "remarks": "🇺🇸 США #7 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
-    "log": {
-      "loglevel": "warning"
-    },
-    "dns": {
-      "hosts": {
-        "cloudflare-dns.com": "1.1.1.1"
-      },
-      "servers": [
-        "https://cloudflare-dns.com/dns-query"
-      ],
-      "queryStrategy": "UseIPv4"
-    },
-    "inbounds": [
-      {
-        "tag": "socks",
-        "listen": "127.0.0.1",
-        "port": 10808,
-        "protocol": "socks",
-        "settings": {
-          "udp": true
-        },
-        "sniffing": {
-          "enabled": true,
-          "destOverride": [
-            "http",
-            "tls",
-            "quic"
-          ]
-        }
-      },
-      {
-        "tag": "http",
-        "listen": "127.0.0.1",
-        "port": 10809,
-        "protocol": "http"
-      }
-    ],
-    "outbounds": [
-      {
-        "tag": "node-ru-1",
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "167.17.69.171",
-              "port": 443,
-              "users": [
-                {
-                  "id": "00144519-7e0d-476b-8d28-435576af9262",
-                  "encryption": "none",
-                  "flow": "xtls-rprx-vision"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "tcp",
-          "security": "reality",
-          "realitySettings": {
-            "serverName": "www.cloudflare.com",
-            "fingerprint": "chrome",
-            "publicKey": "ALT8hIGeZEhi0sQFbXP_ntBg8Xo-v7i0YCLrqTnBxRk",
-            "shortId": "0990d22f",
-            "spiderX": "/"
-          }
-        }
-      },
-      {
-        "tag": "direct",
-        "protocol": "freedom"
-      },
-      {
-        "tag": "block",
-        "protocol": "blackhole"
-      }
-    ],
-    "routing": {
-      "domainStrategy": "AsIs",
-      "balancers": [],
-      "rules": [
-        {
-          "type": "field",
-          "network": "tcp,udp",
-          "outboundTag": "node-ru-1"
-        }
-      ]
-    }
-  },
-  {
-    "remarks": "🇺🇸 США #8 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
-    "log": {
-      "loglevel": "warning"
-    },
-    "dns": {
-      "hosts": {
-        "cloudflare-dns.com": "1.1.1.1"
-      },
-      "servers": [
-        "https://cloudflare-dns.com/dns-query"
-      ],
-      "queryStrategy": "UseIPv4"
-    },
-    "inbounds": [
-      {
-        "tag": "socks",
-        "listen": "127.0.0.1",
-        "port": 10808,
-        "protocol": "socks",
-        "settings": {
-          "udp": true
-        },
-        "sniffing": {
-          "enabled": true,
-          "destOverride": [
-            "http",
-            "tls",
-            "quic"
-          ]
-        }
-      },
-      {
-        "tag": "http",
-        "listen": "127.0.0.1",
-        "port": 10809,
-        "protocol": "http"
-      }
-    ],
-    "outbounds": [
-      {
-        "tag": "node-ru-1",
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "169.40.42.163",
-              "port": 443,
-              "users": [
-                {
-                  "id": "d65cc14c-f53f-4fe2-b262-97856601319c",
-                  "encryption": "none",
-                  "flow": "xtls-rprx-vision"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "tcp",
-          "security": "reality",
-          "realitySettings": {
-            "serverName": "yahoo.com",
-            "fingerprint": "chrome",
-            "publicKey": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
-            "shortId": "c39cc7310a",
-            "spiderX": "/"
-          }
-        }
-      },
-      {
-        "tag": "direct",
-        "protocol": "freedom"
-      },
-      {
-        "tag": "block",
-        "protocol": "blackhole"
-      }
-    ],
-    "routing": {
-      "domainStrategy": "AsIs",
-      "balancers": [],
-      "rules": [
-        {
-          "type": "field",
-          "network": "tcp,udp",
-          "outboundTag": "node-ru-1"
-        }
-      ]
-    }
-  },
-  {
-    "remarks": "🇺🇸 США #9 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
-    "log": {
-      "loglevel": "warning"
-    },
-    "dns": {
-      "hosts": {
-        "cloudflare-dns.com": "1.1.1.1"
-      },
-      "servers": [
-        "https://cloudflare-dns.com/dns-query"
-      ],
-      "queryStrategy": "UseIPv4"
-    },
-    "inbounds": [
-      {
-        "tag": "socks",
-        "listen": "127.0.0.1",
-        "port": 10808,
-        "protocol": "socks",
-        "settings": {
-          "udp": true
-        },
-        "sniffing": {
-          "enabled": true,
-          "destOverride": [
-            "http",
-            "tls",
-            "quic"
-          ]
-        }
-      },
-      {
-        "tag": "http",
-        "listen": "127.0.0.1",
-        "port": 10809,
-        "protocol": "http"
-      }
-    ],
-    "outbounds": [
-      {
-        "tag": "node-ru-1",
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "45.144.221.169",
-              "port": 443,
-              "users": [
-                {
-                  "id": "30572b57-f5ab-4eb8-82d4-a24d399b99f6",
-                  "encryption": "none",
-                  "flow": "xtls-rprx-vision"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "tcp",
-          "security": "reality",
-          "realitySettings": {
-            "serverName": "arizona.eosapp.net",
-            "fingerprint": "chrome",
-            "publicKey": "Buy9pirx5Ih_LHwc6R3BCmvRL4g4Ljx6B3MEsZfIZhU",
-            "shortId": "",
-            "spiderX": "/"
-          }
-        }
-      },
-      {
-        "tag": "direct",
-        "protocol": "freedom"
-      },
-      {
-        "tag": "block",
-        "protocol": "blackhole"
-      }
-    ],
-    "routing": {
-      "domainStrategy": "AsIs",
-      "balancers": [],
-      "rules": [
-        {
-          "type": "field",
-          "network": "tcp,udp",
-          "outboundTag": "node-ru-1"
-        }
-      ]
-    }
-  },
-  {
-    "remarks": "🇺🇸 США #10 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
-    "log": {
-      "loglevel": "warning"
-    },
-    "dns": {
-      "hosts": {
-        "cloudflare-dns.com": "1.1.1.1"
-      },
-      "servers": [
-        "https://cloudflare-dns.com/dns-query"
-      ],
-      "queryStrategy": "UseIPv4"
-    },
-    "inbounds": [
-      {
-        "tag": "socks",
-        "listen": "127.0.0.1",
-        "port": 10808,
-        "protocol": "socks",
-        "settings": {
-          "udp": true
-        },
-        "sniffing": {
-          "enabled": true,
-          "destOverride": [
-            "http",
-            "tls",
-            "quic"
-          ]
-        }
-      },
-      {
-        "tag": "http",
-        "listen": "127.0.0.1",
-        "port": 10809,
-        "protocol": "http"
-      }
-    ],
-    "outbounds": [
-      {
-        "tag": "node-ru-1",
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "45.144.221.169",
-              "port": 443,
-              "users": [
-                {
-                  "id": "30572b57-f5ab-4eb8-82d4-a24d399b99f6",
-                  "encryption": "none",
-                  "flow": "xtls-rprx-vision"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "tcp",
-          "security": "reality",
-          "realitySettings": {
-            "serverName": "arizona.eosapp.net",
-            "fingerprint": "qq",
-            "publicKey": "Buy9pirx5Ih_LHwc6R3BCmvRL4g4Ljx6B3MEsZfIZhU",
-            "shortId": "",
-            "spiderX": "/"
-          }
-        }
-      },
-      {
-        "tag": "direct",
-        "protocol": "freedom"
-      },
-      {
-        "tag": "block",
-        "protocol": "blackhole"
-      }
-    ],
-    "routing": {
-      "domainStrategy": "AsIs",
-      "balancers": [],
-      "rules": [
-        {
-          "type": "field",
-          "network": "tcp,udp",
-          "outboundTag": "node-ru-1"
-        }
-      ]
-    }
-  },
-  {
-    "remarks": "🇺🇸 США #11 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
+    "remarks": "🇺🇸 США #23 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
     "log": {
       "loglevel": "warning"
     },
@@ -5225,7 +2389,320 @@
     }
   },
   {
-    "remarks": "🇺🇸 США #12 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
+    "remarks": "🇺🇸 США #24 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
+    "log": {
+      "loglevel": "warning"
+    },
+    "dns": {
+      "hosts": {
+        "cloudflare-dns.com": "1.1.1.1"
+      },
+      "servers": [
+        "https://cloudflare-dns.com/dns-query"
+      ],
+      "queryStrategy": "UseIPv4"
+    },
+    "inbounds": [
+      {
+        "tag": "socks",
+        "listen": "127.0.0.1",
+        "port": 10808,
+        "protocol": "socks",
+        "settings": {
+          "udp": true
+        },
+        "sniffing": {
+          "enabled": true,
+          "destOverride": [
+            "http",
+            "tls",
+            "quic"
+          ]
+        }
+      },
+      {
+        "tag": "http",
+        "listen": "127.0.0.1",
+        "port": 10809,
+        "protocol": "http"
+      }
+    ],
+    "outbounds": [
+      {
+        "tag": "node-ru-1",
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "159.194.248.11",
+              "port": 443,
+              "users": [
+                {
+                  "id": "d40fdcdb-8d6f-406d-a050-12e196fe8804",
+                  "encryption": "none"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "xhttp",
+          "security": "reality",
+          "realitySettings": {
+            "serverName": "api-maps.yandex.ru",
+            "fingerprint": "chrome",
+            "publicKey": "yQfhPYAXsz1EqKpOglHh72NzJsf9YoPuD1bjMC-DDiM",
+            "shortId": "",
+            "spiderX": "/"
+          },
+          "xhttpSettings": {
+            "path": "/api/v2/updates",
+            "mode": "stream-one",
+            "host": "api-maps.yandex.ru",
+            "extra": {
+              "xmux": {
+                "cMaxReuseTimes": 0,
+                "maxConcurrency": "16-32",
+                "maxConnections": 0,
+                "hKeepAlivePeriod": 0,
+                "hMaxRequestTimes": "600-900",
+                "hMaxReusableSecs": "1800-3000"
+              },
+              "headers": {},
+              "noGRPCHeader": false,
+              "xPaddingBytes": "100-1000",
+              "scMaxEachPostBytes": 1000000,
+              "scMinPostsIntervalMs": 30,
+              "scStreamUpServerSecs": "20-80"
+            }
+          }
+        }
+      },
+      {
+        "tag": "direct",
+        "protocol": "freedom"
+      },
+      {
+        "tag": "block",
+        "protocol": "blackhole"
+      }
+    ],
+    "routing": {
+      "domainStrategy": "AsIs",
+      "balancers": [],
+      "rules": [
+        {
+          "type": "field",
+          "network": "tcp,udp",
+          "outboundTag": "node-ru-1"
+        }
+      ]
+    }
+  },
+  {
+    "remarks": "🇺🇸 США #25 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
+    "log": {
+      "loglevel": "warning"
+    },
+    "dns": {
+      "hosts": {
+        "cloudflare-dns.com": "1.1.1.1"
+      },
+      "servers": [
+        "https://cloudflare-dns.com/dns-query"
+      ],
+      "queryStrategy": "UseIPv4"
+    },
+    "inbounds": [
+      {
+        "tag": "socks",
+        "listen": "127.0.0.1",
+        "port": 10808,
+        "protocol": "socks",
+        "settings": {
+          "udp": true
+        },
+        "sniffing": {
+          "enabled": true,
+          "destOverride": [
+            "http",
+            "tls",
+            "quic"
+          ]
+        }
+      },
+      {
+        "tag": "http",
+        "listen": "127.0.0.1",
+        "port": 10809,
+        "protocol": "http"
+      }
+    ],
+    "outbounds": [
+      {
+        "tag": "node-ru-1",
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "159.194.248.11",
+              "port": 443,
+              "users": [
+                {
+                  "id": "d40fdcdb-8d6f-406d-a050-12e196fe8804",
+                  "encryption": "none"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "xhttp",
+          "security": "reality",
+          "realitySettings": {
+            "serverName": "api-maps.yandex.ru",
+            "fingerprint": "firefox",
+            "publicKey": "yQfhPYAXsz1EqKpOglHh72NzJsf9YoPuD1bjMC-DDiM",
+            "shortId": "",
+            "spiderX": "/"
+          },
+          "xhttpSettings": {
+            "path": "/api/v2/updates",
+            "mode": "stream-one",
+            "host": "api-maps.yandex.ru",
+            "extra": {
+              "xmux": {
+                "cMaxReuseTimes": 0,
+                "maxConcurrency": "16-32",
+                "maxConnections": 0,
+                "hKeepAlivePeriod": 0,
+                "hMaxRequestTimes": "600-900",
+                "hMaxReusableSecs": "1800-3000"
+              },
+              "headers": {},
+              "noGRPCHeader": false,
+              "xPaddingBytes": "100-1000",
+              "scMaxEachPostBytes": 1000000,
+              "scMinPostsIntervalMs": 30,
+              "scStreamUpServerSecs": "20-80"
+            }
+          }
+        }
+      },
+      {
+        "tag": "direct",
+        "protocol": "freedom"
+      },
+      {
+        "tag": "block",
+        "protocol": "blackhole"
+      }
+    ],
+    "routing": {
+      "domainStrategy": "AsIs",
+      "balancers": [],
+      "rules": [
+        {
+          "type": "field",
+          "network": "tcp,udp",
+          "outboundTag": "node-ru-1"
+        }
+      ]
+    }
+  },
+  {
+    "remarks": "🇺🇸 США #26 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
+    "log": {
+      "loglevel": "warning"
+    },
+    "dns": {
+      "hosts": {
+        "cloudflare-dns.com": "1.1.1.1"
+      },
+      "servers": [
+        "https://cloudflare-dns.com/dns-query"
+      ],
+      "queryStrategy": "UseIPv4"
+    },
+    "inbounds": [
+      {
+        "tag": "socks",
+        "listen": "127.0.0.1",
+        "port": 10808,
+        "protocol": "socks",
+        "settings": {
+          "udp": true
+        },
+        "sniffing": {
+          "enabled": true,
+          "destOverride": [
+            "http",
+            "tls",
+            "quic"
+          ]
+        }
+      },
+      {
+        "tag": "http",
+        "listen": "127.0.0.1",
+        "port": 10809,
+        "protocol": "http"
+      }
+    ],
+    "outbounds": [
+      {
+        "tag": "node-ru-1",
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "201.58.177.229",
+              "port": 443,
+              "users": [
+                {
+                  "id": "50a87e21-f0e2-4b53-a787-91adfe748f63",
+                  "encryption": "none",
+                  "flow": "xtls-rprx-vision"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "tcp",
+          "security": "reality",
+          "realitySettings": {
+            "serverName": "swidenafterlanzerotte.space",
+            "fingerprint": "firefox",
+            "publicKey": "MQrvfivvEfLGzDee7h0j5uC-DwaD_38_NXOY9-NhqxM",
+            "shortId": "",
+            "spiderX": "/"
+          }
+        }
+      },
+      {
+        "tag": "direct",
+        "protocol": "freedom"
+      },
+      {
+        "tag": "block",
+        "protocol": "blackhole"
+      }
+    ],
+    "routing": {
+      "domainStrategy": "AsIs",
+      "balancers": [],
+      "rules": [
+        {
+          "type": "field",
+          "network": "tcp,udp",
+          "outboundTag": "node-ru-1"
+        }
+      ]
+    }
+  },
+  {
+    "remarks": "🇺🇸 США #27 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
     "log": {
       "loglevel": "warning"
     },
@@ -5287,7 +2764,7 @@
           "security": "reality",
           "realitySettings": {
             "serverName": "swidenafterlanzerotte.space",
-            "fingerprint": "chrome",
+            "fingerprint": "qq",
             "publicKey": "MQrvfivvEfLGzDee7h0j5uC-DwaD_38_NXOY9-NhqxM",
             "shortId": "",
             "spiderX": "/"
@@ -5316,751 +2793,7 @@
     }
   },
   {
-    "remarks": "🇷🇸 Сербия #5 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
-    "log": {
-      "loglevel": "warning"
-    },
-    "dns": {
-      "hosts": {
-        "cloudflare-dns.com": "1.1.1.1"
-      },
-      "servers": [
-        "https://cloudflare-dns.com/dns-query"
-      ],
-      "queryStrategy": "UseIPv4"
-    },
-    "inbounds": [
-      {
-        "tag": "socks",
-        "listen": "127.0.0.1",
-        "port": 10808,
-        "protocol": "socks",
-        "settings": {
-          "udp": true
-        },
-        "sniffing": {
-          "enabled": true,
-          "destOverride": [
-            "http",
-            "tls",
-            "quic"
-          ]
-        }
-      },
-      {
-        "tag": "http",
-        "listen": "127.0.0.1",
-        "port": 10809,
-        "protocol": "http"
-      }
-    ],
-    "outbounds": [
-      {
-        "tag": "node-ru-1",
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "150.40.126.22",
-              "port": 443,
-              "users": [
-                {
-                  "id": "2f35965a-9a9b-45fd-ba32-987296dfb6be",
-                  "encryption": "none"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "grpc",
-          "security": "reality",
-          "realitySettings": {
-            "serverName": "rs4.univesalsrv.com",
-            "fingerprint": "chrome",
-            "publicKey": "sXsJ4ET-50TYqlhKZf03nPQr2JIy1F0D4m6lOsI0cAs",
-            "shortId": "861ac7d66953e55f",
-            "spiderX": "/"
-          },
-          "grpcSettings": {
-            "serviceName": "media.v1.StreamService"
-          }
-        }
-      },
-      {
-        "tag": "direct",
-        "protocol": "freedom"
-      },
-      {
-        "tag": "block",
-        "protocol": "blackhole"
-      }
-    ],
-    "routing": {
-      "domainStrategy": "AsIs",
-      "balancers": [],
-      "rules": [
-        {
-          "type": "field",
-          "network": "tcp,udp",
-          "outboundTag": "node-ru-1"
-        }
-      ]
-    }
-  },
-  {
-    "remarks": "🇸🇬 Сингапур #1 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
-    "log": {
-      "loglevel": "warning"
-    },
-    "dns": {
-      "hosts": {
-        "cloudflare-dns.com": "1.1.1.1"
-      },
-      "servers": [
-        "https://cloudflare-dns.com/dns-query"
-      ],
-      "queryStrategy": "UseIPv4"
-    },
-    "inbounds": [
-      {
-        "tag": "socks",
-        "listen": "127.0.0.1",
-        "port": 10808,
-        "protocol": "socks",
-        "settings": {
-          "udp": true
-        },
-        "sniffing": {
-          "enabled": true,
-          "destOverride": [
-            "http",
-            "tls",
-            "quic"
-          ]
-        }
-      },
-      {
-        "tag": "http",
-        "listen": "127.0.0.1",
-        "port": 10809,
-        "protocol": "http"
-      }
-    ],
-    "outbounds": [
-      {
-        "tag": "node-ru-1",
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "206.206.76.75",
-              "port": 443,
-              "users": [
-                {
-                  "id": "1e3d3634-36ac-43ac-a439-9665d885238f",
-                  "encryption": "none",
-                  "flow": "xtls-rprx-vision"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "tcp",
-          "security": "reality",
-          "realitySettings": {
-            "serverName": "www.cloudflare.com",
-            "fingerprint": "firefox",
-            "publicKey": "TqIFzUEEI1pIOR8BEpkNKEXcJ6cPfE5EzHb5joIivig",
-            "shortId": "9930177816ab09da",
-            "spiderX": "/"
-          }
-        }
-      },
-      {
-        "tag": "direct",
-        "protocol": "freedom"
-      },
-      {
-        "tag": "block",
-        "protocol": "blackhole"
-      }
-    ],
-    "routing": {
-      "domainStrategy": "AsIs",
-      "balancers": [],
-      "rules": [
-        {
-          "type": "field",
-          "network": "tcp,udp",
-          "outboundTag": "node-ru-1"
-        }
-      ]
-    }
-  },
-  {
-    "remarks": "🇸🇬 Сингапур #2 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
-    "log": {
-      "loglevel": "warning"
-    },
-    "dns": {
-      "hosts": {
-        "cloudflare-dns.com": "1.1.1.1"
-      },
-      "servers": [
-        "https://cloudflare-dns.com/dns-query"
-      ],
-      "queryStrategy": "UseIPv4"
-    },
-    "inbounds": [
-      {
-        "tag": "socks",
-        "listen": "127.0.0.1",
-        "port": 10808,
-        "protocol": "socks",
-        "settings": {
-          "udp": true
-        },
-        "sniffing": {
-          "enabled": true,
-          "destOverride": [
-            "http",
-            "tls",
-            "quic"
-          ]
-        }
-      },
-      {
-        "tag": "http",
-        "listen": "127.0.0.1",
-        "port": 10809,
-        "protocol": "http"
-      }
-    ],
-    "outbounds": [
-      {
-        "tag": "node-ru-1",
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "46.137.202.178",
-              "port": 12512,
-              "users": [
-                {
-                  "id": "2a6c617d-98e4-49c3-95ab-76f02fcf0150",
-                  "encryption": "none",
-                  "flow": "xtls-rprx-vision"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "tcp",
-          "security": "reality",
-          "realitySettings": {
-            "serverName": "www.intel.com",
-            "fingerprint": "firefox",
-            "publicKey": "sO0RBMr_l8TLtZaYBX8n3NdI9AtaugUqJpCR1szNsyA",
-            "shortId": "e692a8250d2e2fd0",
-            "spiderX": "/"
-          }
-        }
-      },
-      {
-        "tag": "direct",
-        "protocol": "freedom"
-      },
-      {
-        "tag": "block",
-        "protocol": "blackhole"
-      }
-    ],
-    "routing": {
-      "domainStrategy": "AsIs",
-      "balancers": [],
-      "rules": [
-        {
-          "type": "field",
-          "network": "tcp,udp",
-          "outboundTag": "node-ru-1"
-        }
-      ]
-    }
-  },
-  {
-    "remarks": "🇸🇬 Сингапур #3 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
-    "log": {
-      "loglevel": "warning"
-    },
-    "dns": {
-      "hosts": {
-        "cloudflare-dns.com": "1.1.1.1"
-      },
-      "servers": [
-        "https://cloudflare-dns.com/dns-query"
-      ],
-      "queryStrategy": "UseIPv4"
-    },
-    "inbounds": [
-      {
-        "tag": "socks",
-        "listen": "127.0.0.1",
-        "port": 10808,
-        "protocol": "socks",
-        "settings": {
-          "udp": true
-        },
-        "sniffing": {
-          "enabled": true,
-          "destOverride": [
-            "http",
-            "tls",
-            "quic"
-          ]
-        }
-      },
-      {
-        "tag": "http",
-        "listen": "127.0.0.1",
-        "port": 10809,
-        "protocol": "http"
-      }
-    ],
-    "outbounds": [
-      {
-        "tag": "node-ru-1",
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "139.162.27.96",
-              "port": 2096,
-              "users": [
-                {
-                  "id": "6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2",
-                  "encryption": "none"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "ws",
-          "security": "tls",
-          "tlsSettings": {
-            "fingerprint": "firefox",
-            "allowInsecure": false,
-            "serverName": "free-server.techsonic.dev"
-          },
-          "wsSettings": {
-            "path": "/free-server.techsonic.dev",
-            "headers": {
-              "Host": "free-server.techsonic.dev"
-            }
-          }
-        }
-      },
-      {
-        "tag": "direct",
-        "protocol": "freedom"
-      },
-      {
-        "tag": "block",
-        "protocol": "blackhole"
-      }
-    ],
-    "routing": {
-      "domainStrategy": "AsIs",
-      "balancers": [],
-      "rules": [
-        {
-          "type": "field",
-          "network": "tcp,udp",
-          "outboundTag": "node-ru-1"
-        }
-      ]
-    }
-  },
-  {
-    "remarks": "🇸🇬 Сингапур #4 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
-    "log": {
-      "loglevel": "warning"
-    },
-    "dns": {
-      "hosts": {
-        "cloudflare-dns.com": "1.1.1.1"
-      },
-      "servers": [
-        "https://cloudflare-dns.com/dns-query"
-      ],
-      "queryStrategy": "UseIPv4"
-    },
-    "inbounds": [
-      {
-        "tag": "socks",
-        "listen": "127.0.0.1",
-        "port": 10808,
-        "protocol": "socks",
-        "settings": {
-          "udp": true
-        },
-        "sniffing": {
-          "enabled": true,
-          "destOverride": [
-            "http",
-            "tls",
-            "quic"
-          ]
-        }
-      },
-      {
-        "tag": "http",
-        "listen": "127.0.0.1",
-        "port": 10809,
-        "protocol": "http"
-      }
-    ],
-    "outbounds": [
-      {
-        "tag": "node-ru-1",
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "3.0.111.82",
-              "port": 17623,
-              "users": [
-                {
-                  "id": "814bd064-544d-4255-a070-5705c03f6da9",
-                  "encryption": "none",
-                  "flow": "xtls-rprx-vision"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "tcp",
-          "security": "reality",
-          "realitySettings": {
-            "serverName": "www.apple.com",
-            "fingerprint": "safari",
-            "publicKey": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
-            "shortId": "48050fab",
-            "spiderX": "/"
-          }
-        }
-      },
-      {
-        "tag": "direct",
-        "protocol": "freedom"
-      },
-      {
-        "tag": "block",
-        "protocol": "blackhole"
-      }
-    ],
-    "routing": {
-      "domainStrategy": "AsIs",
-      "balancers": [],
-      "rules": [
-        {
-          "type": "field",
-          "network": "tcp,udp",
-          "outboundTag": "node-ru-1"
-        }
-      ]
-    }
-  },
-  {
-    "remarks": "🇸🇬 Сингапур #5 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
-    "log": {
-      "loglevel": "warning"
-    },
-    "dns": {
-      "hosts": {
-        "cloudflare-dns.com": "1.1.1.1"
-      },
-      "servers": [
-        "https://cloudflare-dns.com/dns-query"
-      ],
-      "queryStrategy": "UseIPv4"
-    },
-    "inbounds": [
-      {
-        "tag": "socks",
-        "listen": "127.0.0.1",
-        "port": 10808,
-        "protocol": "socks",
-        "settings": {
-          "udp": true
-        },
-        "sniffing": {
-          "enabled": true,
-          "destOverride": [
-            "http",
-            "tls",
-            "quic"
-          ]
-        }
-      },
-      {
-        "tag": "http",
-        "listen": "127.0.0.1",
-        "port": 10809,
-        "protocol": "http"
-      }
-    ],
-    "outbounds": [
-      {
-        "tag": "node-ru-1",
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "8.35.211.242",
-              "port": 443,
-              "users": [
-                {
-                  "id": "fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349",
-                  "encryption": "none"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "ws",
-          "security": "tls",
-          "tlsSettings": {
-            "fingerprint": "chrome",
-            "allowInsecure": false,
-            "serverName": "vpn.cintaku.qzz.io"
-          },
-          "wsSettings": {
-            "path": "/vlessws",
-            "headers": {
-              "Host": "vpn.cintaku.qzz.io"
-            }
-          }
-        }
-      },
-      {
-        "tag": "direct",
-        "protocol": "freedom"
-      },
-      {
-        "tag": "block",
-        "protocol": "blackhole"
-      }
-    ],
-    "routing": {
-      "domainStrategy": "AsIs",
-      "balancers": [],
-      "rules": [
-        {
-          "type": "field",
-          "network": "tcp,udp",
-          "outboundTag": "node-ru-1"
-        }
-      ]
-    }
-  },
-  {
-    "remarks": "🇹🇷 Турция #5 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
-    "log": {
-      "loglevel": "warning"
-    },
-    "dns": {
-      "hosts": {
-        "cloudflare-dns.com": "1.1.1.1"
-      },
-      "servers": [
-        "https://cloudflare-dns.com/dns-query"
-      ],
-      "queryStrategy": "UseIPv4"
-    },
-    "inbounds": [
-      {
-        "tag": "socks",
-        "listen": "127.0.0.1",
-        "port": 10808,
-        "protocol": "socks",
-        "settings": {
-          "udp": true
-        },
-        "sniffing": {
-          "enabled": true,
-          "destOverride": [
-            "http",
-            "tls",
-            "quic"
-          ]
-        }
-      },
-      {
-        "tag": "http",
-        "listen": "127.0.0.1",
-        "port": 10809,
-        "protocol": "http"
-      }
-    ],
-    "outbounds": [
-      {
-        "tag": "node-ru-1",
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "62.133.63.45",
-              "port": 8444,
-              "users": [
-                {
-                  "id": "a346c521-7a7f-452b-9356-a4893feb5982",
-                  "encryption": "none"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "grpc",
-          "security": "reality",
-          "realitySettings": {
-            "serverName": "github.com",
-            "fingerprint": "chrome",
-            "publicKey": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
-            "shortId": "457fab2ac885dbe0",
-            "spiderX": "/"
-          },
-          "grpcSettings": {
-            "serviceName": "GunService"
-          }
-        }
-      },
-      {
-        "tag": "direct",
-        "protocol": "freedom"
-      },
-      {
-        "tag": "block",
-        "protocol": "blackhole"
-      }
-    ],
-    "routing": {
-      "domainStrategy": "AsIs",
-      "balancers": [],
-      "rules": [
-        {
-          "type": "field",
-          "network": "tcp,udp",
-          "outboundTag": "node-ru-1"
-        }
-      ]
-    }
-  },
-  {
-    "remarks": "🇫🇮 Финляндия #5 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
-    "log": {
-      "loglevel": "warning"
-    },
-    "dns": {
-      "hosts": {
-        "cloudflare-dns.com": "1.1.1.1"
-      },
-      "servers": [
-        "https://cloudflare-dns.com/dns-query"
-      ],
-      "queryStrategy": "UseIPv4"
-    },
-    "inbounds": [
-      {
-        "tag": "socks",
-        "listen": "127.0.0.1",
-        "port": 10808,
-        "protocol": "socks",
-        "settings": {
-          "udp": true
-        },
-        "sniffing": {
-          "enabled": true,
-          "destOverride": [
-            "http",
-            "tls",
-            "quic"
-          ]
-        }
-      },
-      {
-        "tag": "http",
-        "listen": "127.0.0.1",
-        "port": 10809,
-        "protocol": "http"
-      }
-    ],
-    "outbounds": [
-      {
-        "tag": "node-ru-1",
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "se14-node.rumedia-cdn.com",
-              "port": 2096,
-              "users": [
-                {
-                  "id": "d1641bc6-3757-43db-815a-9b3f4d9b0d7e",
-                  "encryption": "none"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "ws",
-          "security": "tls",
-          "tlsSettings": {
-            "fingerprint": "chrome",
-            "allowInsecure": false,
-            "serverName": "st33614.rumedia-cdn.com",
-            "alpn": [
-              "http/1.1"
-            ]
-          },
-          "wsSettings": {
-            "path": "/cdn/v3/live",
-            "headers": {
-              "Host": "st33614.rumedia-cdn.com"
-            }
-          }
-        }
-      },
-      {
-        "tag": "direct",
-        "protocol": "freedom"
-      },
-      {
-        "tag": "block",
-        "protocol": "blackhole"
-      }
-    ],
-    "routing": {
-      "domainStrategy": "AsIs",
-      "balancers": [],
-      "rules": [
-        {
-          "type": "field",
-          "network": "tcp,udp",
-          "outboundTag": "node-ru-1"
-        }
-      ]
-    }
-  },
-  {
-    "remarks": "🇫🇮 Финляндия #6 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
+    "remarks": "🇫🇮 Финляндия #18 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
     "log": {
       "loglevel": "warning"
     },
@@ -6149,7 +2882,7 @@
     }
   },
   {
-    "remarks": "🇫🇮 Финляндия #7 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
+    "remarks": "🇫🇮 Финляндия #19 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
     "log": {
       "loglevel": "warning"
     },
@@ -6210,7 +2943,7 @@
           "network": "tcp",
           "security": "tls",
           "tlsSettings": {
-            "fingerprint": "chrome",
+            "fingerprint": "edge",
             "allowInsecure": false,
             "serverName": "fast23.slopllex.app"
           }
@@ -6238,7 +2971,7 @@
     }
   },
   {
-    "remarks": "🇫🇮 Финляндия #8 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
+    "remarks": "🇫🇮 Финляндия #20 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
     "log": {
       "loglevel": "warning"
     },
@@ -6283,29 +3016,25 @@
         "settings": {
           "vnext": [
             {
-              "address": "36a466g.fi1.h1clayd.click",
+              "address": "fast23.slopllex.app",
               "port": 443,
               "users": [
                 {
-                  "id": "9a0e84f8-4b58-477f-99da-5fac5a2e58e8",
-                  "encryption": "none"
+                  "id": "24f10224-ca83-4452-85a9-b3a68d2b76fa",
+                  "encryption": "none",
+                  "flow": "xtls-rprx-vision"
                 }
               ]
             }
           ]
         },
         "streamSettings": {
-          "network": "grpc",
-          "security": "reality",
-          "realitySettings": {
-            "serverName": "36a466g.fi1.h1clayd.click",
-            "fingerprint": "safari",
-            "publicKey": "pAgrBKJCmuSJHIzYkEJTqsOBOVBK_DMtEqFPo-PaTkg",
-            "shortId": "b3c9d0c6bdd114a6",
-            "spiderX": "/"
-          },
-          "grpcSettings": {
-            "serviceName": "0adb9638509b"
+          "network": "tcp",
+          "security": "tls",
+          "tlsSettings": {
+            "fingerprint": "ios",
+            "allowInsecure": false,
+            "serverName": "fast23.slopllex.app"
           }
         }
       },
@@ -6331,7 +3060,7 @@
     }
   },
   {
-    "remarks": "🇫🇮 Финляндия #9 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
+    "remarks": "🇫🇮 Финляндия #21 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
     "log": {
       "loglevel": "warning"
     },
@@ -6376,29 +3105,25 @@
         "settings": {
           "vnext": [
             {
-              "address": "36a466g.fi1.h1clayd.click",
+              "address": "fast23.slopllex.app",
               "port": 443,
               "users": [
                 {
-                  "id": "9a0e84f8-4b58-477f-99da-5fac5a2e58e8",
-                  "encryption": "none"
+                  "id": "24f10224-ca83-4452-85a9-b3a68d2b76fa",
+                  "encryption": "none",
+                  "flow": "xtls-rprx-vision"
                 }
               ]
             }
           ]
         },
         "streamSettings": {
-          "network": "grpc",
-          "security": "reality",
-          "realitySettings": {
-            "serverName": "36a466g.fi1.h1clayd.click",
-            "fingerprint": "chrome",
-            "publicKey": "pAgrBKJCmuSJHIzYkEJTqsOBOVBK_DMtEqFPo-PaTkg",
-            "shortId": "b3c9d0c6bdd114a6",
-            "spiderX": "/"
-          },
-          "grpcSettings": {
-            "serviceName": "0adb9638509b"
+          "network": "tcp",
+          "security": "tls",
+          "tlsSettings": {
+            "fingerprint": "edge",
+            "allowInsecure": false,
+            "serverName": "fast23.slopllex.app"
           }
         }
       },
@@ -6424,7 +3149,7 @@
     }
   },
   {
-    "remarks": "🇫🇮 Финляндия #10 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
+    "remarks": "🇫🇮 Финляндия #22 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
     "log": {
       "loglevel": "warning"
     },
@@ -6514,7 +3239,7 @@
     }
   },
   {
-    "remarks": "🇫🇮 Финляндия #11 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
+    "remarks": "🇸🇪 Швеция #20 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
     "log": {
       "loglevel": "warning"
     },
@@ -6559,828 +3284,7 @@
         "settings": {
           "vnext": [
             {
-              "address": "3f8efdt.fi1.h1clayd.click",
-              "port": 443,
-              "users": [
-                {
-                  "id": "9a0e84f8-4b58-477f-99da-5fac5a2e58e8",
-                  "encryption": "none"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "tcp",
-          "security": "reality",
-          "realitySettings": {
-            "serverName": "3f8efdt.fi1.h1clayd.click",
-            "fingerprint": "qq",
-            "publicKey": "1D_o1pqfVoReg9zLPKNy1wCL7aGWytbmbYPbbJGaozY",
-            "shortId": "023a1e6ffc32be10",
-            "spiderX": "/"
-          }
-        }
-      },
-      {
-        "tag": "direct",
-        "protocol": "freedom"
-      },
-      {
-        "tag": "block",
-        "protocol": "blackhole"
-      }
-    ],
-    "routing": {
-      "domainStrategy": "AsIs",
-      "balancers": [],
-      "rules": [
-        {
-          "type": "field",
-          "network": "tcp,udp",
-          "outboundTag": "node-ru-1"
-        }
-      ]
-    }
-  },
-  {
-    "remarks": "🇫🇷 Франция #7 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
-    "log": {
-      "loglevel": "warning"
-    },
-    "dns": {
-      "hosts": {
-        "cloudflare-dns.com": "1.1.1.1"
-      },
-      "servers": [
-        "https://cloudflare-dns.com/dns-query"
-      ],
-      "queryStrategy": "UseIPv4"
-    },
-    "inbounds": [
-      {
-        "tag": "socks",
-        "listen": "127.0.0.1",
-        "port": 10808,
-        "protocol": "socks",
-        "settings": {
-          "udp": true
-        },
-        "sniffing": {
-          "enabled": true,
-          "destOverride": [
-            "http",
-            "tls",
-            "quic"
-          ]
-        }
-      },
-      {
-        "tag": "http",
-        "listen": "127.0.0.1",
-        "port": 10809,
-        "protocol": "http"
-      }
-    ],
-    "outbounds": [
-      {
-        "tag": "node-ru-1",
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "147.45.47.114",
-              "port": 443,
-              "users": [
-                {
-                  "id": "fd0a5c32-afc0-4d57-b95a-ca6ec8f93e87",
-                  "encryption": "none",
-                  "flow": "xtls-rprx-vision"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "tcp",
-          "security": "reality",
-          "realitySettings": {
-            "serverName": "ozon.ru",
-            "fingerprint": "chrome",
-            "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-            "shortId": "",
-            "spiderX": "/"
-          }
-        }
-      },
-      {
-        "tag": "direct",
-        "protocol": "freedom"
-      },
-      {
-        "tag": "block",
-        "protocol": "blackhole"
-      }
-    ],
-    "routing": {
-      "domainStrategy": "AsIs",
-      "balancers": [],
-      "rules": [
-        {
-          "type": "field",
-          "network": "tcp,udp",
-          "outboundTag": "node-ru-1"
-        }
-      ]
-    }
-  },
-  {
-    "remarks": "🇫🇷 Франция #8 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
-    "log": {
-      "loglevel": "warning"
-    },
-    "dns": {
-      "hosts": {
-        "cloudflare-dns.com": "1.1.1.1"
-      },
-      "servers": [
-        "https://cloudflare-dns.com/dns-query"
-      ],
-      "queryStrategy": "UseIPv4"
-    },
-    "inbounds": [
-      {
-        "tag": "socks",
-        "listen": "127.0.0.1",
-        "port": 10808,
-        "protocol": "socks",
-        "settings": {
-          "udp": true
-        },
-        "sniffing": {
-          "enabled": true,
-          "destOverride": [
-            "http",
-            "tls",
-            "quic"
-          ]
-        }
-      },
-      {
-        "tag": "http",
-        "listen": "127.0.0.1",
-        "port": 10809,
-        "protocol": "http"
-      }
-    ],
-    "outbounds": [
-      {
-        "tag": "node-ru-1",
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "62.210.24.143",
-              "port": 32202,
-              "users": [
-                {
-                  "id": "28148be2-61a7-4f36-8adb-030cc9f82bd0",
-                  "encryption": "none"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "xhttp",
-          "security": "reality",
-          "realitySettings": {
-            "serverName": "www.amazon.com",
-            "fingerprint": "firefox",
-            "publicKey": "bGe_-nAtOq6_w_2mv6pcmD8RzJP65Tti-vyMP2hAwDc",
-            "shortId": "f57d8f26",
-            "spiderX": "/"
-          },
-          "xhttpSettings": {
-            "path": "/G3EEoH63",
-            "mode": "auto",
-            "host": "www.amazon.com"
-          }
-        }
-      },
-      {
-        "tag": "direct",
-        "protocol": "freedom"
-      },
-      {
-        "tag": "block",
-        "protocol": "blackhole"
-      }
-    ],
-    "routing": {
-      "domainStrategy": "AsIs",
-      "balancers": [],
-      "rules": [
-        {
-          "type": "field",
-          "network": "tcp,udp",
-          "outboundTag": "node-ru-1"
-        }
-      ]
-    }
-  },
-  {
-    "remarks": "🇫🇷 Франция #9 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
-    "log": {
-      "loglevel": "warning"
-    },
-    "dns": {
-      "hosts": {
-        "cloudflare-dns.com": "1.1.1.1"
-      },
-      "servers": [
-        "https://cloudflare-dns.com/dns-query"
-      ],
-      "queryStrategy": "UseIPv4"
-    },
-    "inbounds": [
-      {
-        "tag": "socks",
-        "listen": "127.0.0.1",
-        "port": 10808,
-        "protocol": "socks",
-        "settings": {
-          "udp": true
-        },
-        "sniffing": {
-          "enabled": true,
-          "destOverride": [
-            "http",
-            "tls",
-            "quic"
-          ]
-        }
-      },
-      {
-        "tag": "http",
-        "listen": "127.0.0.1",
-        "port": 10809,
-        "protocol": "http"
-      }
-    ],
-    "outbounds": [
-      {
-        "tag": "node-ru-1",
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "45.151.71.152",
-              "port": 443,
-              "users": [
-                {
-                  "id": "8a1f8853-9a71-4ef2-a64c-4f0a94c2e14b",
-                  "encryption": "none",
-                  "flow": "xtls-rprx-vision"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "tcp",
-          "security": "reality",
-          "realitySettings": {
-            "serverName": "abuse.ozon.ru",
-            "fingerprint": "firefox",
-            "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-            "shortId": "",
-            "spiderX": "/"
-          }
-        }
-      },
-      {
-        "tag": "direct",
-        "protocol": "freedom"
-      },
-      {
-        "tag": "block",
-        "protocol": "blackhole"
-      }
-    ],
-    "routing": {
-      "domainStrategy": "AsIs",
-      "balancers": [],
-      "rules": [
-        {
-          "type": "field",
-          "network": "tcp,udp",
-          "outboundTag": "node-ru-1"
-        }
-      ]
-    }
-  },
-  {
-    "remarks": "🇫🇷 Франция #10 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
-    "log": {
-      "loglevel": "warning"
-    },
-    "dns": {
-      "hosts": {
-        "cloudflare-dns.com": "1.1.1.1"
-      },
-      "servers": [
-        "https://cloudflare-dns.com/dns-query"
-      ],
-      "queryStrategy": "UseIPv4"
-    },
-    "inbounds": [
-      {
-        "tag": "socks",
-        "listen": "127.0.0.1",
-        "port": 10808,
-        "protocol": "socks",
-        "settings": {
-          "udp": true
-        },
-        "sniffing": {
-          "enabled": true,
-          "destOverride": [
-            "http",
-            "tls",
-            "quic"
-          ]
-        }
-      },
-      {
-        "tag": "http",
-        "listen": "127.0.0.1",
-        "port": 10809,
-        "protocol": "http"
-      }
-    ],
-    "outbounds": [
-      {
-        "tag": "node-ru-1",
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "147.45.47.89",
-              "port": 443,
-              "users": [
-                {
-                  "id": "fd0a5c32-afc0-4d57-b95a-ca6ec8f93e87",
-                  "encryption": "none",
-                  "flow": "xtls-rprx-vision"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "tcp",
-          "security": "reality",
-          "realitySettings": {
-            "serverName": "ozon.ru",
-            "fingerprint": "firefox",
-            "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-            "shortId": "",
-            "spiderX": "/"
-          }
-        }
-      },
-      {
-        "tag": "direct",
-        "protocol": "freedom"
-      },
-      {
-        "tag": "block",
-        "protocol": "blackhole"
-      }
-    ],
-    "routing": {
-      "domainStrategy": "AsIs",
-      "balancers": [],
-      "rules": [
-        {
-          "type": "field",
-          "network": "tcp,udp",
-          "outboundTag": "node-ru-1"
-        }
-      ]
-    }
-  },
-  {
-    "remarks": "🇨🇿 Чехия #1 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
-    "log": {
-      "loglevel": "warning"
-    },
-    "dns": {
-      "hosts": {
-        "cloudflare-dns.com": "1.1.1.1"
-      },
-      "servers": [
-        "https://cloudflare-dns.com/dns-query"
-      ],
-      "queryStrategy": "UseIPv4"
-    },
-    "inbounds": [
-      {
-        "tag": "socks",
-        "listen": "127.0.0.1",
-        "port": 10808,
-        "protocol": "socks",
-        "settings": {
-          "udp": true
-        },
-        "sniffing": {
-          "enabled": true,
-          "destOverride": [
-            "http",
-            "tls",
-            "quic"
-          ]
-        }
-      },
-      {
-        "tag": "http",
-        "listen": "127.0.0.1",
-        "port": 10809,
-        "protocol": "http"
-      }
-    ],
-    "outbounds": [
-      {
-        "tag": "node-ru-1",
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "195.123.245.241",
-              "port": 443,
-              "users": [
-                {
-                  "id": "7c053ca8-38cc-45e2-930c-eda1fd66f903",
-                  "encryption": "none",
-                  "flow": "xtls-rprx-vision"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "tcp",
-          "security": "reality",
-          "realitySettings": {
-            "serverName": "gateway.icloud.com",
-            "fingerprint": "firefox",
-            "publicKey": "hlY5ce1UsVIgE46y5PlEZhUsSaXUnCtoDLLaGrhInjw",
-            "shortId": "23d0950d60bc0d5b",
-            "spiderX": "/"
-          }
-        }
-      },
-      {
-        "tag": "direct",
-        "protocol": "freedom"
-      },
-      {
-        "tag": "block",
-        "protocol": "blackhole"
-      }
-    ],
-    "routing": {
-      "domainStrategy": "AsIs",
-      "balancers": [],
-      "rules": [
-        {
-          "type": "field",
-          "network": "tcp,udp",
-          "outboundTag": "node-ru-1"
-        }
-      ]
-    }
-  },
-  {
-    "remarks": "🇨🇭 Швейцария #1 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
-    "log": {
-      "loglevel": "warning"
-    },
-    "dns": {
-      "hosts": {
-        "cloudflare-dns.com": "1.1.1.1"
-      },
-      "servers": [
-        "https://cloudflare-dns.com/dns-query"
-      ],
-      "queryStrategy": "UseIPv4"
-    },
-    "inbounds": [
-      {
-        "tag": "socks",
-        "listen": "127.0.0.1",
-        "port": 10808,
-        "protocol": "socks",
-        "settings": {
-          "udp": true
-        },
-        "sniffing": {
-          "enabled": true,
-          "destOverride": [
-            "http",
-            "tls",
-            "quic"
-          ]
-        }
-      },
-      {
-        "tag": "http",
-        "listen": "127.0.0.1",
-        "port": 10809,
-        "protocol": "http"
-      }
-    ],
-    "outbounds": [
-      {
-        "tag": "node-ru-1",
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "208.69.78.217",
-              "port": 2053,
-              "users": [
-                {
-                  "id": "c0dd6d59-1573-43af-8b70-1470b2632a6d",
-                  "encryption": "none"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "tcp",
-          "security": "reality",
-          "realitySettings": {
-            "serverName": "www.apple.com",
-            "fingerprint": "chrome",
-            "publicKey": "A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0",
-            "shortId": "ad86e2d52ff40ebd",
-            "spiderX": "/"
-          }
-        }
-      },
-      {
-        "tag": "direct",
-        "protocol": "freedom"
-      },
-      {
-        "tag": "block",
-        "protocol": "blackhole"
-      }
-    ],
-    "routing": {
-      "domainStrategy": "AsIs",
-      "balancers": [],
-      "rules": [
-        {
-          "type": "field",
-          "network": "tcp,udp",
-          "outboundTag": "node-ru-1"
-        }
-      ]
-    }
-  },
-  {
-    "remarks": "🇨🇭 Швейцария #2 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
-    "log": {
-      "loglevel": "warning"
-    },
-    "dns": {
-      "hosts": {
-        "cloudflare-dns.com": "1.1.1.1"
-      },
-      "servers": [
-        "https://cloudflare-dns.com/dns-query"
-      ],
-      "queryStrategy": "UseIPv4"
-    },
-    "inbounds": [
-      {
-        "tag": "socks",
-        "listen": "127.0.0.1",
-        "port": 10808,
-        "protocol": "socks",
-        "settings": {
-          "udp": true
-        },
-        "sniffing": {
-          "enabled": true,
-          "destOverride": [
-            "http",
-            "tls",
-            "quic"
-          ]
-        }
-      },
-      {
-        "tag": "http",
-        "listen": "127.0.0.1",
-        "port": 10809,
-        "protocol": "http"
-      }
-    ],
-    "outbounds": [
-      {
-        "tag": "node-ru-1",
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "lv2.himoy.space",
-              "port": 443,
-              "users": [
-                {
-                  "id": "5131b5e9-2c3c-44a0-8f18-0641f3f21cac",
-                  "encryption": "none",
-                  "flow": "xtls-rprx-vision"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "tcp",
-          "security": "reality",
-          "realitySettings": {
-            "serverName": "lv2.himoy.space",
-            "fingerprint": "chrome",
-            "publicKey": "AoPku9i0xSD2cCzJdPcUSSft8c_RkIZbsbP888VO938",
-            "shortId": "287b3d62899669d7",
-            "spiderX": "/"
-          }
-        }
-      },
-      {
-        "tag": "direct",
-        "protocol": "freedom"
-      },
-      {
-        "tag": "block",
-        "protocol": "blackhole"
-      }
-    ],
-    "routing": {
-      "domainStrategy": "AsIs",
-      "balancers": [],
-      "rules": [
-        {
-          "type": "field",
-          "network": "tcp,udp",
-          "outboundTag": "node-ru-1"
-        }
-      ]
-    }
-  },
-  {
-    "remarks": "🇸🇪 Швеция #1 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
-    "log": {
-      "loglevel": "warning"
-    },
-    "dns": {
-      "hosts": {
-        "cloudflare-dns.com": "1.1.1.1"
-      },
-      "servers": [
-        "https://cloudflare-dns.com/dns-query"
-      ],
-      "queryStrategy": "UseIPv4"
-    },
-    "inbounds": [
-      {
-        "tag": "socks",
-        "listen": "127.0.0.1",
-        "port": 10808,
-        "protocol": "socks",
-        "settings": {
-          "udp": true
-        },
-        "sniffing": {
-          "enabled": true,
-          "destOverride": [
-            "http",
-            "tls",
-            "quic"
-          ]
-        }
-      },
-      {
-        "tag": "http",
-        "listen": "127.0.0.1",
-        "port": 10809,
-        "protocol": "http"
-      }
-    ],
-    "outbounds": [
-      {
-        "tag": "node-ru-1",
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "196.247.163.10",
-              "port": 443,
-              "users": [
-                {
-                  "id": "30572b57-f5ab-4eb8-82d4-a24d399b99f6",
-                  "encryption": "none",
-                  "flow": "xtls-rprx-vision"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "tcp",
-          "security": "reality",
-          "realitySettings": {
-            "serverName": "britainmh.eosvpn.com",
-            "fingerprint": "chrome",
-            "publicKey": "5984Ah0pkfSVekU5xafQ1trZZN7MyNCJ-3KfCo-O6A4",
-            "shortId": "",
-            "spiderX": "/"
-          }
-        }
-      },
-      {
-        "tag": "direct",
-        "protocol": "freedom"
-      },
-      {
-        "tag": "block",
-        "protocol": "blackhole"
-      }
-    ],
-    "routing": {
-      "domainStrategy": "AsIs",
-      "balancers": [],
-      "rules": [
-        {
-          "type": "field",
-          "network": "tcp,udp",
-          "outboundTag": "node-ru-1"
-        }
-      ]
-    }
-  },
-  {
-    "remarks": "🇸🇪 Швеция #2 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
-    "log": {
-      "loglevel": "warning"
-    },
-    "dns": {
-      "hosts": {
-        "cloudflare-dns.com": "1.1.1.1"
-      },
-      "servers": [
-        "https://cloudflare-dns.com/dns-query"
-      ],
-      "queryStrategy": "UseIPv4"
-    },
-    "inbounds": [
-      {
-        "tag": "socks",
-        "listen": "127.0.0.1",
-        "port": 10808,
-        "protocol": "socks",
-        "settings": {
-          "udp": true
-        },
-        "sniffing": {
-          "enabled": true,
-          "destOverride": [
-            "http",
-            "tls",
-            "quic"
-          ]
-        }
-      },
-      {
-        "tag": "http",
-        "listen": "127.0.0.1",
-        "port": 10809,
-        "protocol": "http"
-      }
-    ],
-    "outbounds": [
-      {
-        "tag": "node-ru-1",
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "104.27.124.133",
+              "address": "172.67.145.14",
               "port": 443,
               "users": [
                 {
@@ -7395,7 +3299,7 @@
           "network": "ws",
           "security": "tls",
           "tlsSettings": {
-            "fingerprint": "chrome",
+            "fingerprint": "ios",
             "allowInsecure": false,
             "serverName": "web-app-ji3j1z.app-wuuhuw.workers.dev"
           },
@@ -7429,834 +3333,7 @@
     }
   },
   {
-    "remarks": "🇸🇪 Швеция #3 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
-    "log": {
-      "loglevel": "warning"
-    },
-    "dns": {
-      "hosts": {
-        "cloudflare-dns.com": "1.1.1.1"
-      },
-      "servers": [
-        "https://cloudflare-dns.com/dns-query"
-      ],
-      "queryStrategy": "UseIPv4"
-    },
-    "inbounds": [
-      {
-        "tag": "socks",
-        "listen": "127.0.0.1",
-        "port": 10808,
-        "protocol": "socks",
-        "settings": {
-          "udp": true
-        },
-        "sniffing": {
-          "enabled": true,
-          "destOverride": [
-            "http",
-            "tls",
-            "quic"
-          ]
-        }
-      },
-      {
-        "tag": "http",
-        "listen": "127.0.0.1",
-        "port": 10809,
-        "protocol": "http"
-      }
-    ],
-    "outbounds": [
-      {
-        "tag": "node-ru-1",
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "104.21.74.214",
-              "port": 2087,
-              "users": [
-                {
-                  "id": "50414e45-4c5f-5a45-5553-6f51879c0594",
-                  "encryption": "none"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "ws",
-          "security": "tls",
-          "tlsSettings": {
-            "fingerprint": "chrome",
-            "allowInsecure": false,
-            "serverName": "levikoconfig.levikogjgfdd.ir"
-          },
-          "wsSettings": {
-            "path": "/",
-            "headers": {
-              "Host": "levikoconfig.levikogjgfdd.ir"
-            }
-          }
-        }
-      },
-      {
-        "tag": "direct",
-        "protocol": "freedom"
-      },
-      {
-        "tag": "block",
-        "protocol": "blackhole"
-      }
-    ],
-    "routing": {
-      "domainStrategy": "AsIs",
-      "balancers": [],
-      "rules": [
-        {
-          "type": "field",
-          "network": "tcp,udp",
-          "outboundTag": "node-ru-1"
-        }
-      ]
-    }
-  },
-  {
-    "remarks": "🇯🇵 Япония #2 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
-    "log": {
-      "loglevel": "warning"
-    },
-    "dns": {
-      "hosts": {
-        "cloudflare-dns.com": "1.1.1.1"
-      },
-      "servers": [
-        "https://cloudflare-dns.com/dns-query"
-      ],
-      "queryStrategy": "UseIPv4"
-    },
-    "inbounds": [
-      {
-        "tag": "socks",
-        "listen": "127.0.0.1",
-        "port": 10808,
-        "protocol": "socks",
-        "settings": {
-          "udp": true
-        },
-        "sniffing": {
-          "enabled": true,
-          "destOverride": [
-            "http",
-            "tls",
-            "quic"
-          ]
-        }
-      },
-      {
-        "tag": "http",
-        "listen": "127.0.0.1",
-        "port": 10809,
-        "protocol": "http"
-      }
-    ],
-    "outbounds": [
-      {
-        "tag": "node-ru-1",
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "3.114.220.22",
-              "port": 10583,
-              "users": [
-                {
-                  "id": "814bd064-544d-4255-a070-5705c03f6da9",
-                  "encryption": "none",
-                  "flow": "xtls-rprx-vision"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "tcp",
-          "security": "reality",
-          "realitySettings": {
-            "serverName": "www.apple.com",
-            "fingerprint": "chrome",
-            "publicKey": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
-            "shortId": "48050fab",
-            "spiderX": "/"
-          }
-        }
-      },
-      {
-        "tag": "direct",
-        "protocol": "freedom"
-      },
-      {
-        "tag": "block",
-        "protocol": "blackhole"
-      }
-    ],
-    "routing": {
-      "domainStrategy": "AsIs",
-      "balancers": [],
-      "rules": [
-        {
-          "type": "field",
-          "network": "tcp,udp",
-          "outboundTag": "node-ru-1"
-        }
-      ]
-    }
-  },
-  {
-    "remarks": "🇯🇵 Япония #3 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
-    "log": {
-      "loglevel": "warning"
-    },
-    "dns": {
-      "hosts": {
-        "cloudflare-dns.com": "1.1.1.1"
-      },
-      "servers": [
-        "https://cloudflare-dns.com/dns-query"
-      ],
-      "queryStrategy": "UseIPv4"
-    },
-    "inbounds": [
-      {
-        "tag": "socks",
-        "listen": "127.0.0.1",
-        "port": 10808,
-        "protocol": "socks",
-        "settings": {
-          "udp": true
-        },
-        "sniffing": {
-          "enabled": true,
-          "destOverride": [
-            "http",
-            "tls",
-            "quic"
-          ]
-        }
-      },
-      {
-        "tag": "http",
-        "listen": "127.0.0.1",
-        "port": 10809,
-        "protocol": "http"
-      }
-    ],
-    "outbounds": [
-      {
-        "tag": "node-ru-1",
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "128.241.25.11",
-              "port": 30021,
-              "users": [
-                {
-                  "id": "4070dab7-dad3-44c7-b57b-24be1b8ffe50",
-                  "encryption": "none"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "ws",
-          "security": "tls",
-          "tlsSettings": {
-            "fingerprint": "firefox",
-            "allowInsecure": false,
-            "serverName": "ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev"
-          },
-          "wsSettings": {
-            "path": "/@Marisa_kristi",
-            "headers": {
-              "Host": "ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev"
-            }
-          }
-        }
-      },
-      {
-        "tag": "direct",
-        "protocol": "freedom"
-      },
-      {
-        "tag": "block",
-        "protocol": "blackhole"
-      }
-    ],
-    "routing": {
-      "domainStrategy": "AsIs",
-      "balancers": [],
-      "rules": [
-        {
-          "type": "field",
-          "network": "tcp,udp",
-          "outboundTag": "node-ru-1"
-        }
-      ]
-    }
-  },
-  {
-    "remarks": "🇯🇵 Япония #4 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
-    "log": {
-      "loglevel": "warning"
-    },
-    "dns": {
-      "hosts": {
-        "cloudflare-dns.com": "1.1.1.1"
-      },
-      "servers": [
-        "https://cloudflare-dns.com/dns-query"
-      ],
-      "queryStrategy": "UseIPv4"
-    },
-    "inbounds": [
-      {
-        "tag": "socks",
-        "listen": "127.0.0.1",
-        "port": 10808,
-        "protocol": "socks",
-        "settings": {
-          "udp": true
-        },
-        "sniffing": {
-          "enabled": true,
-          "destOverride": [
-            "http",
-            "tls",
-            "quic"
-          ]
-        }
-      },
-      {
-        "tag": "http",
-        "listen": "127.0.0.1",
-        "port": 10809,
-        "protocol": "http"
-      }
-    ],
-    "outbounds": [
-      {
-        "tag": "node-ru-1",
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "3.114.220.22",
-              "port": 10583,
-              "users": [
-                {
-                  "id": "814bd064-544d-4255-a070-5705c03f6da9",
-                  "encryption": "none",
-                  "flow": "xtls-rprx-vision"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "tcp",
-          "security": "reality",
-          "realitySettings": {
-            "serverName": "www.apple.com",
-            "fingerprint": "chrome",
-            "publicKey": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
-            "shortId": "48050fab",
-            "spiderX": "/"
-          }
-        }
-      },
-      {
-        "tag": "direct",
-        "protocol": "freedom"
-      },
-      {
-        "tag": "block",
-        "protocol": "blackhole"
-      }
-    ],
-    "routing": {
-      "domainStrategy": "AsIs",
-      "balancers": [],
-      "rules": [
-        {
-          "type": "field",
-          "network": "tcp,udp",
-          "outboundTag": "node-ru-1"
-        }
-      ]
-    }
-  },
-  {
-    "remarks": "🇯🇵 Япония #5 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
-    "log": {
-      "loglevel": "warning"
-    },
-    "dns": {
-      "hosts": {
-        "cloudflare-dns.com": "1.1.1.1"
-      },
-      "servers": [
-        "https://cloudflare-dns.com/dns-query"
-      ],
-      "queryStrategy": "UseIPv4"
-    },
-    "inbounds": [
-      {
-        "tag": "socks",
-        "listen": "127.0.0.1",
-        "port": 10808,
-        "protocol": "socks",
-        "settings": {
-          "udp": true
-        },
-        "sniffing": {
-          "enabled": true,
-          "destOverride": [
-            "http",
-            "tls",
-            "quic"
-          ]
-        }
-      },
-      {
-        "tag": "http",
-        "listen": "127.0.0.1",
-        "port": 10809,
-        "protocol": "http"
-      }
-    ],
-    "outbounds": [
-      {
-        "tag": "node-ru-1",
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "156.229.163.237",
-              "port": 10238,
-              "users": [
-                {
-                  "id": "2cb1d752-6d36-4a2f-9a47-79a5010f326b",
-                  "encryption": "none"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "ws",
-          "security": "tls",
-          "tlsSettings": {
-            "fingerprint": "firefox",
-            "allowInsecure": false,
-            "serverName": "ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev"
-          },
-          "wsSettings": {
-            "path": "/@Marisa_kristi",
-            "headers": {
-              "Host": "ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev"
-            }
-          }
-        }
-      },
-      {
-        "tag": "direct",
-        "protocol": "freedom"
-      },
-      {
-        "tag": "block",
-        "protocol": "blackhole"
-      }
-    ],
-    "routing": {
-      "domainStrategy": "AsIs",
-      "balancers": [],
-      "rules": [
-        {
-          "type": "field",
-          "network": "tcp,udp",
-          "outboundTag": "node-ru-1"
-        }
-      ]
-    }
-  },
-  {
-    "remarks": "🇯🇵 Япония #6 · 🌍 Блокировки · 📶 Белые списки · ⚠ Не проверен",
-    "log": {
-      "loglevel": "warning"
-    },
-    "dns": {
-      "hosts": {
-        "cloudflare-dns.com": "1.1.1.1"
-      },
-      "servers": [
-        "https://cloudflare-dns.com/dns-query"
-      ],
-      "queryStrategy": "UseIPv4"
-    },
-    "inbounds": [
-      {
-        "tag": "socks",
-        "listen": "127.0.0.1",
-        "port": 10808,
-        "protocol": "socks",
-        "settings": {
-          "udp": true
-        },
-        "sniffing": {
-          "enabled": true,
-          "destOverride": [
-            "http",
-            "tls",
-            "quic"
-          ]
-        }
-      },
-      {
-        "tag": "http",
-        "listen": "127.0.0.1",
-        "port": 10809,
-        "protocol": "http"
-      }
-    ],
-    "outbounds": [
-      {
-        "tag": "node-ru-1",
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "31.76.91.98",
-              "port": 443,
-              "users": [
-                {
-                  "id": "7072eeba-94fd-4fb3-92f2-a4506dd84cd8",
-                  "encryption": "none",
-                  "flow": "xtls-rprx-vision"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "tcp",
-          "security": "reality",
-          "realitySettings": {
-            "serverName": "fuji.etherhub.cc",
-            "fingerprint": "firefox",
-            "publicKey": "ejx56dFtS4LK_Th6HSLFFdm7v7zqRpv8KfjrWAw4Sjg",
-            "shortId": "bd6f67b6b2152b45",
-            "spiderX": "/"
-          }
-        }
-      },
-      {
-        "tag": "direct",
-        "protocol": "freedom"
-      },
-      {
-        "tag": "block",
-        "protocol": "blackhole"
-      }
-    ],
-    "routing": {
-      "domainStrategy": "AsIs",
-      "balancers": [],
-      "rules": [
-        {
-          "type": "field",
-          "network": "tcp,udp",
-          "outboundTag": "node-ru-1"
-        }
-      ]
-    }
-  },
-  {
-    "remarks": "🇷🇺 Россия #13 · 📶 Белые списки · ⚠ Не проверен",
-    "log": {
-      "loglevel": "warning"
-    },
-    "dns": {
-      "hosts": {
-        "cloudflare-dns.com": "1.1.1.1"
-      },
-      "servers": [
-        "https://cloudflare-dns.com/dns-query"
-      ],
-      "queryStrategy": "UseIPv4"
-    },
-    "inbounds": [
-      {
-        "tag": "socks",
-        "listen": "127.0.0.1",
-        "port": 10808,
-        "protocol": "socks",
-        "settings": {
-          "udp": true
-        },
-        "sniffing": {
-          "enabled": true,
-          "destOverride": [
-            "http",
-            "tls",
-            "quic"
-          ]
-        }
-      },
-      {
-        "tag": "http",
-        "listen": "127.0.0.1",
-        "port": 10809,
-        "protocol": "http"
-      }
-    ],
-    "outbounds": [
-      {
-        "tag": "node-ru-1",
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "193.223.104.162",
-              "port": 443,
-              "users": [
-                {
-                  "id": "fd0a5c32-afc0-4d57-b95a-ca6ec8f93e87",
-                  "encryption": "none",
-                  "flow": "xtls-rprx-vision"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "tcp",
-          "security": "reality",
-          "realitySettings": {
-            "serverName": "ozon.ru",
-            "fingerprint": "firefox",
-            "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-            "shortId": "",
-            "spiderX": "/"
-          }
-        }
-      },
-      {
-        "tag": "direct",
-        "protocol": "freedom"
-      },
-      {
-        "tag": "block",
-        "protocol": "blackhole"
-      }
-    ],
-    "routing": {
-      "domainStrategy": "AsIs",
-      "balancers": [],
-      "rules": [
-        {
-          "type": "field",
-          "network": "tcp,udp",
-          "outboundTag": "node-ru-1"
-        }
-      ]
-    }
-  },
-  {
-    "remarks": "🇷🇺 Россия #14 · 📶 Белые списки · ⚠ Не проверен",
-    "log": {
-      "loglevel": "warning"
-    },
-    "dns": {
-      "hosts": {
-        "cloudflare-dns.com": "1.1.1.1"
-      },
-      "servers": [
-        "https://cloudflare-dns.com/dns-query"
-      ],
-      "queryStrategy": "UseIPv4"
-    },
-    "inbounds": [
-      {
-        "tag": "socks",
-        "listen": "127.0.0.1",
-        "port": 10808,
-        "protocol": "socks",
-        "settings": {
-          "udp": true
-        },
-        "sniffing": {
-          "enabled": true,
-          "destOverride": [
-            "http",
-            "tls",
-            "quic"
-          ]
-        }
-      },
-      {
-        "tag": "http",
-        "listen": "127.0.0.1",
-        "port": 10809,
-        "protocol": "http"
-      }
-    ],
-    "outbounds": [
-      {
-        "tag": "node-ru-1",
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "147.45.46.178",
-              "port": 443,
-              "users": [
-                {
-                  "id": "fd0a5c32-afc0-4d57-b95a-ca6ec8f93e87",
-                  "encryption": "none",
-                  "flow": "xtls-rprx-vision"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "tcp",
-          "security": "reality",
-          "realitySettings": {
-            "serverName": "abuse.ozon.ru",
-            "fingerprint": "firefox",
-            "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-            "shortId": "",
-            "spiderX": "/"
-          }
-        }
-      },
-      {
-        "tag": "direct",
-        "protocol": "freedom"
-      },
-      {
-        "tag": "block",
-        "protocol": "blackhole"
-      }
-    ],
-    "routing": {
-      "domainStrategy": "AsIs",
-      "balancers": [],
-      "rules": [
-        {
-          "type": "field",
-          "network": "tcp,udp",
-          "outboundTag": "node-ru-1"
-        }
-      ]
-    }
-  },
-  {
-    "remarks": "🇷🇺 Россия #15 · 📶 Белые списки · ⚠ Не проверен",
-    "log": {
-      "loglevel": "warning"
-    },
-    "dns": {
-      "hosts": {
-        "cloudflare-dns.com": "1.1.1.1"
-      },
-      "servers": [
-        "https://cloudflare-dns.com/dns-query"
-      ],
-      "queryStrategy": "UseIPv4"
-    },
-    "inbounds": [
-      {
-        "tag": "socks",
-        "listen": "127.0.0.1",
-        "port": 10808,
-        "protocol": "socks",
-        "settings": {
-          "udp": true
-        },
-        "sniffing": {
-          "enabled": true,
-          "destOverride": [
-            "http",
-            "tls",
-            "quic"
-          ]
-        }
-      },
-      {
-        "tag": "http",
-        "listen": "127.0.0.1",
-        "port": 10809,
-        "protocol": "http"
-      }
-    ],
-    "outbounds": [
-      {
-        "tag": "node-ru-1",
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "45.12.75.242",
-              "port": 26424,
-              "users": [
-                {
-                  "id": "633f424e-2b11-48da-a6b3-a849dd71456f",
-                  "encryption": "none"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "tcp",
-          "security": "reality",
-          "realitySettings": {
-            "serverName": "ya.ru",
-            "fingerprint": "chrome",
-            "publicKey": "l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0",
-            "shortId": "23103e1e",
-            "spiderX": "/"
-          }
-        }
-      },
-      {
-        "tag": "direct",
-        "protocol": "freedom"
-      },
-      {
-        "tag": "block",
-        "protocol": "blackhole"
-      }
-    ],
-    "routing": {
-      "domainStrategy": "AsIs",
-      "balancers": [],
-      "rules": [
-        {
-          "type": "field",
-          "network": "tcp,udp",
-          "outboundTag": "node-ru-1"
-        }
-      ]
-    }
-  },
-  {
-    "remarks": "🇷🇺 Россия #16 · 📶 Белые списки · ⚠ Не проверен",
+    "remarks": "🇷🇺 Россия #84 · 📶 Белые списки · ⚠ Не проверен",
     "log": {
       "loglevel": "warning"
     },
@@ -8348,7 +3425,7 @@
     }
   },
   {
-    "remarks": "🇷🇺 Россия #17 · 📶 Белые списки · ⚠ Не проверен",
+    "remarks": "🇷🇺 Россия #85 · 📶 Белые списки · ⚠ Не проверен",
     "log": {
       "loglevel": "warning"
     },
@@ -8393,11 +3470,11 @@
         "settings": {
           "vnext": [
             {
-              "address": "45.11.93.214",
-              "port": 443,
+              "address": "78.159.246.85",
+              "port": 2053,
               "users": [
                 {
-                  "id": "7f6adf9d-42f1-4fec-ab22-fb7f66bf3adc",
+                  "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
                   "encryption": "none"
                 }
               ]
@@ -8408,18 +3485,13 @@
           "network": "xhttp",
           "security": "tls",
           "tlsSettings": {
-            "fingerprint": "firefox",
-            "allowInsecure": false,
-            "serverName": "rjynmkx8v52c.hat.onl",
-            "alpn": [
-              "h2",
-              "http/1.1"
-            ]
+            "fingerprint": "chrome",
+            "allowInsecure": false
           },
           "xhttpSettings": {
-            "path": "/vod/cmzmf68h2m/chunks",
+            "path": "/api/v1/upload",
             "mode": "auto",
-            "host": "rjynmkx8v52c.hat.onl"
+            "host": "fitindoor.net"
           }
         }
       },
@@ -8445,7 +3517,7 @@
     }
   },
   {
-    "remarks": "🇷🇺 Россия #18 · 📶 Белые списки · ⚠ Не проверен",
+    "remarks": "🇷🇺 Россия #86 · 📶 Белые списки · ⚠ Не проверен",
     "log": {
       "loglevel": "warning"
     },
@@ -8490,98 +3562,7 @@
         "settings": {
           "vnext": [
             {
-              "address": "45.11.93.214",
-              "port": 443,
-              "users": [
-                {
-                  "id": "7f6adf9d-42f1-4fec-ab22-fb7f66bf3adc",
-                  "encryption": "none"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "grpc",
-          "security": "tls",
-          "tlsSettings": {
-            "fingerprint": "firefox",
-            "allowInsecure": false,
-            "serverName": "u6uchb205e.hat.onl"
-          },
-          "grpcSettings": {
-            "serviceName": "vod.Qvhnu9V5WVuVduqzDkRv.frag.278.mp4"
-          }
-        }
-      },
-      {
-        "tag": "direct",
-        "protocol": "freedom"
-      },
-      {
-        "tag": "block",
-        "protocol": "blackhole"
-      }
-    ],
-    "routing": {
-      "domainStrategy": "AsIs",
-      "balancers": [],
-      "rules": [
-        {
-          "type": "field",
-          "network": "tcp,udp",
-          "outboundTag": "node-ru-1"
-        }
-      ]
-    }
-  },
-  {
-    "remarks": "🇷🇺 Россия #19 · 📶 Белые списки · ⚠ Не проверен",
-    "log": {
-      "loglevel": "warning"
-    },
-    "dns": {
-      "hosts": {
-        "cloudflare-dns.com": "1.1.1.1"
-      },
-      "servers": [
-        "https://cloudflare-dns.com/dns-query"
-      ],
-      "queryStrategy": "UseIPv4"
-    },
-    "inbounds": [
-      {
-        "tag": "socks",
-        "listen": "127.0.0.1",
-        "port": 10808,
-        "protocol": "socks",
-        "settings": {
-          "udp": true
-        },
-        "sniffing": {
-          "enabled": true,
-          "destOverride": [
-            "http",
-            "tls",
-            "quic"
-          ]
-        }
-      },
-      {
-        "tag": "http",
-        "listen": "127.0.0.1",
-        "port": 10809,
-        "protocol": "http"
-      }
-    ],
-    "outbounds": [
-      {
-        "tag": "node-ru-1",
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "147.45.47.100",
+              "address": "147.45.47.89",
               "port": 443,
               "users": [
                 {
@@ -8598,7 +3579,7 @@
           "security": "reality",
           "realitySettings": {
             "serverName": "ozon.ru",
-            "fingerprint": "firefox",
+            "fingerprint": "android",
             "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
             "shortId": "",
             "spiderX": "/"
@@ -8627,7 +3608,7 @@
     }
   },
   {
-    "remarks": "🇷🇺 Россия #20 · 📶 Белые списки · ⚠ Не проверен",
+    "remarks": "🇷🇺 Россия #87 · 📶 Белые списки · ⚠ Не проверен",
     "log": {
       "loglevel": "warning"
     },
@@ -8672,7 +3653,7 @@
         "settings": {
           "vnext": [
             {
-              "address": "147.45.47.91",
+              "address": "147.45.47.93",
               "port": 443,
               "users": [
                 {
@@ -8689,7 +3670,98 @@
           "security": "reality",
           "realitySettings": {
             "serverName": "ozon.ru",
-            "fingerprint": "firefox",
+            "fingerprint": "android",
+            "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+            "shortId": "",
+            "spiderX": "/"
+          }
+        }
+      },
+      {
+        "tag": "direct",
+        "protocol": "freedom"
+      },
+      {
+        "tag": "block",
+        "protocol": "blackhole"
+      }
+    ],
+    "routing": {
+      "domainStrategy": "AsIs",
+      "balancers": [],
+      "rules": [
+        {
+          "type": "field",
+          "network": "tcp,udp",
+          "outboundTag": "node-ru-1"
+        }
+      ]
+    }
+  },
+  {
+    "remarks": "🇷🇺 Россия #88 · 📶 Белые списки · ⚠ Не проверен",
+    "log": {
+      "loglevel": "warning"
+    },
+    "dns": {
+      "hosts": {
+        "cloudflare-dns.com": "1.1.1.1"
+      },
+      "servers": [
+        "https://cloudflare-dns.com/dns-query"
+      ],
+      "queryStrategy": "UseIPv4"
+    },
+    "inbounds": [
+      {
+        "tag": "socks",
+        "listen": "127.0.0.1",
+        "port": 10808,
+        "protocol": "socks",
+        "settings": {
+          "udp": true
+        },
+        "sniffing": {
+          "enabled": true,
+          "destOverride": [
+            "http",
+            "tls",
+            "quic"
+          ]
+        }
+      },
+      {
+        "tag": "http",
+        "listen": "127.0.0.1",
+        "port": 10809,
+        "protocol": "http"
+      }
+    ],
+    "outbounds": [
+      {
+        "tag": "node-ru-1",
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "193.160.140.115",
+              "port": 443,
+              "users": [
+                {
+                  "id": "fd0a5c32-afc0-4d57-b95a-ca6ec8f93e87",
+                  "encryption": "none",
+                  "flow": "xtls-rprx-vision"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "tcp",
+          "security": "reality",
+          "realitySettings": {
+            "serverName": "ozon.ru",
+            "fingerprint": "android",
             "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
             "shortId": "",
             "spiderX": "/"
